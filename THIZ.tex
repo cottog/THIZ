@@ -171,7 +171,7 @@ This skill determines a character's movement speed, and is also used by characte
 This skill determines how heavy of an object a character can lift, as well as how heavy of a load they can carry on their backs as they travel. A character can overhead lift 100 pounds plus an additional 10 pounds for every point of Strength. A character can lift double this amount off the ground, moving as if they had a Speed rating of 0. They can move in this way for the same amount of time they can Sprint (see the chapter on Movement).
 
 \subsubsection{Toughness [P]}
-This is the skill that characters use to shrug off the effects of attacks they receive in combat, as well as the effects of poison or other hazards. The chapters entitled \textbf{Combat} and \textbf{Dangers} explain the use of this skill in more detail. 
+This is the skill that characters use to shrug off the effects of attacks they receive in combat, as well as the effects of poison or other hazards. The chapters entitled \textbf{Combat} and \textbf{Dangers} explain the use of this skill in more detail. This skill also governs how long a character can spend Sprinting. See the chapter on \textbf{Movement} for more details.
 
 \subsubsection{Willpower [M]}
 Willpower governs a character's ability to resist their internal compulsions and desires, as well as those that others may attempt to impose upon them. Characters usually use Willpower to negate or lessen the effects of their Weaknesses. Willpower may also help a character ignore certain magical attacks.
@@ -556,7 +556,7 @@ The player (and referee) should keep in mind that certain Weaknesses may preclud
 \begin{multicols}{2}
 \subsection{General Weaknesses}
 \subsubsection{Allergy}
-The character has a serious and violent allergy to a substance. When choosing this Weakness, the player should name a substance that is common enough for this to truly be a Weakness, but not something that will kill the character immediately. If the character should ever come into close proximity with their allergen, they must test Body. On a failure, they suffer the effects of their allergy, depending on the method of contact. Skin contact with their allergen results in an unsightly, painful rash. They take a -3 to all Skills involving the use or movement of that area of their skin for 1d10 hours. For example, an allergic reaction on one's arms would result in a -3 to most Weapon Skills, Trade/Artisan/Profession Skills, etc. If a character were to accidentally swallow their allergen, however, the consequences could be much more dire. If they were to fail their Body check in this situation, their eyes will swell shut and their airway will close. Unless they (or another character nearby) can quickly induce vomiting or perform some sort of medical procedure, they will begin suffocating. Please see the Chapter on \textbf{Hazards} for more information about suffocation damage. Even if a character were to prevent their death by suffocation, their puffy eyes give them a -5 to any tasks requiring sight for 1d6 hours.
+The character has a serious and violent allergy to a substance. When choosing this Weakness, the player should name a substance that is common enough for this to truly be a Weakness, but not something that will kill the character immediately. If the character should ever come into close proximity with their allergen, they must test Toughness. On a failure, they suffer the effects of their allergy, depending on the method of contact. Skin contact with their allergen results in an unsightly, painful rash. They take a -3 to all Skills involving the use or movement of that area of their skin for 1d10 hours. For example, an allergic reaction on one's arms would result in a -3 to most Weapon Skills, Trade/Artisan/Profession Skills, etc. If a character were to accidentally swallow their allergen, however, the consequences could be much more dire. If they were to fail their Toughness check in this situation, their eyes will swell shut and their airway will close. Unless they (or another character nearby) can quickly induce vomiting or perform some sort of medical procedure, they will begin suffocating. Please see the Chapter on \textbf{Hazards} for more information about suffocation damage. Even if a character were to prevent their death by suffocation, their puffy eyes give them a -5 to any tasks requiring sight for 1d6 hours.
 \subsubsection{Color Blind}
 Characters with this Weakness have an inability to distinguish between different colors. This may result in a -3 to using Perception to detect subtle differences in shade (such as when a hidden enemy is wearing camouflage). This may also result in ridicule or ire when the character fails to coordinate the colors of their own outfit. 
 \subsubsection{Missing Limb}
@@ -564,12 +564,24 @@ The character is missing a limb. While this will certainly hamper the character 
 \subsubsection{Night-Blind}
 A character with this Weakness cannot see very well (or at all) at night. Characters with this Weakness cannot use Navigation to travel at night, and they suffer a -2 to any action requiring sight performed at night. 
 \subsubsection{Physically Dependent}
-The character requires some sort of substance to function normally, at the player's discretion. Perhaps they have an illness that requires frequent consumption of \emph{Degiik} leaves. Perhaps they have abused Synthehol for too long. Whatever the reason, if the character goes more than three days without consuming this substance, they suffer a -1 to all Skills. Every two days thereafter, this penalty increases by 1. If the character's Body skill reaches a rating of 0, they go unconscious. If their Body Skill reaches a negative value equal to its original rating, they die. 
+The character requires some sort of substance to function normally, at the player's discretion. Perhaps they have an illness that requires frequent consumption of \emph{Degiik} leaves. Perhaps they have abused Synthehol for too long. Whatever the reason, if the character goes more than three days without consuming this substance, they suffer a -1 to all Skills. Every two days thereafter, this penalty increases by 1. If the character's Toughness skill reaches a rating of 0, they go unconscious. If their Toughness Skill reaches a negative value equal to its original rating, they die. 
 
-If the character begins ingesting this substance again, the penalty is reduced by 2 for each day they consume it, until it has been reduced to 0. If the penalty reached a magnitude over 3, they suffer the excess as a permanent reduction to their Body Skill. For example, if the character went 11 days without meeting their needs, they will have suffered a -5 to all Skills. Once they satisfy their itch and reduce the penalty to 0, their Body Skill is nonetheless permanently reduced by 2. 
+If the character begins ingesting this substance again, the penalty is reduced by 2 for each day they consume it, until it has been reduced to 0. If the penalty reached a magnitude over 3, they suffer the excess as a permanent reduction to their Toughness Skill. For example, if the character went 11 days without meeting their needs, they will have suffered a -5 to all Skills. Once they satisfy their itch and reduce the penalty to 0, their Toughness Skill is nonetheless permanently reduced by 2. 
 
 \subsubsection{Reckless}
 The character is a person of action. Unwilling or unable to stop and think of the consequences of their actions, they often leap into the maw of danger. Characters with this Weakness cannot pass up their turn in combat if physically able to act, nor can they delay an action. 
+
+\subsubsection{Silent. Possibly Deadly.}
+A character with this Weakness is a person of few (if any) words. They are indisposed to or incapable of communicating even with their comrades. Of course, while this may be beneficial if they were to be interrogated, this also means their reticence may prevent them from pointing out any danger they have spotted. 
+
+\subsubsection{Tin Ear}
+This character is incapable of distinguishing between musical notes. They cannot possess or even test against any Skills involving the musical arts. Their inability to appreciate music may also prove detrimental in social situations. 
+
+\subsubsection{Unlucky}
+A character with this Weakness is possessed of particularly ill fortune. Whenever they make a check against a skill and get a 98-100, something particularly bad happens to them: their pantaloons fall down while addressing a diplomat; a piton slips out of the cliff face they are attempting to scale; their grenade bounces off a wall and rolls toward their feet. 
+
+\subsubsection{Weak Constitution}
+This character has a particularly feeble stomach, and they tire easily. When making a Toughness check against poison, they suffer a -3. Additionally, they can Sprint as if their Toughness was 3 ranks lower than it actually is.
 
 \end{multicols}
 \end{document}
