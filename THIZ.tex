@@ -7,14 +7,15 @@
   citecolor    = red      % Colour of citations
 }
 \usepackage[table,xcdraw]{xcolor}
+\usepackage{nonfloat}
 \usepackage{multicol}
-\setcounter{chapter}{-1}
 \setcounter{secnumdepth}{0}
 \makeatletter
 \renewcommand{\@dotsep}{10000} 
 \makeatother
 \begin{document}
 
+\frontmatter
 
 \title{ {\Huge THIZ} \\ \vspace{2 mm} {\large THIZ is Heavily Inspired by ZeFRS}}
 \date{}
@@ -75,6 +76,9 @@ THIZ fits into this picture by adding an element of order and providing a means 
 \section*{Requisite Supplies}
 
 You'll need a referee and at least one other player. A pencil and paper will be useful, as will the character sheet included at the end of this book. Additionally, you will need to be able to randomly generate a number between 1 and 100. This is normally achieved using a pair of ten-sided dice, often referred to as a d100, or percentile dice.  This set of dice typically has one die with numbers from 10 to 100 and one die that ranges from 0 to 9, but alternately you could use two dice with a similar range of numbers, as long as they are of a different color, and you consistently designate one color to serve as one part of the percentage. Finally, you will need a copy of the resolution table that is included in this book. This is used to resolve any conflicts or contests between characters. Once a d100 has been rolled and a random number generated, this number will be used in conjunction with the resolution table to determine the level of success of a character's actions. Enough talk. Let's get to the game!
+
+\mainmatter
+\pagenumbering{gobble}
 
 \chapter{Character Creation}
 
@@ -149,6 +153,11 @@ To further customize your character, you may choose to give them \textbf{Weaknes
 In addition to the actual skill ratings your character possesses, they also have three general skill ratings: \textbf{Physical}, \textbf{Mental}, and \textbf{Magical}. These scores are calculated by taking your character's rating in the appropriate skills, summing these ratings, and dividing the result by ten, rounding down. The skills in the above chart marked with a [P] contribute to your character's Physical rating, whereas those marked with a [M] contribute to their Mental rating. All Magic Skills contribute to their Magical rating. 
 
 \onecolumn
+\section{Starting Equipment}
+A character in THIZ typically starts with very little equipment. They are just beginning their life of adventure, often setting out from home to seek better fortunes elsewhere. A character typically starts play with a single weapon, 1d8 gold coins, and two pieces of mundane equipment. This equipment could be anything from a piece of armor, to a length of rope (100 feet) and a grapple, to a set of tailor's tools, to a small horse or mule, or anything else of that sort. 
+
+\section{Luck}
+Every player character in THIZ is destined for greatness. As such, fate itself may intervene before the character can come to an untimely end. Of course, the character can forge their own destiny, and, at times, it seems their whims dictate the events that unfold around them.  At character creation, the referee secretly rolls 1d10 for each player character. This number should not be revealed to the player, but the referee should remember this number for the duration of the campaign. To see how Luck can be used during play, please see the appropriate section in the chapter on \textbf{Character Advancement and Time Management}.
 
 \chapter{Skills}
 This chapter discusses the various skills available to your character in greater detail. Those marked with an [M] or [P] contribute to a character's Magical or Physical general skill rating. All Magic Skills contribute to their Magical general rating.
@@ -170,7 +179,7 @@ This skill determines a character's movement speed, and is also used by characte
 \subsubsection{Strength [P]}
 This skill determines how heavy of an object a character can lift, as well as how heavy of a load they can carry on their backs as they travel. A character can overhead lift 100 pounds plus an additional 10 pounds for every point of Strength. A character can lift double this amount off the ground, moving as if they had a Speed rating of 0. They can move in this way for the same amount of time they can Sprint (see the chapter on Movement).
 
-Additionally, characters receive a +1 bonus to melee damage for every 10 full points they have in Strength (1 at 10, 1 at 15, 2 at 20).
+Additionally, characters receive a +1 bonus to melee attack rolls for every 10 full points they have in Strength (1 at 10, 1 at 15, 2 at 20).
 
 \subsubsection{Toughness [P]}
 This is the skill that characters use to shrug off the effects of attacks they receive in combat, as well as the effects of poison or other hazards. The chapters entitled \textbf{Combat} and \textbf{Dangers} explain the use of this skill in more detail. This skill also governs how long a character can spend sprinting and jogging. See the chapter on \textbf{Movement} for more details.
@@ -196,6 +205,8 @@ This skill is used by characters when they are attacking an enemy using a part o
 This skill is used by a character when they wish to attack or perform maneuvers with a weapon. A new instance of this skill should be chosen for every weapon the character is proficient in, each with its own rating determined by points that have been allocated to it specifically.
 
 \section{Soft Skills}
+
+A good number of these skills can help the character earn money while outside of combat, especially in the time between campaigns. See the chapter entitled \textbf{Character Advancement and Time Management} in order to see how a character may earn money by pursuing a career. 
 \subsection{Expertise}
 \subsubsection{Appraise [M]}
 This skill is used to appraise the value of trade goods and the works of artisans and craftsmen. A character that has a particular Artisan or Profession skill can check against their skill rating to appraise works (or materials) that fall under that skill's domain, but any character that does not have the appropriate profession or craft must use the Appraise skill to judge the value of an item. A character that has both Appraise and an appropriate Artisan or Profession skill may check against the higher of the two skill ratings, with a +2 bonus, in order to appraise something. 
@@ -204,7 +215,6 @@ The level of success of this check determines the width of the price range a cha
 \subsubsection{Artisan [M]}
 This skill is intended for character's that intend to pursue a more artistic profession. When learning this profession, a character must choose an artistic calling, such as Goldsmithing (making jewelry from gems and precious metals), Silversmithing (making silverware, flatware, hollowware, and other such items from gems and precious metals), Painting, Sculpture etc... A character may have multiple instances of the Artisan skill for each artistic pursuit they wish to follow. Of course, they must allocate points to each of these skills separately in order to increase their ratings. 
 
-See the chapter entitled \textbf{Character Advancement and Time Management} in order to see how a character may earn money by pursuing a career. 
 \subsubsection{Forgery [M]}
 This skill governs a character's ability to create forged documents in any language they can read and write. In order for a character to forge a specific document, they must have a copy of that document to reference while creating the document. For each full 4-hour period a character has to work on their forgery, with a minimum of 1 (8 hours or less) and up to a maximum of 6 (24 hours or more), they may make a resolution check against their Forgery rating. For each check, the player should write down a 1, 2, 3, or 4 for a Green, Yellow, Red, or Black success, respectively. After all checks have been made, the player should sum the numbers they have written down. This sum is the forged document's \textbf{Forgery Score}. A Forgery Score of 0 means the character has failed; otherwise, they have successfully created a forgery. The Forgery Score is important if another character attempts to discover the ruse.
 
@@ -229,14 +239,11 @@ If a player roleplays their speech to the character particularly well, the refer
 \subsubsection{Profession [M]}
 This skill is for characters who wish to pursue a career in a more "learned" field, such as Education (educating others), Mathematics, Engineering, Architecture, Medicine, Surgery, etc... A character may have multiple instances of the Profession skill for each intellectual pursuit they wish to follow. Of course, they must allocate points to each of these skills separately in order to increase their ratings. 
 
-As Surgery falls under this skill, please see the chapter entitled Combat in order to see its possible uses. 
+As Surgery falls under this skill, please see the chapter entitled \textbf{Combat} in order to see its possible uses. 
 
-See the chapter entitled \textbf{Character Advancement and Time Management} in order to see how a character may earn money by pursuing a career. 
 
 \subsubsection{Trade [P]}
 This skill represents a character's knowledge of and ability in a tradeskill, such as Woodworking, Carpentry, Plumbing (if setting-appropriate), Blacksmithing, etc... Professions that fall under this skill's purview are those that are typically considered "blue-collar."  A character may have multiple instances of the Trade skill for each trade they wish to pursue. Of course, they must allocate points to each of these skills separately in order to increase their ratings. 
-
-See the chapter entitled "Character Advancement and Time Management" in order to see how a character may earn money by pursuing a career. 
 
 \subsubsection{Trapping}
 This skill is used by characters who wish to construct and lay traps. This skill also represents a character's knowledge and intuition of where best to lay traps. This skill can be used to construct or detect outdoor traps for creatures up to human size. Spike pits, snares, and net traps fall under the umbrella of this skill. Indoor or mechanical traps are not governed by this skill, which would more likely fall under Engineering (a subset of Profession).
@@ -646,7 +653,7 @@ Most Quirks cost two Skill Points. Those that cost a different amount will have 
 
 Except in clear cases of mortal damage (decapitation, magical annihilation, etc), the player may spend a Luck Point to keep fighting beyond the point of death. If the character falls in combat with something they particularly hate (the target of a Hatred Weakness), the player must spend this Luck Point (if they have any remaining). A character in this state receives many bonuses and weaknesses.
 
-The Berserk state confers the following bonuses: The character may continue to ignore the effect of any wounds they incur until the end of the combat. Additionally, they receive a +3 bonus to both Strength checks and Willpower checks for the duration of combat. The character also receives a +1 bonus to melee damage for every 5 full points in Strength, as opposed to the usual 10. Lastly, the character can ignore any Phobias they have.
+The Berserk state confers the following bonuses: The character may continue to ignore the effect of any wounds they incur until the end of the combat. Additionally, they receive a +3 bonus to both Strength checks and Willpower checks for the duration of combat. The character also receives a +1 bonus to melee attack rolls for every 5 full points in Strength, as opposed to the usual 10. Lastly, the character can ignore any Phobias they have.
 
 The Berserk state has the following drawbacks: The character must focus their attention on the target of any Hatred Weaknesses they have, ignoring other enemies until their Hated targets are dead. If they Hate multiple targets in the combat, they must attack the closest first. Additionally, the character remains in a blood-trance continues once all enemies have been vanquished. The closest living creature in sight becomes their next target, continuing until the character can no longer see a living creature, at which point they succumb to their wounds. 
 
@@ -714,6 +721,540 @@ The character is a practiced hand at treating combat wounds. Perhaps they were a
 A character with Quirk is considered by most to be a particularly pitiful creature. The character, by some twist of fate, is completely immune to the effects of magic, both helpful and harmful. Additionally, all characters within 20 feet of this creature receive a -2 to all Magical Skill checks used to manifest magical effects. 
 
 Additionally, all creatures can sense that the character is, in some way, subtly \emph{different} than those around them. Most characters will treat the character more gruffly than they would a normal stranger. Magically-attuned creatures, however, experience a strong feeling of disgust when in the presence Void-Touched characters, as they are an antithesis of everything they believe in. Creatures that have points in the Reiki or Magic Sense Skills, or any creature with a General Magic Rating of 2 or greater fall into the previous category. Demons, spirits, and any other creatures that the referee deems appropriate may also fall into the above category.
+\end{multicols}
+
+\chapter{The Resolution Chart}
+This chapter concerns the method by which conflicts are resolved in THIZ. These conflicts are resolved with dice rolls, and the results of those rolls are found by consulting the Resolution Chart. Depicted at the end of this book in many forms, this chart dictates how successful any character is whenever they use a Skill. The player makes a check by rolling a 1d100 and consulting the proper row of the resolution chart.
+
+\section{Reading the Resolution Chart}
+The resolution chart consists of multiple rows and six columns. The leftmost column, which contains a white background or a white header, denotes the rating against which a check is being made. For example, if a character is attempting to swim through rough seas and has a rating of 4 in the Swimming skill, the player will consult the row whose left-most column contains a '4' when making a check. Once the proper row has been consulted, the player can then determine the level of success. This is represented by the columns whose background colors or headers are black, red, yellow, green, or grey. These colors represent black, red, yellow, or green success and failure, respectively. 
+
+There are many variations of the resolution chart depicted in the back of the book. They represent the roll required to attain a certain level of success in two different ways. Some of the charts contain a range of numbers in their columns, whereas some contain a single number. The charts containing a range of numbers depict the numbers between which your d100 roll must fall in order to achieve that level of success. On the charts with a single number, your level of success is that of the column which depicts the smallest number greater than your roll. 
+
+For example, in the Swimming example above, if the player rolled a 40, their level of success (with a rating of 4), would be Yellow.
+
+\chapter{Combat}
+\begin{multicols}{2}
+Combat may be the meat and potatoes of your group's tabletop adventures, or it may be the occasional, unfortunate side effect of poor roleplay. Either way, there inevitably comes a time when your characters must test their mettle and cross swords (figuratively or literally) with their foes. 
+
+\section{Get the Mooks out of the Way!}
+In the world of THIZ, players will encounter two types of enemies: Mooks and Adversaries. 
+
+Mooks are the chaff which your characters must clear on their way to the adversaries. Hired thugs, guardsmen, militia-men, sailors, and other such fighters who certainly die by the sword, but don't quite live like it, as your characters do. 
+
+Adversaries are characters that are on par with those of the players. Armed with only your Skills and your wits, you will almost certainly square off against adversaries during your adventures. Unlike combat with Mooks, meeting an Adversary in pitched battle is not a guaranteed victory. 
+
+\section{How Combat Works}
+Combat in THIZ is composed of the following discrete components:
+\begin{enumerate}
+  \setlength{\itemsep}{0cm}%
+  \setlength{\parskip}{0cm}%
+  \item Determining surprise
+  \item Determining initiative
+  \item Declare and resolve actions in initiative passes
+  \item Repeat 2 \& 3 until combat is over
+\end{enumerate}
+
+\section{Determine Surprise}
+In most cases, some combatants are more prepared for combat than others. Some fighters may be caught completely unawares, or perhaps were distracted whilst a nearby argument escalated into a brawl. Whatever the case may be, all fighters begin combat by checking against Speed + Perception. Depending on the result of this check, each combatant gets 0 through 4 points, for Failure through Black success, respectively. This value is their \textbf{Preparedness}.  
+
+Whichever side has the combatant with the highest Preparedness may take a full Initiative Pass of actions against their enemies. In the case of a tie, compare the total Preparedness of either party. If there is still a tie, have the characters with the highest Preparedness check Preparedness again, until the tie is resolved.
+
+In some special cases, such as an ambush, the referee may declare that one side is unprepared, in which case the other side takes a full Initiative Pass of actions against the other. 
+
+If a character enters combat after it has already began, they must declare an intended target. The character and their intended target then determine their Preparedness. The character with the highest preparedness may take a free action against the other. The newly arrived character may afterward take part in regular combat, starting with the following Initiative Pass.
+
+\section{Determining Initiative and Initiative Passes}
+In order to determine Initiative, players roll 1d10 and add either Speed + Perception or their General Physical rating, whichever is higher.
+
+Once all characters have determined their Initiative, they each take a 
+\textbf{turn} in initiative order. A turn in combat lasts 5 seconds, and permits a character to take a single action. Possible actions are outlined below, in the section entitled \textbf{Actions}, but typical actions include: moving, attacking, or casting a spell. 
+
+Once all characters in the combat have acted in initiative order, they subtract 10 from their Initiative score. If any characters have an initiative above 0, they may act again, in order of their new Initiative. This process repeats until no characters have an initiative  above 0. This cycle, beginning with all characters checking Initiative and ending with all characters possessing an Initiative of 0 or lower, is called an \textbf{Initiative Pass}. 
+
+If combat is not resolved (i.e. there are combatants alive and willing to fight on both sides), then all characters determine Initiative again and the process starts over. 
+
+\section{Actions}
+There are six general actions that a character can take on their turn during combat: Move, Attack, Defend, Use Magic, Use Maneuvers, or Wait. Below follows a description of these actions and how they work. 
+
+\subsubsection{Move}
+A character can move using whatever means are available to them and appropriate to the circumstances. The distance they can move is dictated by the character's Speed rating. See the Chapter on Movement for more information.
+
+\subsubsection{Attack}
+Attacks are actions that attempt to harm the target in some way. There are two types of attacks: Missile Attacks, and Melee Attacks.
+
+\textbf{Melee attacks} are any attacks made with a character's melee weapon or fists. When making a Melee Attack, the character must be within 5 feet of the target. The attacking player must declare a body location they wish to target: Head, Gut, Chest, Right or Left Arm, or Right or Left Leg. The sections below entitled \textbf{Determining a Hit} and \textbf{Damage} describe how to resolve the intent of a melee attack. 
+
+A \textbf{Missile Attack} is slightly more complex. This is any attack made with a ranged weapon of some kind: bow, crossbow, gun, thrown weapon, etc. In order to make a Missile Attack, the character must be  out of the melee range of any enemy combatants, and within the range of their ranged weapon. Unlike with melee attacks, the body location targeted by a missile attack is normally determined randomly by rolling 1d100 and consulting the table below. Alternately, the player can choose to declare the body location they will be targeting. In this case, the player must get a Black success when determining their hit, or else the attack misses. As with melee attacks, see the sections "Determining a Hit" and "Damage" to see how to resolve the intent of a missile attack. 
+
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\textbf{Die Roll} & \textbf{Location} \\ \hline
+01-10             & Left Leg          \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+11-20             & Right Leg         \\ \hline
+21-45             & Gut               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+46-70             & Chest             \\ \hline
+71-80             & Left Arm          \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+81-90             & Right Arm         \\ \hline
+90-100            & Head              \\ \hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Defend}
+When a character chooses to defend, they add their Weapon Skill (for the weapon they have equipped) to their Speed for the first attack made against them before their next turn. 
+
+\subsubsection{Use Magic}
+This action is taken when a character attempts to manifest a magical effect using one of their Magic Skills. See the chapter entitled \textbf{Magic} to learn more about using magic in combat.
 
 \end{multicols}
+
+
+\appendix
+\chapter{Resolution Charts}
+This appendix contains multiple renditions of the resolution chart, as there has been no established consensus as to which is best. I consider the chart contained in ZeFRS, by which this set of rules was inspired, too large and hard to read. The chapter on \textbf{The Resolution Chart} contains guidelines for reading the various iterations of the resolution chart, as well as how to determine the success of a Skill check using the resolution chart. 
+
+
+\begin{table}[h]
+\begin{tabular}{
+>{\columncolor[HTML]{FFFFFF}}l 
+>{\columncolor[HTML]{000000}}c 
+>{\columncolor[HTML]{FE0000}}c 
+>{\columncolor[HTML]{F8FF00}}c 
+>{\columncolor[HTML]{34FF34}}c 
+>{\columncolor[HTML]{EFEFEF}}c }
+{\color[HTML]{000000} \textbf{-26 to -30}} & {\color[HTML]{FFFFFF} \textbf{1 .. 4}}  & {\color[HTML]{FFFFFF}\textbf{5 .. 10}}  & \textbf{11 .. 18} & \textbf{19 .. 30} & \textbf{31 .. 100} \\
+\textbf{-21 to -25}                        & {\color[HTML]{FFFFFF} \textbf{1 .. 4}}  & {\color[HTML]{FFFFFF}\textbf{5 .. 10}}  & \textbf{11 .. 19} & \textbf{20 .. 31} & \textbf{32 .. 100} \\
+\textbf{-16 to -20}                        & {\color[HTML]{FFFFFF} \textbf{1 .. 4}}  & {\color[HTML]{FFFFFF}\textbf{5 .. 11}}  & \textbf{12 .. 20} & \textbf{21 .. 32} & \textbf{33 .. 100} \\
+\textbf{-11 to -15}                        & {\color[HTML]{FFFFFF} \textbf{1 .. 4}}  & {\color[HTML]{FFFFFF}\textbf{5 .. 11}}  & \textbf{12 .. 21} & \textbf{22 .. 33} & \textbf{34 .. 100} \\
+\textbf{-10}                               & {\color[HTML]{FFFFFF} \textbf{1 .. 4}}  & {\color[HTML]{FFFFFF}\textbf{5 .. 12}}  & \textbf{13 .. 22} & \textbf{23 .. 34} & \textbf{35 .. 100} \\
+\textbf{-9}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 5}}  & {\color[HTML]{FFFFFF}\textbf{6 .. 12}}  & \textbf{13 .. 23} & \textbf{24 .. 36} & \textbf{37 .. 100} \\
+\textbf{-8}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 5}}  & {\color[HTML]{FFFFFF}\textbf{6 .. 13}}  & \textbf{14 .. 24} & \textbf{25 .. 38} & \textbf{39 .. 100} \\
+\textbf{-7}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 5}}  & {\color[HTML]{FFFFFF}\textbf{6 .. 13}}  & \textbf{14 .. 25} & \textbf{26 .. 40} & \textbf{41 .. 100} \\
+\textbf{-6}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 6}}  & {\color[HTML]{FFFFFF}\textbf{7 .. 14}}  & \textbf{15 .. 26} & \textbf{27 .. 42} & \textbf{43 .. 100} \\
+\textbf{-5}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 6}}   & {\color[HTML]{FFFFFF}\textbf{7 .. 14}}  & \textbf{15 .. 27} & \textbf{28 .. 44} & \textbf{45 .. 100} \\
+\textbf{-4}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 6}}   & {\color[HTML]{FFFFFF}\textbf{7 .. 15}}  & \textbf{16 .. 28} & \textbf{29 .. 46} & \textbf{47 .. 100} \\
+\textbf{-3}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 6}}   & {\color[HTML]{FFFFFF}\textbf{7 .. 15}}  & \textbf{16 .. 29} & \textbf{30 .. 48} & \textbf{49 .. 100} \\
+\textbf{-2}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 7}}  & {\color[HTML]{FFFFFF}\textbf{8 .. 16}}  & \textbf{17 .. 30} & \textbf{31 .. 50} & \textbf{51 .. 100} \\
+\textbf{-1}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 7}}  & {\color[HTML]{FFFFFF}\textbf{8 .. 16}}  & \textbf{17 .. 31} & \textbf{32 .. 52} & \textbf{53 .. 100} \\
+\textbf{0}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 7}}  & {\color[HTML]{FFFFFF}\textbf{8 .. 17}}  & \textbf{18 .. 33} & \textbf{34 .. 54} & \textbf{55 .. 100} \\
+\textbf{1}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 7}}  & {\color[HTML]{FFFFFF}\textbf{8 .. 18}}  & \textbf{19 .. 35} & \textbf{36 .. 57} & \textbf{58 .. 100} \\
+\textbf{2}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 8}}  & {\color[HTML]{FFFFFF}\textbf{9 .. 19}}  & \textbf{20 .. 37} & \textbf{38 .. 60} & \textbf{59 .. 100} \\
+\textbf{3}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 8}}  & {\color[HTML]{FFFFFF}\textbf{9 .. 20}}  & \textbf{21 .. 39} & \textbf{40 .. 63} & \textbf{64 .. 100} \\
+\textbf{4}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 9}}  & {\color[HTML]{FFFFFF}\textbf{10 .. 21}} & \textbf{22 .. 41} & \textbf{41 .. 66} & \textbf{67 .. 100} \\
+\textbf{5}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 9}}  & {\color[HTML]{FFFFFF}\textbf{10 .. 22}} & \textbf{23 .. 43} & \textbf{44 .. 69} & \textbf{70 .. 100} \\
+\textbf{6}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 10}} & {\color[HTML]{FFFFFF}\textbf{11 .. 23}} & \textbf{24 .. 45} & \textbf{46 .. 72} & \textbf{73 .. 100} \\
+\textbf{7}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 10}} & {\color[HTML]{FFFFFF}\textbf{11 .. 25}} & \textbf{26 .. 47} & \textbf{48 .. 75} & \textbf{76 .. 100} \\
+\textbf{8}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 11}} & {\color[HTML]{FFFFFF}\textbf{12 .. 27}} & \textbf{28 .. 49} & \textbf{50 .. 78} & \textbf{79 .. 100} \\
+\textbf{9}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 12}} & {\color[HTML]{FFFFFF}\textbf{13 .. 29}} & \textbf{30 .. 51} & \textbf{52 .. 81} & \textbf{82 .. 100} \\
+\textbf{10}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 13}} & {\color[HTML]{FFFFFF}\textbf{14 .. 31}} & \textbf{32 .. 53} & \textbf{54 .. 84} & \textbf{85 .. 100} \\
+\textbf{11 to 15}                          & {\color[HTML]{FFFFFF} \textbf{1 .. 14}} & {\color[HTML]{FFFFFF}\textbf{15 .. 33}} & \textbf{34 .. 56} & \textbf{57 .. 88} & \textbf{89 .. 100} \\
+\textbf{16 to 20}                          & {\color[HTML]{FFFFFF} \textbf{1 .. 15}} & {\color[HTML]{FFFFFF}\textbf{16 .. 35}} & \textbf{36 .. 59} & \textbf{60 .. 92} & \textbf{93 .. 100} \\
+\textbf{21 to 25}                          & {\color[HTML]{FFFFFF} \textbf{1 .. 16}} & {\color[HTML]{FFFFFF}\textbf{17 .. 37}} & \textbf{38 .. 62} & \textbf{63 .. 96} & \textbf{97 .. 100} \\
+\textbf{26 to 30}                          & {\color[HTML]{FFFFFF} \textbf{1 .. 18}} & {\color[HTML]{FFFFFF}\textbf{19 .. 40}} & \textbf{41 .. 66} & \textbf{67 .. 96} & \textbf{97 .. 100}
+\end{tabular}
+\end{table}
+
+
+\newpage
+
+\begin{table}[h]
+\begin{tabular}{
+>{\columncolor[HTML]{FFFFFF}}l 
+>{\columncolor[HTML]{000000}}c 
+>{\columncolor[HTML]{FE0000}}c 
+>{\columncolor[HTML]{F8FF00}}c 
+>{\columncolor[HTML]{34FF34}}c 
+>{\columncolor[HTML]{EFEFEF}}c }
+{\color[HTML]{000000} \textbf{-26 to -30}} & {\color[HTML]{FFFFFF} \textbf{1 .. 4}}  & {\color[HTML]{FFFFFF}\textbf{5 .. 10}}  & \textbf{11 .. 18} & \textbf{19 .. 30} & \textbf{31 .. 100} \\	\hline
+\textbf{-21 to -25}                        & {\color[HTML]{FFFFFF} \textbf{1 .. 4}}  & {\color[HTML]{FFFFFF}\textbf{5 .. 10}}  & \textbf{11 .. 19} & \textbf{20 .. 31} & \textbf{32 .. 100} \\	\hline
+\textbf{-16 to -20}                        & {\color[HTML]{FFFFFF} \textbf{1 .. 4}}  & {\color[HTML]{FFFFFF}\textbf{5 .. 11}}  & \textbf{12 .. 20} & \textbf{21 .. 32} & \textbf{33 .. 100} \\	\hline
+\textbf{-11 to -15}                        & {\color[HTML]{FFFFFF} \textbf{1 .. 4}}  & {\color[HTML]{FFFFFF}\textbf{5 .. 11}}  & \textbf{12 .. 21} & \textbf{22 .. 33} & \textbf{34 .. 100} \\	\hline
+\textbf{-10}                               & {\color[HTML]{FFFFFF} \textbf{1 .. 4}}  & {\color[HTML]{FFFFFF}\textbf{5 .. 12}}  & \textbf{13 .. 22} & \textbf{23 .. 34} & \textbf{35 .. 100} \\	\hline
+\textbf{-9}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 5}}  & {\color[HTML]{FFFFFF}\textbf{6 .. 12}}  & \textbf{13 .. 23} & \textbf{24 .. 36} & \textbf{37 .. 100} \\	\hline
+\textbf{-8}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 5}}  & {\color[HTML]{FFFFFF}\textbf{6 .. 13}}  & \textbf{14 .. 24} & \textbf{25 .. 38} & \textbf{39 .. 100} \\	\hline
+\textbf{-7}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 5}}  & {\color[HTML]{FFFFFF}\textbf{6 .. 13}}  & \textbf{14 .. 25} & \textbf{26 .. 40} & \textbf{41 .. 100} \\	\hline
+\textbf{-6}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 6}}  & {\color[HTML]{FFFFFF}\textbf{7 .. 14}}  & \textbf{15 .. 26} & \textbf{27 .. 42} & \textbf{43 .. 100} \\	\hline
+\textbf{-5}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 6}}   & {\color[HTML]{FFFFFF}\textbf{7 .. 14}}  & \textbf{15 .. 27} & \textbf{28 .. 44} & \textbf{45 .. 100} \\	\hline
+\textbf{-4}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 6}}   & {\color[HTML]{FFFFFF}\textbf{7 .. 15}}  & \textbf{16 .. 28} & \textbf{29 .. 46} & \textbf{47 .. 100} \\	\hline
+\textbf{-3}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 6}}   & {\color[HTML]{FFFFFF}\textbf{7 .. 15}}  & \textbf{16 .. 29} & \textbf{30 .. 48} & \textbf{49 .. 100} \\	\hline
+\textbf{-2}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 7}}  & {\color[HTML]{FFFFFF}\textbf{8 .. 16}}  & \textbf{17 .. 30} & \textbf{31 .. 50} & \textbf{51 .. 100} \\	\hline
+\textbf{-1}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 7}}  & {\color[HTML]{FFFFFF}\textbf{8 .. 16}}  & \textbf{17 .. 31} & \textbf{32 .. 52} & \textbf{53 .. 100} \\	\hline
+\textbf{0}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 7}}  & {\color[HTML]{FFFFFF}\textbf{8 .. 17}}  & \textbf{18 .. 33} & \textbf{34 .. 54} & \textbf{55 .. 100} \\	\hline
+\textbf{1}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 7}}  & {\color[HTML]{FFFFFF}\textbf{8 .. 18}}  & \textbf{19 .. 35} & \textbf{36 .. 57} & \textbf{58 .. 100} \\	\hline
+\textbf{2}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 8}}  & {\color[HTML]{FFFFFF}\textbf{9 .. 19}}  & \textbf{20 .. 37} & \textbf{38 .. 60} & \textbf{59 .. 100} \\	\hline
+\textbf{3}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 8}}  & {\color[HTML]{FFFFFF}\textbf{9 .. 20}}  & \textbf{21 .. 39} & \textbf{40 .. 63} & \textbf{64 .. 100} \\	\hline
+\textbf{4}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 9}}  & {\color[HTML]{FFFFFF}\textbf{10 .. 21}} & \textbf{22 .. 41} & \textbf{41 .. 66} & \textbf{67 .. 100} \\	\hline
+\textbf{5}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 9}}  & {\color[HTML]{FFFFFF}\textbf{10 .. 22}} & \textbf{23 .. 43} & \textbf{44 .. 69} & \textbf{70 .. 100} \\	\hline
+\textbf{6}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 10}} & {\color[HTML]{FFFFFF}\textbf{11 .. 23}} & \textbf{24 .. 45} & \textbf{46 .. 72} & \textbf{73 .. 100} \\	\hline
+\textbf{7}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 10}} & {\color[HTML]{FFFFFF}\textbf{11 .. 25}} & \textbf{26 .. 47} & \textbf{48 .. 75} & \textbf{76 .. 100} \\	\hline
+\textbf{8}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 11}} & {\color[HTML]{FFFFFF}\textbf{12 .. 27}} & \textbf{28 .. 49} & \textbf{50 .. 78} & \textbf{79 .. 100} \\	\hline
+\textbf{9}                                 & {\color[HTML]{FFFFFF} \textbf{1 .. 12}} & {\color[HTML]{FFFFFF}\textbf{13 .. 29}} & \textbf{30 .. 51} & \textbf{52 .. 81} & \textbf{82 .. 100} \\	\hline
+\textbf{10}                                & {\color[HTML]{FFFFFF} \textbf{1 .. 13}} & {\color[HTML]{FFFFFF}\textbf{14 .. 31}} & \textbf{32 .. 53} & \textbf{54 .. 84} & \textbf{85 .. 100} \\	\hline
+\textbf{11 to 15}                          & {\color[HTML]{FFFFFF} \textbf{1 .. 14}} & {\color[HTML]{FFFFFF}\textbf{15 .. 33}} & \textbf{34 .. 56} & \textbf{57 .. 88} & \textbf{89 .. 100} \\	\hline
+\textbf{16 to 20}                          & {\color[HTML]{FFFFFF} \textbf{1 .. 15}} & {\color[HTML]{FFFFFF}\textbf{16 .. 35}} & \textbf{36 .. 59} & \textbf{60 .. 92} & \textbf{93 .. 100} \\	\hline
+\textbf{21 to 25}                          & {\color[HTML]{FFFFFF} \textbf{1 .. 16}} & {\color[HTML]{FFFFFF}\textbf{17 .. 37}} & \textbf{38 .. 62} & \textbf{63 .. 96} & \textbf{97 .. 100} \\ 	\hline
+\textbf{26 to 30}                          & {\color[HTML]{FFFFFF} \textbf{1 .. 18}} & {\color[HTML]{FFFFFF}\textbf{19 .. 40}} & \textbf{41 .. 66} & \textbf{67 .. 96} & \textbf{97 .. 100}
+\end{tabular}
+\end{table}
+
+
+\newpage
+
+
+\begin{table}[h]
+\begin{tabular}{
+>{\columncolor[HTML]{FFFFFF}}l 
+>{\columncolor[HTML]{000000}}c 
+>{\columncolor[HTML]{FE0000}}c
+>{\columncolor[HTML]{F8FF00}}c 
+>{\columncolor[HTML]{34FF34}}c 
+>{\columncolor[HTML]{EFEFEF}}c }
+{\color[HTML]{000000} \textbf{-26 to -30}} & {\color[HTML]{FFFFFF} \textbf{4}}  & {\color[HTML]{FFFFFF}\textbf{10}}  & \textbf{18} & \textbf{30} & \textbf{100} \\ 	
+\textbf{-21 to -25}                        & {\color[HTML]{FFFFFF} \textbf{4}}  & {\color[HTML]{FFFFFF}\textbf{10}}  & \textbf{19} & \textbf{31} & \textbf{100} \\	
+\textbf{-16 to -20}                        & {\color[HTML]{FFFFFF} \textbf{4}}  & {\color[HTML]{FFFFFF}\textbf{11}}  & \textbf{20} & \textbf{32} & \textbf{100} \\	
+\textbf{-11 to -15}                        & {\color[HTML]{FFFFFF} \textbf{4}}  & {\color[HTML]{FFFFFF}\textbf{11}}  & \textbf{21} & \textbf{33} & \textbf{100} \\	
+\textbf{-10}                               & {\color[HTML]{FFFFFF} \textbf{4}}  & {\color[HTML]{FFFFFF}\textbf{12}}  & \textbf{22} & \textbf{34} & \textbf{100} \\	
+\textbf{-9}                                & {\color[HTML]{FFFFFF} \textbf{5}}  & {\color[HTML]{FFFFFF}\textbf{12}}  & \textbf{23} & \textbf{36} & \textbf{100} \\	
+\textbf{-8}                                & {\color[HTML]{FFFFFF} \textbf{5}}  & {\color[HTML]{FFFFFF}\textbf{13}}  & \textbf{24} & \textbf{38} & \textbf{100} \\	
+\textbf{-7}                                & {\color[HTML]{FFFFFF} \textbf{5}}  & {\color[HTML]{FFFFFF}\textbf{13}}  & \textbf{25} & \textbf{40} & \textbf{100} \\	
+\textbf{-6}                                & {\color[HTML]{FFFFFF} \textbf{6}}  & {\color[HTML]{FFFFFF}\textbf{14}}  & \textbf{26} & \textbf{42} & \textbf{100} \\	
+\textbf{-5}                                & {\color[HTML]{FFFFFF} \textbf{6}}   & {\color[HTML]{FFFFFF}\textbf{14}}  & \textbf{27} & \textbf{44} & \textbf{100} \\	
+\textbf{-4}                                & {\color[HTML]{FFFFFF} \textbf{6}}   & {\color[HTML]{FFFFFF}\textbf{15}}  & \textbf{28} & \textbf{46} & \textbf{100} \\	
+\textbf{-3}                                & {\color[HTML]{FFFFFF} \textbf{6}}   & {\color[HTML]{FFFFFF}\textbf{15}}  & \textbf{29} & \textbf{48} & \textbf{100} \\		
+\textbf{-2}                                & {\color[HTML]{FFFFFF} \textbf{7}}  & {\color[HTML]{FFFFFF}\textbf{16}}  & \textbf{30} & \textbf{50} & \textbf{100} \\	
+\textbf{-1}                                & {\color[HTML]{FFFFFF} \textbf{7}}  & {\color[HTML]{FFFFFF}\textbf{16}}  & \textbf{31} & \textbf{52} & \textbf{100} \\	
+\textbf{0}                                 & {\color[HTML]{FFFFFF} \textbf{7}}  & {\color[HTML]{FFFFFF}\textbf{17}}  & \textbf{33} & \textbf{54} & \textbf{100} \\	
+\textbf{1}                                 & {\color[HTML]{FFFFFF} \textbf{7}}  & {\color[HTML]{FFFFFF}\textbf{18}}  & \textbf{35} & \textbf{57} & \textbf{100} \\	
+\textbf{2}                                 & {\color[HTML]{FFFFFF} \textbf{8}}  & {\color[HTML]{FFFFFF}\textbf{19}}  & \textbf{37} & \textbf{60} & \textbf{100} \\	
+\textbf{3}                                 & {\color[HTML]{FFFFFF} \textbf{8}}  & {\color[HTML]{FFFFFF}\textbf{20}}  & \textbf{39} & \textbf{63} & \textbf{100} \\	
+\textbf{4}                                 & {\color[HTML]{FFFFFF} \textbf{9}}  & {\color[HTML]{FFFFFF}\textbf{21}} & \textbf{41} & \textbf{66} & \textbf{100} \\	
+\textbf{5}                                 & {\color[HTML]{FFFFFF} \textbf{9}}  & {\color[HTML]{FFFFFF}\textbf{22}} & \textbf{43} & \textbf{69} & \textbf{100} \\	
+\textbf{6}                                 & {\color[HTML]{FFFFFF} \textbf{10}} & {\color[HTML]{FFFFFF}\textbf{23}} & \textbf{45} & \textbf{72} & \textbf{100} \\	
+\textbf{7}                                 & {\color[HTML]{FFFFFF} \textbf{10}} & {\color[HTML]{FFFFFF}\textbf{25}} & \textbf{47} & \textbf{75} & \textbf{100} \\	
+\textbf{8}                                 & {\color[HTML]{FFFFFF} \textbf{11}} & {\color[HTML]{FFFFFF}\textbf{27}} & \textbf{49} & \textbf{78} & \textbf{100} \\	
+\textbf{9}                                 & {\color[HTML]{FFFFFF} \textbf{12}} & {\color[HTML]{FFFFFF}\textbf{29}} & \textbf{51} & \textbf{81} & \textbf{100} \\	
+\textbf{10}                                & {\color[HTML]{FFFFFF} \textbf{13}} & {\color[HTML]{FFFFFF}\textbf{31}} & \textbf{53} & \textbf{84} & \textbf{100} \\	
+\textbf{11 to 15}                          & {\color[HTML]{FFFFFF} \textbf{14}} & {\color[HTML]{FFFFFF}\textbf{33}} & \textbf{56} & \textbf{88} & \textbf{100} \\	
+\textbf{16 to 20}                          & {\color[HTML]{FFFFFF} \textbf{15}} & {\color[HTML]{FFFFFF}\textbf{35}} & \textbf{59} & \textbf{92} & \textbf{100} \\	
+\textbf{21 to 25}                          & {\color[HTML]{FFFFFF} \textbf{16}} & {\color[HTML]{FFFFFF}\textbf{37}} & \textbf{62} & \textbf{96} & \textbf{100} \\	
+\textbf{26 to 30}                          & {\color[HTML]{FFFFFF} \textbf{18}} & {\color[HTML]{FFFFFF}\textbf{40}} & \textbf{66} & \textbf{96} & \textbf{100}	
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[h]
+\begin{tabular}{
+>{\columncolor[HTML]{FFFFFF}}l 
+>{\columncolor[HTML]{000000}}c 
+>{\columncolor[HTML]{FE0000}}c
+>{\columncolor[HTML]{F8FF00}}c 
+>{\columncolor[HTML]{34FF34}}c 
+>{\columncolor[HTML]{EFEFEF}}c }
+{\color[HTML]{000000} \textbf{-26 to -30}} & {\color[HTML]{FFFFFF} \textbf{4}}  & {\color[HTML]{FFFFFF}\textbf{10}}  & \textbf{18} & \textbf{30} & \textbf{100} \\ 	\hline
+\textbf{-21 to -25}                        & {\color[HTML]{FFFFFF} \textbf{4}}  & {\color[HTML]{FFFFFF}\textbf{10}}  & \textbf{19} & \textbf{31} & \textbf{100} \\	\hline
+\textbf{-16 to -20}                        & {\color[HTML]{FFFFFF} \textbf{4}}  & {\color[HTML]{FFFFFF}\textbf{11}}  & \textbf{20} & \textbf{32} & \textbf{100} \\	\hline
+\textbf{-11 to -15}                        & {\color[HTML]{FFFFFF} \textbf{4}}  & {\color[HTML]{FFFFFF}\textbf{11}}  & \textbf{21} & \textbf{33} & \textbf{100} \\	\hline
+\textbf{-10}                               & {\color[HTML]{FFFFFF} \textbf{4}}  & {\color[HTML]{FFFFFF}\textbf{12}}  & \textbf{22} & \textbf{34} & \textbf{100} \\	\hline
+\textbf{-9}                                & {\color[HTML]{FFFFFF} \textbf{5}}  & {\color[HTML]{FFFFFF}\textbf{12}}  & \textbf{23} & \textbf{36} & \textbf{100} \\	\hline
+\textbf{-8}                                & {\color[HTML]{FFFFFF} \textbf{5}}  & {\color[HTML]{FFFFFF}\textbf{13}}  & \textbf{24} & \textbf{38} & \textbf{100} \\	\hline
+\textbf{-7}                                & {\color[HTML]{FFFFFF} \textbf{5}}  & {\color[HTML]{FFFFFF}\textbf{13}}  & \textbf{25} & \textbf{40} & \textbf{100} \\	\hline
+\textbf{-6}                                & {\color[HTML]{FFFFFF} \textbf{6}}  & {\color[HTML]{FFFFFF}\textbf{14}}  & \textbf{26} & \textbf{42} & \textbf{100} \\	\hline
+\textbf{-5}                                & {\color[HTML]{FFFFFF} \textbf{6}}   & {\color[HTML]{FFFFFF}\textbf{14}}  & \textbf{27} & \textbf{44} & \textbf{100} \\	\hline
+\textbf{-4}                                & {\color[HTML]{FFFFFF} \textbf{6}}   & {\color[HTML]{FFFFFF}\textbf{15}}  & \textbf{28} & \textbf{46} & \textbf{100} \\	\hline
+\textbf{-3}                                & {\color[HTML]{FFFFFF} \textbf{6}}   & {\color[HTML]{FFFFFF}\textbf{15}}  & \textbf{29} & \textbf{48} & \textbf{100} \\	\hline	
+\textbf{-2}                                & {\color[HTML]{FFFFFF} \textbf{7}}  & {\color[HTML]{FFFFFF}\textbf{16}}  & \textbf{30} & \textbf{50} & \textbf{100} \\	\hline
+\textbf{-1}                                & {\color[HTML]{FFFFFF} \textbf{7}}  & {\color[HTML]{FFFFFF}\textbf{16}}  & \textbf{31} & \textbf{52} & \textbf{100} \\	\hline
+\textbf{0}                                 & {\color[HTML]{FFFFFF} \textbf{7}}  & {\color[HTML]{FFFFFF}\textbf{17}}  & \textbf{33} & \textbf{54} & \textbf{100} \\	\hline
+\textbf{1}                                 & {\color[HTML]{FFFFFF} \textbf{7}}  & {\color[HTML]{FFFFFF}\textbf{18}}  & \textbf{35} & \textbf{57} & \textbf{100} \\	\hline
+\textbf{2}                                 & {\color[HTML]{FFFFFF} \textbf{8}}  & {\color[HTML]{FFFFFF}\textbf{19}}  & \textbf{37} & \textbf{60} & \textbf{100} \\	\hline
+\textbf{3}                                 & {\color[HTML]{FFFFFF} \textbf{8}}  & {\color[HTML]{FFFFFF}\textbf{20}}  & \textbf{39} & \textbf{63} & \textbf{100} \\	\hline
+\textbf{4}                                 & {\color[HTML]{FFFFFF} \textbf{9}}  & {\color[HTML]{FFFFFF}\textbf{21}} & \textbf{41} & \textbf{66} & \textbf{100} \\	\hline
+\textbf{5}                                 & {\color[HTML]{FFFFFF} \textbf{9}}  & {\color[HTML]{FFFFFF}\textbf{22}} & \textbf{43} & \textbf{69} & \textbf{100} \\	\hline
+\textbf{6}                                 & {\color[HTML]{FFFFFF} \textbf{10}} & {\color[HTML]{FFFFFF}\textbf{23}} & \textbf{45} & \textbf{72} & \textbf{100} \\	\hline
+\textbf{7}                                 & {\color[HTML]{FFFFFF} \textbf{10}} & {\color[HTML]{FFFFFF}\textbf{25}} & \textbf{47} & \textbf{75} & \textbf{100} \\	\hline
+\textbf{8}                                 & {\color[HTML]{FFFFFF} \textbf{11}} & {\color[HTML]{FFFFFF}\textbf{27}} & \textbf{49} & \textbf{78} & \textbf{100} \\	\hline
+\textbf{9}                                 & {\color[HTML]{FFFFFF} \textbf{12}} & {\color[HTML]{FFFFFF}\textbf{29}} & \textbf{51} & \textbf{81} & \textbf{100} \\	\hline
+\textbf{10}                                & {\color[HTML]{FFFFFF} \textbf{13}} & {\color[HTML]{FFFFFF}\textbf{31}} & \textbf{53} & \textbf{84} & \textbf{100} \\	\hline
+\textbf{11 to 15}                          & {\color[HTML]{FFFFFF} \textbf{14}} & {\color[HTML]{FFFFFF}\textbf{33}} & \textbf{56} & \textbf{88} & \textbf{100} \\	\hline
+\textbf{16 to 20}                          & {\color[HTML]{FFFFFF} \textbf{15}} & {\color[HTML]{FFFFFF}\textbf{35}} & \textbf{59} & \textbf{92} & \textbf{100} \\	\hline
+\textbf{21 to 25}                          & {\color[HTML]{FFFFFF} \textbf{16}} & {\color[HTML]{FFFFFF}\textbf{37}} & \textbf{62} & \textbf{96} & \textbf{100} \\	\hline
+\textbf{26 to 30}                          & {\color[HTML]{FFFFFF} \textbf{18}} & {\color[HTML]{FFFFFF}\textbf{40}} & \textbf{66} & \textbf{96} & \textbf{100}	
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[h]
+\begin{tabular}{lccccc}
+\multicolumn{1}{c|}{} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} \textbf{B}} & \cellcolor[HTML]{FE0000}{\color[HTML]{FFFFFF}\textbf{R}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}\textbf{Y}} & \multicolumn{1}{c|}{\cellcolor[HTML]{34FF34}\textbf{G}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{F}} \\
+\rowcolor[HTML]{FFFFFF} 
+{\color[HTML]{000000} \textbf{-26 to -30}} & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 10                            & 11 .. 18                                               & 19 .. 30                                               & 31 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{-21 to -25}                        & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 10                            & 11 .. 19                                               & 20 .. 31                                               & 32 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{-16 to -20}                        & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 11                            & 12 .. 20                                               & 21 .. 32                                               & 33 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{-11 to -15}                        & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 11                            & 12 .. 21                                               & 22 .. 33                                               & 34 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{-10}                               & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 12                            & 13 .. 22                                               & 23 .. 34                                               & 35 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{-9}                                & {\color[HTML]{333333} 1 .. 5}                             & 6 .. 12                            & 13 .. 23                                               & 24 .. 36                                               & 37 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{-8}                                & {\color[HTML]{333333} 1 .. 5}                             & 6 .. 13                            & 14 .. 24                                               & 25 .. 38                                               & 39 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{-7}                                & {\color[HTML]{333333} 1 .. 5}                             & 6 .. 13                            & 14 .. 25                                               & 26 .. 40                                               & 41 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{-6}                                & {\color[HTML]{333333} 1 .. 6}                             & 7 .. 14                            & 15 .. 26                                               & 27 .. 42                                               & 43 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{-5}                                & {\color[HTML]{333333} 1 .. 6}                             & 7 .. 14                            & 15 .. 27                                               & 28 .. 44                                               & 45 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{-4}                                & {\color[HTML]{333333} 1 .. 6}                             & 7 .. 15                            & 16 .. 28                                               & 29 .. 46                                               & 47 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{-3}                                & {\color[HTML]{333333} 1 .. 6}                             & 7 .. 15                            & 16 .. 29                                               & 30 .. 48                                               & 49 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{-2}                                & {\color[HTML]{333333} 1 .. 7}                             & 8 .. 16                            & 17 .. 30                                               & 31 .. 50                                               & 51 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{-1}                                & {\color[HTML]{333333} 1 .. 7}                             & 8 .. 16                            & 17 .. 31                                               & 32 .. 52                                               & 53 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{0}                                 & {\color[HTML]{333333} 1 .. 7}                             & 8 .. 17                            & 18 .. 33                                               & 34 .. 54                                               & 55 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{1}                                 & {\color[HTML]{333333} 1 .. 7}                             & 8 .. 18                            & 19 .. 35                                               & 36 .. 57                                               & 58 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{2}                                 & {\color[HTML]{333333} 1 .. 8}                             & 9 .. 19                            & 20 .. 37                                               & 38 .. 60                                               & 59 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{3}                                 & {\color[HTML]{333333} 1 .. 8}                             & 9 .. 20                            & 21 .. 39                                               & 40 .. 63                                               & 64 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{4}                                 & {\color[HTML]{333333} 1 .. 9}                             & 10 .. 21                           & 22 .. 41                                               & 41 .. 66                                               & 67 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{5}                                 & {\color[HTML]{333333} 1 .. 9}                             & 10 .. 22                           & 23 .. 43                                               & 44 .. 69                                               & 70 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{6}                                 & {\color[HTML]{333333} 1 .. 10}                            & 11 .. 23                           & 24 .. 45                                               & 46 .. 72                                               & 73 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{7}                                 & {\color[HTML]{333333} 1 .. 10}                            & 11 .. 25                           & 26 .. 47                                               & 48 .. 75                                               & 76 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{8}                                 & {\color[HTML]{333333} 1 .. 11}                            & 12 .. 27                           & 28 .. 49                                               & 50 .. 78                                               & 79 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{9}                                 & {\color[HTML]{333333} 1 .. 12}                            & 13 .. 29                           & 30 .. 51                                               & 52 .. 81                                               & 82 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{10}                                & {\color[HTML]{333333} 1 .. 13}                            & 14 .. 31                           & 32 .. 53                                               & 54 .. 84                                               & 85 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{11 to 15}                          & {\color[HTML]{333333} 1 .. 14}                            & 15 .. 33                           & 34 .. 56                                               & 57 .. 88                                               & 89 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{16 to 20}                          & {\color[HTML]{333333} 1 .. 15}                            & 16 .. 35                           & 36 .. 59                                               & 60 .. 92                                               & 93 .. 100                                              \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{21 to 25}                          & {\color[HTML]{333333} 1 .. 16}                            & 17 .. 37                           & 38 .. 62                                               & 63 .. 96                                               & 97 .. 100                                              \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{26 to 30}                          & {\color[HTML]{333333} 1 .. 18}                            & 19 .. 40                           & 41 .. 66                                               & 67 .. 96                                               & 97 .. 100                                             
+\end{tabular}
+\end{table}
+
+\newpage
+
+
+\begin{table}[h]
+\begin{tabular}{l|c|c|c|c|c|}
+\cline{2-6}
+\multicolumn{1}{c|}{} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} \textbf{B}} & \cellcolor[HTML]{FE0000}{\color[HTML]{FFFFFF}\textbf{R}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}\textbf{Y}} & \multicolumn{1}{c|}{\cellcolor[HTML]{34FF34}\textbf{G}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{F}} \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{-26 to -30}}} & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 10                            & 11 .. 18                                                & 19 .. 30                                                & 31 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-21 to -25}}                        & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 10                            & 11 .. 19                                                & 20 .. 31                                                & 32 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-16 to -20}}                        & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 11                            & 12 .. 20                                                & 21 .. 32                                                & 33 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-11 to -15}}                        & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 11                            & 12 .. 21                                                & 22 .. 33                                                & 34 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-10}}                               & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 12                            & 13 .. 22                                                & 23 .. 34                                                & 35 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-9}}                                & {\color[HTML]{333333} 1 .. 5}                             & 6 .. 12                            & 13 .. 23                                                & 24 .. 36                                                & 37 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-8}}                                & {\color[HTML]{333333} 1 .. 5}                             & 6 .. 13                            & 14 .. 24                                                & 25 .. 38                                                & 39 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-7}}                                & {\color[HTML]{333333} 1 .. 5}                             & 6 .. 13                            & 14 .. 25                                                & 26 .. 40                                                & 41 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-6}}                                & {\color[HTML]{333333} 1 .. 6}                             & 7 .. 14                            & 15 .. 26                                                & 27 .. 42                                                & 43 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-5}}                                & {\color[HTML]{333333} 1 .. 6}                             & 7 .. 14                            & 15 .. 27                                                & 28 .. 44                                                & 45 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-4}}                                & {\color[HTML]{333333} 1 .. 6}                             & 7 .. 15                            & 16 .. 28                                                & 29 .. 46                                                & 47 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-3}}                                & {\color[HTML]{333333} 1 .. 6}                             & 7 .. 15                            & 16 .. 29                                                & 30 .. 48                                                & 49 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-2}}                                & {\color[HTML]{333333} 1 .. 7}                             & 8 .. 16                            & 17 .. 30                                                & 31 .. 50                                                & 51 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-1}}                                & {\color[HTML]{333333} 1 .. 7}                             & 8 .. 16                            & 17 .. 31                                                & 32 .. 52                                                & 53 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{0}}                                 & {\color[HTML]{333333} 1 .. 7}                             & 8 .. 17                            & 18 .. 33                                                & 34 .. 54                                                & 55 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{1}}                                 & {\color[HTML]{333333} 1 .. 7}                             & 8 .. 18                            & 19 .. 35                                                & 36 .. 57                                                & 58 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{2}}                                 & {\color[HTML]{333333} 1 .. 8}                             & 9 .. 19                            & 20 .. 37                                                & 38 .. 60                                                & 59 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{3}}                                 & {\color[HTML]{333333} 1 .. 8}                             & 9 .. 20                            & 21 .. 39                                                & 40 .. 63                                                & 64 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{4}}                                 & {\color[HTML]{333333} 1 .. 9}                             & 10 .. 21                           & 22 .. 41                                                & 41 .. 66                                                & 67 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{5}}                                 & {\color[HTML]{333333} 1 .. 9}                             & 10 .. 22                           & 23 .. 43                                                & 44 .. 69                                                & 70 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{6}}                                 & {\color[HTML]{333333} 1 .. 10}                            & 11 .. 23                           & 24 .. 45                                                & 46 .. 72                                                & 73 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{7}}                                 & {\color[HTML]{333333} 1 .. 10}                            & 11 .. 25                           & 26 .. 47                                                & 48 .. 75                                                & 76 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{8}}                                 & {\color[HTML]{333333} 1 .. 11}                            & 12 .. 27                           & 28 .. 49                                                & 50 .. 78                                                & 79 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{9}}                                 & {\color[HTML]{333333} 1 .. 12}                            & 13 .. 29                           & 30 .. 51                                                & 52 .. 81                                                & 82 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{10}}                                & {\color[HTML]{333333} 1 .. 13}                            & 14 .. 31                           & 32 .. 53                                                & 54 .. 84                                                & 85 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{11 to 15}}                          & {\color[HTML]{333333} 1 .. 14}                            & 15 .. 33                           & 34 .. 56                                                & 57 .. 88                                                & 89 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{16 to 20}}                          & {\color[HTML]{333333} 1 .. 15}                            & 16 .. 35                           & 36 .. 59                                                & 60 .. 92                                                & 93 .. 100                                               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{21 to 25}}                          & {\color[HTML]{333333} 1 .. 16}                            & 17 .. 37                           & 38 .. 62                                                & 63 .. 96                                                & 97 .. 100                                               \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{26 to 30}}                          & {\color[HTML]{333333} 1 .. 18}                            & 19 .. 40                           & 41 .. 66                                                & 67 .. 96                                                & 97 .. 100                                               \\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[h]
+\begin{tabular}{lccccc}
+\multicolumn{1}{c|}{} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} \textbf{B}} & \cellcolor[HTML]{FE0000}{\color[HTML]{FFFFFF}\textbf{R}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}\textbf{Y}} & \multicolumn{1}{c|}{\cellcolor[HTML]{34FF34}\textbf{G}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{F}} \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{-26 to -30}}} & {\color[HTML]{333333}4}	&10	& 18	& 30	& 100	\\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{-21 to -25}}   & {\color[HTML]{333333}4}  	&10		& 19		& 31		& 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{-16 to -20}}  	& {\color[HTML]{333333}4}  	&11       & 20      & 32      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{-11 to -15}}   & {\color[HTML]{333333}4} 	&11       & 21      & 33      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{-10}}    	    & {\color[HTML]{333333}4} 	&12       & 22      & 34      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{-9}} 			& {\color[HTML]{333333}5}     &12       & 23      & 36      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{-8}}			& {\color[HTML]{333333}5}     &13       & 24      & 38      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{-7}}			& {\color[HTML]{333333}5}     &13       & 25      & 40      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{-6}}			& {\color[HTML]{333333}6}     &14       & 26      & 42      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{-5}}			& {\color[HTML]{333333}6}     &14       & 27      & 44      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{-4}}           & {\color[HTML]{333333}6}     &15       & 28      & 46      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{-3}}           & {\color[HTML]{333333}6}     &15       & 29      & 48      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{-2}}           & {\color[HTML]{333333}7}     &16       & 30      & 50      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{-1}}           & {\color[HTML]{333333}7}     &16       & 31      & 52      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{0}}            & {\color[HTML]{333333}7}     &17       & 33      & 54      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{1}}            & {\color[HTML]{333333}7}     &18       & 35      & 57      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{2}}            & {\color[HTML]{333333}8}     &19       & 37      & 60      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{3}}            & {\color[HTML]{333333}8}     &20       & 39      & 63      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{4}}            & {\color[HTML]{333333}9}     & 21      & 41      & 66      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{5}}            & {\color[HTML]{333333}9}     & 22      & 43      & 69      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{6}}            & {\color[HTML]{333333}10}    & 23      & 45      & 72      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{7}}            & {\color[HTML]{333333}10}    & 25      & 47      & 75      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{8}}            & {\color[HTML]{333333}11}    & 27      & 49      & 78      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{9}}            & {\color[HTML]{333333}12}    & 29      & 51      & 81      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{10}}           & {\color[HTML]{333333}13}    & 31      & 53      & 84      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{11 to 15}}     & {\color[HTML]{333333}14}    & 33      & 56      & 88      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{16 to 20}}     & {\color[HTML]{333333}15}    & 35      & 59      & 92      & 100     \\ 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{21 to 25}}     & {\color[HTML]{333333}16}    & 37      & 62      & 96      & 100     \\ 
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}\textbf{26 to 30}}     & {\color[HTML]{333333}18}    & 40      & 66      & 96      & 100     \\ 
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[h]
+\begin{tabular}{l|c|c|c|c|c|}
+\cline{2-6}
+\multicolumn{1}{c|}{} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} \textbf{B}} & \cellcolor[HTML]{FE0000}{\color[HTML]{FFFFFF}\textbf{R}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}\textbf{Y}} & \multicolumn{1}{c|}{\cellcolor[HTML]{34FF34}\textbf{G}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{F}} \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{-26 to -30}}} & {\color[HTML]{333333}4}	&10	& 18	& 30	& 100	\\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-21 to -25}}   & {\color[HTML]{333333}4}  	&10		& 19		& 31		& 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-16 to -20}}  	& {\color[HTML]{333333}4}  	&11       & 20      & 32      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-11 to -15}}   & {\color[HTML]{333333}4} 	&11       & 21      & 33      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-10}}    	    & {\color[HTML]{333333}4} 	&12       & 22      & 34      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-9}} 			& {\color[HTML]{333333}5}     &12       & 23      & 36      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-8}}			& {\color[HTML]{333333}5}     &13       & 24      & 38      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-7}}			& {\color[HTML]{333333}5}     &13       & 25      & 40      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-6}}			& {\color[HTML]{333333}6}     &14       & 26      & 42      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-5}}			& {\color[HTML]{333333}6}     &14       & 27      & 44      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-4}}           & {\color[HTML]{333333}6}     &15       & 28      & 46      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-3}}           & {\color[HTML]{333333}6}     &15       & 29      & 48      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{-2}}           & {\color[HTML]{333333}7}     &16       & 30      & 50      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{-1}}           & {\color[HTML]{333333}7}     &16       & 31      & 52      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{0}}            & {\color[HTML]{333333}7}     &17       & 33      & 54      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{1}}            & {\color[HTML]{333333}7}     &18       & 35      & 57      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{2}}            & {\color[HTML]{333333}8}     &19       & 37      & 60      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{3}}            & {\color[HTML]{333333}8}     &20       & 39      & 63      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{4}}            & {\color[HTML]{333333}9}     & 21      & 41      & 66      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{5}}            & {\color[HTML]{333333}9}     & 22      & 43      & 69      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{6}}            & {\color[HTML]{333333}10}    & 23      & 45      & 72      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{7}}            & {\color[HTML]{333333}10}    & 25      & 47      & 75      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{8}}            & {\color[HTML]{333333}11}    & 27      & 49      & 78      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{9}}            & {\color[HTML]{333333}12}    & 29      & 51      & 81      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{10}}           & {\color[HTML]{333333}13}    & 31      & 53      & 84      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{11 to 15}}     & {\color[HTML]{333333}14}    & 33      & 56      & 88      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{16 to 20}}     & {\color[HTML]{333333}15}    & 35      & 59      & 92      & 100     \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}\textbf{21 to 25}}     & {\color[HTML]{333333}16}    & 37      & 62      & 96      & 100     \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{26 to 30}}     & {\color[HTML]{333333}18}    & 40      & 66      & 96      & 100     \\ \hline
+\end{tabular}
+\end{table}
+
+
 \end{document}
