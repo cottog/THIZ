@@ -9,6 +9,7 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{nonfloat}
 \usepackage{multicol}
+\usepackage{graphicx}
 \setcounter{secnumdepth}{0}
 \makeatletter
 \renewcommand{\@dotsep}{10000} 
@@ -829,6 +830,22 @@ Characters in THIZ have seven body sections, as discussed above: Head, Chest, Gu
 Depending on the level of success of the hit, the character receives a Green, Yellow, Red or Black Wound to the stricken body location, for a Green through Black Success, respectively. A character can receive any number of Green Wounds, but only one each of the other types of wounds. If they receive a second wound of the same color to the same body location, it is stepped up to the next color of wound. 
 
 The effect of wounds on particular body locations is outlined in the charts below:
+
+\begin{center}
+\scalebox{0.7}{
+	\begin{tabular}{l|c|c|}
+\cline{2-3}
+ & G/Y/R & Black \\ \hline
+\multicolumn{1}{|l|}{Head} & -1/2/4 to all Skills & Incapacitated \\ \hline
+\multicolumn{1}{|l|}{Chest} & -1/2/4 to Initiative & Incapacitated \\ \hline
+\multicolumn{1}{|l|}{Gut} & -1/2/4 Toughness & Incapacitated \\ \hline
+\multicolumn{1}{|l|}{Arm} & -1/2/4 to Skills with arm & Useless \\ \hline
+\multicolumn{1}{|l|}{Leg} & -1/2/4 Speed & Useless \\ \hline
+\end{tabular}
+}
+\end{center}
+
+In the case of non-lethal damage (attacker is using bare fists), an Incapacitated character is simply unconscious (they cannot act, Speed is 0). In the case of lethal damage, they are dying. They must check Toughness. On a failure, they die. On a Black success, they need not check Toughness any more. A character can attempt to use First Aid to stabilize an Incapacitated character, which they do on any level of success. Also in the case of lethal damage, a limb with a Black success can be removed, at the referee's discretion. 
 
 \end{multicols}
 
