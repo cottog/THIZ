@@ -82,6 +82,7 @@ You'll need a referee and at least one other player. A pencil and paper will be 
 \pagenumbering{gobble}
 
 \chapter{Character Creation}
+Every player in THIZ needs a character, through which they interact with the other players and the referee.
 
 \section{What Exactly is a \emph{Character?}}
 As you may have guessed, this chapter intends to outline the process of creating a character. In order to create a character, it is necessary to understand what exactly defines a character in the world of THIZ. Characters in THIZ have a name and a homeland, both of which are mostly fluff; and a set of skills, which defines the limits of what they can do.
@@ -164,7 +165,7 @@ Every player character in THIZ is destined for greatness. As such, fate itself m
 This chapter discusses the various skills available to your character in greater detail. Those marked with an [M] or [P] contribute to a character's Magical or Physical general skill rating. All Magic Skills contribute to their Magical general rating.
 
 With the exception of Magic Skills, which cannot be used unless a character has learned them, a character makes resolution checks using the higher between their rating in the appropriate skill or that skill's governing general rating (Physical or Mental). For example, a character with no rating in Unarmed Combat and Physical rating of 4 makes resolution checks for Unarmed Combat against a base rating of 4 (situational modifiers may affect this rating as any other). A character attempting to make a check a check against an Artisan, Trade, or Profession skill for which they must use their General Rating (they are untrained in said Skill) takes a -5 to that General Rating for their lack of specialized training or knowledge.
-\newpage
+
 \begin{multicols}{2}
 
 \section{Hard Skills}
@@ -446,7 +447,7 @@ Insight is the art of gleaning information about events that are distant in spac
 \subsubsection{Mentalism}
 Mentalism is what allows a spellcaster to move \emph{information} from one mind to another. This includes, but is not necessarily limited to, reading minds, communicating telepathically, mind control, and creating illusions. The range in which a spellcaster can use Mentalism on another character is about the size of a large city. If the spellcaster has a very strong personal connection with the intended target, they may be able to communicate telepathically outside of this range. The complexity of a task, as well as a target's inclination to carry out such a task, may increase or decrease the required level of success to force them to perform that task, according to the referee's discretion.
 
-In combat, a Mentalist can also make a target feel as if they have suffered a specific wound. This ability can be used on any character within range. Such a wound wound is identical to any other wound, except that its effects last until the character has has spent 10+1d10 minutes resting outside of combat. A character who wishes to use mentalism on any character in combat must make a check against (Mentalism - target's Willpower). The spellcaster may then inflict a wound on the target equal in magnitude to their level of success, on a body area of their choice. Alternately, they may impart an effect similar to those in the "In-combat" chart below.  
+In combat, a Mentalist can also make a target feel as if they have suffered a wound. This ability can be used on any character within range. Such a wound wound is identical to any other wound, except that its effects last until the character has has spent 10+1d10 minutes resting outside of combat. A character who wishes to use mentalism on any character in combat must make a check against (Mentalism - target's Willpower). The spellcaster may then inflict a wound on the target equal in magnitude to their level of success, on a body area of their choice. Alternately, they may impart an effect similar to those in the "In-combat" chart below.  
 
 \textbf{Example Out-of-Combat Mentalism Effects}:
 	\begin{itemize}
@@ -511,7 +512,7 @@ If a character desires to move (or stop) an object or character, they may make a
 In times of great desire or desperation, a character can achieve a momentum far greater than those indicated above for their level of success, although they will incur a physical toll afterwards (such as a Yellow wound, a temporary stun, or falling unconscious) as adjudicated by the referee.
 
 \subsubsection{Reiki}
-Reiki is the skill of manipulating the flow of latent magical energy present in all beings. Characters using this skill must be within melee range in order to affect another character with it. If they wish to heal a character, they must get within melee range of that character and make a check against Reiki. They heal the character of one wound that is of equal or lower magnitude to their level of success (a Yellow success heals a Yellow or Green wound). Alternatively, a Green or higher success can alleviate the negative effects of a Specific Wound for 1+1d4 combat turns. 
+Reiki is the skill of manipulating the flow of latent magical energy present in all beings. Characters using this skill must be within melee range in order to affect another character with it. If they wish to heal a character, they must get within melee range of that character, declare which body location they wish to heal, and make a check against Reiki. They heal the character of one wound that is of equal or lower magnitude to their level of success (a Yellow success heals a Yellow or Green wound). % Alternatively, a Green or higher success can alleviate the negative effects of a Specific Wound for 1+1d4 combat turns. 
 
 In order to damage an enemy using Reiki, a character must first roll to hit the enemy character using their Unarmed Combat skill. They then make a check against their (Reiki - target's Toughness) skill, inflicting a wound to their enemy equal in magnitude to their level of success. 
 
@@ -652,7 +653,6 @@ Quirks are small modifiers to specific Skills that a player can purchase at Char
 
 Most Quirks cost two Skill Points. Those that cost a different amount will have their cost listed above their description. 
 
-\newpage
 \begin{multicols}{2}
 \subsubsection{Berserk}
 \textbf{\small Cost: 5 Skill Points}
@@ -832,7 +832,7 @@ See the section below, "Damage," to find out more about how this hit can affect 
 \section{Damage}
 Characters in THIZ have seven body sections, as discussed above: Head, Chest, Gut, Right and Left Arm, and Right and Left Leg. Each of these body sections can be targeted, and each of them can receive wounds. Whenever a body section has been successfully hit by an attacker, the character receiving the hit makes a check against their Toughness rating. If their level of success exceeds that of the hit, they receive no wound. If their level of success matches that of the hit, the level of success of the hit is reduced by one. 
 
-Depending on the level of success of the hit, the character receives a Green, Yellow, Red or Black Wound to the stricken body location, for a Green through Black Success, respectively. A character can receive any number of Green Wounds, but only one each of the other types of wounds. If they receive a second wound of the same color to the same body location, it is stepped up to the next color of wound. 
+Depending on the level of success of the hit, the character receives a Green, Yellow, Red or Black Wound to the stricken body location, for a Green through Black Success, respectively. A character can receive any number of Green Wounds, but only one each of the other types of wounds. If they receive a second wound of the same color to the same body location, it is stepped up to the next color of wound. A Mook that has a wound greater than Green on their Head, Chest, or Gut is defeated.
 
 The effect of wounds on particular body locations is outlined in the charts below:
 
@@ -902,6 +902,34 @@ In a setting where weapons are capable of burst or fully-automatic fire, the cha
 
 \end{multicols}
 
+\chapter{Magic}
+Magic in THIZ is a powerful force. Player characters and their Adversaries will often use magic to their own ends, often performing feats well beyond normal human ability. Such power, however, comes at a steep price: the study and use of magic often warps the minds and bodies of those who dare dabble in the arcane.
+
+\begin{multicols}{2}
+\subsection{Magic Users}
+Any character in THIZ can learn magic, so long as they are willing to pay the price. Players can choose to learn Magic Skills at Character Creation, and for each Magic Skill their character possesses, they must choose a Magical or Mental Weakness to represent the effect such knowledge has had on their person. A character can also learn a Magical Skill at any point in the campaign, so long as they have a teacher and time to spare. 
+
+In most settings, characters that do not possess magical abilities will be suspicious or fearful of those that do. A character who is discovered to be a "witch" or "sorcerer" may find that those they once considered friends will want nothing more to do with them.
+
+\subsubsection{Learning New Magic Skills}
+Like all skills, Magical Skills require an cost of 5 Skill Points to learn after Character Creation. Additionally, the character must have a mentor or tutor who already possess a particular Magic Skill to teach them the Magic Skill.
+
+All Magic Skills require a 9-month period of study. The character must spend every day learning the Magic Skill with their tutor. After this period, the character has a rating of 1 that Magic Skill and may increase it in the same manner as any other skill: spending a Skill Point earned at the end of a session or campaign. Only one Magic Skill may be learned at a time. Once a character acquires a new Magic Skill, they must acquire a new Mental or Magical Weakness
+
+If the tutor and the character wish, the character may travel or adventure while studying with their tutor, so long as the they spend some time each day studying the desired Magic Skill. Characters studying a Magic Skill in this way must spend 1/3rd more time studying their Magic Skill. That means, a character studying a Magic Skill on the go must spend 9 months + 3 additional months studying, for a total of 12 months. 
+
+Lastly, a character that has spent time studying a Magic Skill under a tutor may gain a \textbf{Special} in that Magic Skill. The section "Training" in the chapter \textbf{Character Advancement \& Time Management} has more information on Specials, but they are essentially personalized specialties that a character develops while mastering a skill. This can take the form of a +3 to the Magic Skill in a specific environment or time period, or a specific magical effect that the character can manifest at an easier level of success than normal. The Special is unique to the character, but may also exhibit the influence of their tutor, as well. A character that already knows a Magic Skill and wishes to develop a Special for said Magic Skill must spend 3 months with a tutor who knows that Magic Skill. A character can only have one Special for each skill they possess, but they may seek further training to develop a new Special.
+
+\subsubsection{Manifesting Magical Effects}
+
+
+\end{multicols}
+
+\chapter{Movement}
+
+\chapter{Hazards}
+
+\chapter{Character Advancement \& Time Management}
 
 \appendix
 \chapter{Resolution Charts}
