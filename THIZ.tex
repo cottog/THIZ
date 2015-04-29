@@ -263,16 +263,16 @@ A character wishing to long jump may make a resolution check against their Acrob
 If the character can run at least their jogging distance before attempting the long jump, they can jump 20, 22, 24, or 26 feet, for Green through Black successes respectively.
 
 A character attempting a vertical jump from standing can reach heights of 32, 34, 36, or 38 inches, for Green through Black successes. A character that can run at least their jogging distance before attempting a high jump can reach a height of 60, 68, 76, or 84 inches for Green through Black successes.
-\subsubsection{Climbing}
+\subsubsection{Climbing [P]}
 This skill is used by a character when they are scaling towers or large walls. Any character can climb a short distance, but for a character to successfully climb for an extended period of time over a large distance, they need some knowledge and experience. The chapter on Movement has more information regarding climbing. 
 
-\subsubsection{Sleight of Hand}
+\subsubsection{Sleight of Hand [P]}
 This skill governs the ability of a character to successfully make an object appear or disappear from within a pocket. The difficulty required for a character to hide or reveal a particular object successfully depends on the size of the object, according to the referee's discretion. Something discrete like a coin may require only a Green Success, whereas something the size of a human head or larger would require a Black success. Any level of success below the threshold established by the referee means that the item was spotted, at least in passing, by a nearby character that was actively observing the character attempting to use Sleight of Hand. A failure means that the character has dropped the item. 
 
 A character may also attempt to cheat at a game of chance with their Sleight of Hand skill. Any level of success means that their cheating has so far gone undetected. 
 Whenever a character makes a Sleight of Hand check, subtract the highest Perception rating among all the characters who are actively observing the character making the check. 
 
-\subsubsection{Stealth}
+\subsubsection{Stealth [P]}
 This skill allows a character to attempt to hide from others or move unseen. A character wishing to use stealth to move must make a check against their stealth rating minus the highest Perception rating among all the characters actively searching for them (but not currently looking at them). If they succeed, they may move up to 1, 2, 3, or 4 times their walking speed before they must make a stealth check again. On a failure, they have been spotted. A character automatically fails a stealth attempt if they are being directly observed by a character that is searching for them or would immediately reveal their location to someone searching for them. If they are currently being observed, they must first move out of sight before attempting stealth. 
 
 If a character is attempting to hide from someone pursuing them, that person doesn't currently have them in sight, they make make a check against their stealth rating to enter a hiding spot, hide an object they are holding, or hide a character that is adjacent to them into a hiding spot of sufficient size that is nearby.
@@ -281,10 +281,10 @@ If a character is attempting to hide from someone pursuing them, that person doe
 
 See the description of the skills \textbf{Perception} and \textbf{Scrutiny} to learn more about spotting a character that is hidden. 
 
-\subsubsection{Swimming}
+\subsubsection{Swimming [P]}
 Without this skill, a character can only tread water or doggy paddle in the water. In order to move any appreciable distance in the water, or to stay afloat for an extended amount of time, a character must have a rating above 0 in the Swimming skill. Please see the chapter on Movement for more information.
 
-\subsubsection{Throwing}
+\subsubsection{Throwing [P]}
 This skill is used whenever a character attempts to throw a non-weapon object across any distance. A character can make a check against this skill to throw a 16-pound object 64, 68, 72, or 76 inches on Green through Black successes, respectively. This distance is inversely correlated to the object's weight. If the object were to double in weight, the possible distance it could be thrown would be halved. 
 
 This skill is meant to represent the maximum possible distance a character could throw an object, with ample time to prepare themselves for the throw. If this skill were to be used for combat in an improvised manner, an object of any size can only be thrown a quarter the distance it could normally be thrown.
@@ -946,19 +946,79 @@ All characters can crawl, walk, jog or sprint. Crawling and walking are achieved
 All characters can attempt to climb, but proper training and experience makes it much easier. In order to scale a surface, the character must make a check against their Climbing skill or General Physical rating. 
 
 \subsubsection{Swimming}
-Not all characters can swim. A character that has spent their life away from large bodies of water or has simply never swum before may drown if they attempt to swim in rough water or cover any significant distance. 
+Not all characters can swim. A character that has spent their life away from large bodies of water or has simply never swum before may drown if they attempt to swim in rough water or cover any significant distance. Characters with a rating in Swimming skill are much less susceptible to the dangers of open water.
 
 \subsubsection{Acrobatics}
 A character can jump, tumble, or perform other acrobatic stunts by succeeding at a check against their Acrobatics skill or General Physical rating. 
 
 \section{Travel}
 \subsubsection{Walking}
-When traveling on foot, a character can move a certain number of miles per day, depending on their Movement or General Physical rating.
+When traveling on foot, a character can move a certain number of miles per day, depending on their Speed or General Physical rating.
 
 \subsubsection{Animals}
-Animals are also limited in terms of how many miles they can cover per day by their Movement or General Physical rating. A character riding an animal or driving a team of animals may use their Animal Handling school to direct or motivate the animals to move, but they cannot use Animal Handling to get the creatures to travel a distance greater than that dictated by their Movement rating.
+Animals are also limited in terms of how many miles they can cover per day by their Speed or General Physical rating. A character riding an animal or driving a team of animals may use their Animal Handling school to direct or motivate the animals to move, but they cannot use Animal Handling to get the creatures to travel a distance greater than that dictated by their Speed rating.
 
-\subsubsection{•}
+\subsubsection{Boats}
+Boats and ships are often a relatively safe and easy means of traveling long distances. A boat that is rowed can travel 10 miles in a day. A boat that is sailing on good winds can travel up to 30 miles in a day. A larger ship can travel up to 50 or 65 miles in a day, depending on its cargo and weather conditions. Ships that use motors or other technological (or magical) means of travel can go 80, 100, or even more miles in a day if the referee deems it appropriate. 
+
+\section{Movement Rate Table}
+
+\begin{center}
+\scalebox{0.7}{
+\begin{tabular}{|c|l|l|l|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\textbf{Rating}      & \textbf{Crawl} & \textbf{Walk} & \textbf{Jog} & \textbf{Sprint} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{-10 or less} & 1 {[}10{]}     & /             & /            & /               \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{-9 to -5}    & 2 {[}25{]}     & 5 {[}50{]}    & /            & /               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{-4 to -3}    & 2 {[}25{]}     & 5 {[}50{]}    & 10 {[}100{]} & /               \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{-2 to 0}     & 3 {[}35{]}     & 5 {[}50{]}    & 10 {[}100{]} & 15 {[}150{]}    \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{1 to 3}      & 3 {[}35{]}     & 5 {[}50{]}    & 15 {[}150{]} & 20 {[}250{]}    \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{4 to 6}      & 3 {[}35{]}     & 10 {[}100{]}  & 20 {[}250{]} & 25 {[}300{]}    \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{7 to 10}     & 3 {[}35{]}     & 10 {[}100{]}  & 20 {[}250{]} & 30 {[}350{]}    \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{11 to 13}    & 4 {[}50{]}     & 10 {[}100{]}  & 20 {[}250{]} & 35 {[}400{]}    \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{14 to 17}    & 4 {[}50{]}     & 10 {[}100{]}  & 20 {[}250{]} & 40 {[}500{]}    \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{22 to 25}    & 5 {[}60{]}     & 10 {[}100{]}  & 25 {[}300{]} & 50 {[}600{]}    \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{26 to 29}    & 5 {[}60{]}     & 15 {[}150{]}  & 25 {[}300{]} & 55 {[}650{]}    \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{30+}         & 5 {[}60{]}     & 15 {[}150{]}  & 30 {[}350{]} & 60 {[}700{]}    \\ \hline
+\end{tabular}
+}
+\end{center}
+\tiny \# - The distance in feet a character can move per combat turn \\[0pt]
+[\#] - The distance in feet a character can move per minute \\
+/ - This type of movement is prohibited
+
+\normalsize
+The table above depicts the distance a character can crawl, walk, jog, or sprint, as determined by the higher of their Speed skill or General Physical rating.
+
+\section{Fatigue}
+Certain types of movement cause a character to become fatigued, with different consequences depending on the type of action. 
+
+\subsubsection{Crawling and Walking}
+Crawling and walking do not cause fatigue in the same sense as other types of movement. A character can continually walk or crawl at the rate listed in the table above indefinitely, as long as they take 8 hours of sleep for every 24-hour period. 
+
+\subsubsection{Jogging}
+A character may jog at the rate listed on the table above for a number of hours equal to either their Toughness or General Physical rating. A character with a value of zero in both of those ratings can jog for a single hour. After jogging for their maximum time, the character must rest for 1 hour. A character who has exceeded their maximum jogging time can no longer jog until they get 8 hours of sleep. 
+
+\subsubsection{Sprinting}
+A character may sprint at the rate listed on the table above for a number of minutes equal to their Toughness or General Physical rating. A character with a value of zero in both of those ratings can sprint for a single minute. After sprinting a character must rest for 30 minutes. 
+
+\section{Animals}
+Animals follow the same movement and fatigue rules as humans. One notable difference between the two is that, while humans have a maximum possible rating of 30 in any Skill, animals may have a rating that is higher, especially in Speed. If a character wishes to induce an animal to move or act in an abnormal manner, they must make a check against their Animal Handling or General Mental rating. On a failure, the animal does not obey. On any level of success, the animal complies. At the referee's discretion, a greater level of success may result in an exemplary execution of the character's command. 
+
+\section{Climbing}
 
 \end{multicols}
 
