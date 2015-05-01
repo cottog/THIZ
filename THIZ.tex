@@ -687,7 +687,7 @@ A character with this Quirk has particularly nimble fingers. Their attempts at p
 Any time the player chooses to spend a Luck Point, the referee must make a roll against that character's current Luck Point total. On a Black success, the Luck Point has its intended effect, but remains unspent. The result of this check should not be revealed. 
 
 \subsubsection{Marathon Runner}
-The character can jog for three more hours or sprint for three more minutes than their Toughness or General Physical rating would allow. 
+The character can jog for three more hours or sprint for three more minutes than their Toughness or General Physical rating would allow. The character is still limited to 16 total hours of jogging in each 24-hour period, as well as a need for 8 hours of sleep in each 24-hour period.
 
 \subsubsection{Military Background}
 Characters with this Quirk must have a rating of at least 1 in the Weapon Skill for the standard-issue weapon of their homeland's military. 
@@ -825,7 +825,7 @@ Maneuvers are actions such as Bull Rush, Disarm, Trip, or other actions that aff
 A character can choose to wait on their turn. If they do so, they must state an action they wish to perform and a condition that will cause them to act. If that condition occurs before their next turn, they may perform their action. If they wish to act before the trigger occurs, they must check Speed. On a success, they may act before the triggering condition occurs. Otherwise, they act after.
 
 \section{Determining a Hit}
-In order to determine a hit with an attack, you simply make a resolution check against (your Weapon Skill with your equipped weapon or General Physical rating + that weapon's Attack Bonus, if any) - (your target's Speed or General Physical rating + your target's Armor Bonus on the targeted body region, if any). On any level of success, you have hit your target. For example, an attacker armed with a steel sword and with a Sword Skill rating of 3 attacks a target with Speed 4 and bronze armor. He checks against an adjusted rating of (3 [his Sword Skill] + 4 [his sword's Attack Bonus]) - (4 [his opponent's Speed + 1 [his opponent's armor bonus]), which equals 2. The player rolls a d100 and checks the resolution chart for a rating of 2.
+In order to determine a hit with an attack, you simply make a resolution check against (your Weapon Skill with your equipped weapon or General Physical rating + that weapon's Attack Bonus, if any) - (your target's Speed or General Physical rating + your target's Armor Bonus on the targeted body region, if any). This value is denoted as the \textbf{Adjusted Attack Rating}. On any level of success, you have hit your target. For example, an attacker armed with a steel sword and with a Sword Skill rating of 3 attacks a target with Speed 4 and bronze armor. He checks against an adjusted rating of (3 [his Sword Skill] + 4 [his sword's Attack Bonus]) - (4 [his opponent's Speed + 1 [his opponent's armor bonus]), which equals 2. The player rolls a d100 and checks the resolution chart for a rating of 2.
 
 See the section below, "Damage," to find out more about how this hit can affect your target. The section \textbf{Combat Equipment} discusses Attack Bonuses and Armor Bonuses. 
 
@@ -988,7 +988,7 @@ Boats and ships are often a relatively safe and easy means of traveling long dis
 \rowcolor[HTML]{EFEFEF} 
 \textbf{14 to 17}    & 10 {[}120{]}                                              & 25 {[}300{]}                                              & 40 {[}500{]}                                              & 80 {[}950{]}                                              \\ \hline
 \rowcolor[HTML]{C0C0C0} 
-\textbf{18 to 21}    & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}10 {[}120{]}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}25 {[}300{]}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}45 {[}550{]}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}85 {[}950{]}} \\ \hline
+\textbf{18 to 21}    & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}10 {[}120{]}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}25 {[}300{]}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}45 {[}550{]}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}85 {[}1000{]}} \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 \textbf{22 to 25}    & 15 {[}180{]}                                              & 25 {[}300{]}                                              & 45 {[}550{]}                                              & 85 {[}1000{]}                                             \\ \hline
 \rowcolor[HTML]{C0C0C0} 
@@ -1043,12 +1043,165 @@ A character's walking speed in battle or when walking short distances is much gr
 
 An animal carrying a rider can only travel 2/3 its typical distance (as determined above) each day. If it is pulling a vehicle, the animal can travel 1/2 its typical distance each day. 
 
+\section{Vehicles}
+Normally, the day-to-day trivialities of traveling are glossed over by the players and the referee. Travel usually happens in the stroke of a narrative brush, with the occasional storm or pack of bandits to break up the monotony. The following rules, then, deal with vehicular combat, vehicular collisions, and tests of skill between one driver and another.
 
+\subsection{Operating a Vehicle}
+Operating a vehicle is governed by the Pilot skill. Each unique vehicle, such as a chariot or sledge, should have its own instance of the Pilot skill. 
+
+\subsection{Vehicular Movement}
+A vehicle has four speed categories: slow, cruising, fast, and flat-out. A vehicle that is moving flat-out imposes a -3 to any Pilot skill checks made to maneuver the vehicle. A vehicle that is just starting up or nearly stopped is considered to have a speed of zero for all intents and purposes. 
+
+For every vehicle, these four categories should be assigned a Speed rating. This rating is the vehicle's Speed rating while it's movement falls under that category. The rate of feet traveled per combat turn (or minute) by the vehicle is listed in the table below. This table uses the same numbering conventions as the Movement Rate table above. The numbers given below are for traditional terrestrial vehicles. If a setting demands more fast-moving vehicles, then some math will be required. In the case of vehicles that move at a similar rate to modern aircraft, multiply the numbers in the table below by 60. For those that move at a rate similar to modern spacecraft, multiply the numbers by 500. For vehicles which can reach superluminal speeds (or which travel via non-traditional means), these numbers may not even matter or have meaning.
 
 \end{multicols}
 
+\begin{table}[h]
+\scalebox{0.7}{
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{14}{|c|}{\cellcolor[HTML]{9B9B9B}\textbf{Vehicle Movement Rates}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+1-3                                                    & 4-6                                                    & 7-10                                                   & 11-13                                                  & 14-17                                                  & 18-21                                                   & 22-25                                                   & 26-29                                                   & 30-33                                                    & 34-37                                                    & 38-41                                                    & 42-45                                                    & 46-49                                                    & 50-53                                                    \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\begin{tabular}[c]{@{}c@{}}60\\ {[}750{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}65\\ {[}800{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}70\\ {[}850{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}75\\ {[}900{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}80\\ {[}950{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}85\\ {[}1000{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}90\\ {[}1050{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}95\\ {[}1150{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}105\\ {[}1250{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}115\\ {[}1400{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}125\\ {[}1500{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}135\\ {[}1650{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}145\\ {[}1750{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}155\\ {[}1850{]}\end{tabular} \\ \hline
+\end{tabular}
+}
+\end{table}
+
+\begin{multicols}{2}
+
+\subsection{Vehicular Chases}
+
+A character or vehicle can only be considered to be in a chase with another character or vehicle if they can achieve a speed of at least 2/3 that of the other vehicle. Otherwise, the character or vehicle with the greater speed either catches up to them or outdistances them immediately.
+
+The character controlling each vehicle or mount in a chase must make an initiative check each round (see \textbf{Combat}). The character with the highest initiative score may choose to change the position of their vehicle relative to another vehicle involved in the chase, either widening or closing the gap between them. They may modify the distance between them an amount equal to their vehicle's movement per turn. If the distance they can move in any round is greater than the distance between their vehicle and another, and they wish to move closer to the vehicle in question, they may choose to overtake them, drop behind them, or move to the side of the other vehicle.
+
+\subsection{Potential Collisions}
+
+If a vehicles path crosses that of another vehicle, and they could potentially collide, the pilots of both vehicles must make a resolution check against the appropriate Pilot rating for their vehicle (or their General Mental rating). If both pilots fail, the vehicles collide. If one pilot achieves a greater level of success than the other, they can determine at what distance the vehicles pass by each other. If both pilots achieve the same level of success, they pass each other within range of any missile weapons. 
+
+Likewise, the pilots of two vehicles that are approaching head-on must both make resolution checks against the appropriate Pilot skill or their General Mental rating. If both fail, the vehicles collide head-on. Otherwise, the Pilot who achieved the greater level of success decides how quickly the vehicles pass by each other. On a tie, the vehicles pass each other within range on any missile weapons.
+
+\subsection{Vehicular Combat}
+Attacks made from a moving vehicle against a stationary target or a pedestrian are made at a -1 for each point in the vehicle's current Speed rating. If the vehicle is bearing straight toward or straight away from its target, this penalty is nullified. 
+
+When an attack is made against a vehicle by a stationary target or a vehicle that is crossing its path, the target vehicle's current Speed is used by the attacker to calculate their adjusted attack rating. 
+
+As vehicles can take damage, they each have their own unique Toughness rating, as determined by the referee. When they suffer damage, they can make a check against their Toughness rating to avoid the wound, just as a character would. All vehicles have a single body location. If they suffer a Black wound, the vehicle is unable to continue operating. 
+
+\subsection{Collision Damage}
+
+When vehicles collide, make a check against the Speed of the vehicle doing the striking, as if it were the adjusted attack rating of an attacking character. If the vehicle rear-ends a slower vehicle, subtract the slower vehicle's Speed from the striking vehicle's speed. Alternately, if the two vehicles collided head-on, add their Speeds together. In a collision, both vehicles can potentially suffer the wound resulting from this resolution check. They both make a check against their Toughness in order to see if they have indeed suffered the wound. 
+
+If a moving vehicle strikes a pedestrian, make a resolution check against the vehicle's current Speed minus the pedestrian's Speed in order to determine the potential wound the pedestrian will suffer. Only the pedestrian suffers damage in this type of collision, and they may make a check against Toughness as normal when potentially suffering a wound. 
+
+When a moving vehicle strikes a stationary fixture, such as a building or city wall, make a check against the vehicle's current Speed in order to determine the wound the vehicle may suffer, as above. It is up to the referee's discretion to determine how the stationary fixture is affected by the collision. 
+
+\subsection{Inoperable Vehicles}
+
+When a vehicle has suffered a Black wound, it becomes inoperable. If this occurs while the vehicle was in motion, this could be catastrophic for the vehicle's occupants. In this case, the pilot makes a resolution check against the appropriate Pilot skill or their General Mental rating. On a success, they successfully guide the vehicle to a stop. On a Black success, the pilot can keep the vehicle moving for one more combat turn on skill alone. On a failure, they lose control of the vehicle and they, as well as the vehicle's other occupants, may suffer damage. Make a resolution check against the vehicle's Speed at the time of the event that rendered it inoperable for each occupant of the vehicle. Also roll on the body location chart for each character to see where they may be injured by the crash. The Speed check is modified by the Speed and Armor Bonus of the character in question, as with any Attack resolution check. The normal rules for determining a hit and damage are used to determine how each character is finally affected by the crash. 
+
+\end{multicols}
+
+
 \chapter{Hazards}
 
+There are many hazards a character may encounter while adventuring. This chapter aims to cover environmental hazards, as well as poisons and traps. 
+
+\begin{multicols}{2}
+
+\section{Fall Damage}
+
+Characters that fall more than 10 feet may possibly be damaged by their fall. When a character falls from such a height, subtract 10 from the distance fallen and make a check against it as if it were an attack rating. This is not mitigated by the character's Speed or Armor Bonus. The level of success of this check determines what wound the character suffers. On a white result, the character is miraculously unharmed. Roll on the body location chart to see where the character is injured. A wound suffered from a fall has the same effects on a character as any other damage. 
+
+Characters injured by a fall that survive the damage are stunned for a number of turns equal to the distance fallen divided by 10. Stunned characters may take no actions. 
+
+A character that falls 100 feet or more onto an unyielding surface is killed instantaneously. A character that falls 100 feet or more onto a yielding (deep water, sand, deep snow) surface may survive, according to the referee's discretion. Water, regardless of depth, is not a yielding surface if the character has fallen 200 feet or more. 
+
+\section{Fire}
+
+A fire has a rating based on its intensity. A fire's rating is used as if it were an attacker's Weapon skill in order to determine if it inflicts a wound on a character. A character that is able to move away from the fire may reduce the fire's rating by their Speed rating. Additionally, any armor worn by a character on a targeted body location reduces the fire's rating by 1, regardless of the Armor Bonus it may have. 
+
+In order to determine where a character is injured by a fire, the referee could use the situation to dictate the location, such as ruling that the body location closest to or targeted by the fire (at the hands of another character, usually) is injured by the fire. If the character is temporarily consumed or licked by flames, the referee may use the random body location chart to determine where the character is injured, or their own discretion. In some cases, all body locations could be affected simultaneously.
+
+Below is a chart depicting the rating for typical types of fire: 
+
+
+\begin{center}
+\scalebox{0.7}{
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{9B9B9B}\textbf{Fire Ratings}} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Candle, small lamp}                   & -5                  \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{torch, lantern}                       & 0                   \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{small fire, burning sheet}            & 5 to 8              \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{large fire, burning beam}             & 10 to 14            \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{bonfire, burning building}            & 15 to 20            \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{lava, magical fire}                   & 25 to 30            \\ \hline
+\end{tabular}
+}
+\end{center}
+
+\section{Open Water}
+
+A character must make a resolution check to stay above water whenever they encounter an extraordinary situation in the water. Such situations include: 
+\begin{itemize}
+		\setlength{\itemsep}{0cm}%
+  		\setlength{\parskip}{0cm}%
+		\item{Suddenly falling into water}
+		\item{Diving from a height greater than 20 feet}
+		\item{Swimming in armor}
+		\item{Beginning a swim in a body of water with a rating of 10 or greater}
+		\item{Beginning a turn in a body of water with a rating of 25 or greater}
+	\end{itemize}
+
+Bodies of water have a rating, like fires, but they do not actively harm the character like fires do. Instead, when a character needs to make a resolution check to stay afloat, they make a check against double their Swimming or General Physical rating, minus both their highest Armor Bonus and the rating of the body of water they are in. Success means the character has managed to stay afloat. Failure means the character is underwater and, if they wish to breach the water's surface, they must spend a turn making another swimming check. A success on this second check means they are no longer underwater.
+
+A character that cannot breathe for any reason, including submersion in water, can hold their breath for (6 + their General Physical rating) turns. After this time has been exceeded, keep a running total of the number of turns they have been unable to breathe. At the end of each turn after that point, make a resolution check against the running total you have been keeping. The character receives a wound corresponding to the level of success of that check to their Chest body location. A character regains a turn they can spend without breathing for every two turns they spend being able to breathe. 
+
+For example, a character with a General Physical rating of 1 can hold their breath for 7 turns. Unfortunately for them, they have been cast into the vacuum of space without any breathing apparatus. After the 8th turn of being in the void, they make a check against a rating of 1. Unfortunately for them, it results in a Green wound to their Chest. They now suffer from a -1 to initiative checks. The next turn, the 9th turn they could not breathe, they would make a resolution check against a rating of 2.
+
+Below is a table of ratings for typical bodies of water:
+
+\begin{center}
+\scalebox{0.7}{
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{9B9B9B}\textbf{Water Ratings}} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{still, flat, calm}                               & 0         \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{slow stream, sewer, calm ocean}                  & 5         \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{strong current, icy water}                       & 10        \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{rapids, ocean swells}                            & 15        \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{whitewater, windblown ocean}                     & 25        \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{waterfall, river whirlpool, stormy seas}         & 35        \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{ocean whirlpool}                                 & 40        \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{hurricane on the open ocean}                     & 50        \\ \hline
+\end{tabular}
+}
+\end{center}
+
+\section{Poison}
+Every poison has a wound rating (from Green to Black) and a duration. Whenever a character is poisoned, the referee makes a check against that character's Toughness or General Physical rating. If their level of success meets or exceeds that of the poison, they do not suffer the wound the poison would inflict on them. Otherwise, they must attempt to find and apply the antidote before duration takes effect. If they fail to do so, they suffer a wound appropriate for the Wound rating of the poison. Most poisons inflict a wound on the Gut body location, but the referee can instead decide to inflict a wound on the body location directly affected by the poison (such as an arm if it was cut by a poisoned blade).
+
+\end{multicols}
 
 \chapter{Character Advancement \& Time Management}
 
