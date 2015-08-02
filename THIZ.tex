@@ -14,6 +14,7 @@
 \makeatletter
 \renewcommand{\@dotsep}{10000} 
 \makeatother
+\raggedbottom
 \begin{document}
 
 \frontmatter
@@ -436,7 +437,17 @@ Druidism is borne of a spellcaster spending much time in nature, communing with 
 \subsubsection{Elementalism}
 An Elementalist is a spellcaster that has attained mastery over the  wild forces that shape the world: Earth, Wind, Fire, and Water. These powers may be the consequence of pacts made with ancient Elemenals, the product of years of academic study, or simply the result of sheer force of will. No matter its source, an Elementalist's knowledge is most often used to wreak terrible havoc both unto their enemies and the environment around them. 
 
-An Elementalist of average power must normally be in the presence of an element in order to bend it to their will.    
+An Elementalist of average power must normally be in the presence of an element in order to bend it to their will. For example, if they wished to set an enemy alight, they would normally have to be near an open flame. An elementalist can attack an enemy within a range of 10 feet for every 5 ranks they have in this skill. To make a simple attack using elementalism, a character can declare the element they wish to use, so long as there is a source. They must then make a check against their Elementalism skill, inflicting a wound based on the level of success as if it were any other type of attack. For ranged attacks, they must roll on the  random body location chart like any other missile attack.
+
+\textbf{Example Elementalism Effects}:
+	\begin{itemize}
+		\setlength{\itemsep}{0cm}%
+  		\setlength{\parskip}{0cm}%
+		\item{ \small Erect a small wall sufficient to protect one character [G]}
+		\item{ \small Build an icy staircase or ladder to a 20-foot height [Y]}
+		\item{ \small Conjure high winds in a 15-foot area, giving a -2 penalty to incoming missile attacks [R]}
+		\item{ \small Cover a typical building in flames with a Fire Rating of 25  [B]}
+	\end{itemize}
 
 \subsubsection{Insight}
 Insight is the art of gleaning information about events that are distant in space, time, or both. This information could be the result of divine revelation or just a spellcaster's natural ability. In order to manifest an Insight spell effect that targets a specific person, the caster must have an object that is connected to that person in some way (they previously owned it, it was once a part of their body). If a spellcaster uses Insight to glean information about the future, it is dependent on the referee's discretion and the setting as to whether or not this future can be changed.
@@ -950,6 +961,8 @@ Lastly, a character that has spent time studying a Magic Skill under a tutor may
 \subsection{Manifesting Magical Effects}
 A character wishing to use their magical skill must declare the magical effect they intend to manifest. The referee then gives them a target level of Success they must reach in order to make that effect occur. Of course, the more complex or powerful the magical effect, the higher the level of success required. The description of each Magical Skill in the \textbf{Skills} chapter has example magical effects and the requisite levels of success. Additionally, particularly powerful Magic Skills and magical effects will require the use of rare or expensive reagents each time they are cast. The character may have to pay a large sum of money or go on an adventure or quest to find these reagents.
 
+Whenever a character witnesses a particularly impressive use of a Magical Skill, at the referee's discretion, they can possibly be inflicted with Terror. For more information, please see the section entitled "Terror" at the end of this chapter.  
+
 \subsection{Extended Casting}
 Obviously, not every time a character attempts to manifest a magical effect will they achieve the requisite level of success. This usually means that the magical effect does not occur, and whatever reagents the character was using to cast the spell are wasted. 
 
@@ -957,7 +970,12 @@ All is not lost, however, as a character may choose to continue attempting to ca
 
 For example, in the middle of combat, Bertold is attempting to use Artifice to add +1 to attack bonus of all nearby firearms. This requires a Red success. On his first turn, he only achieves a Green success. He chooses to continue the same spell until he succeeds. On his next turn, he gets a Yellow success. He now has a Green and a Yellow success, but no Red success, so the spell is not successful. On his third turn, he gets another Green success. Two Green successes make another Yellow success, and two Yellow success make a Red success. The spell is finally cast!
 
-If a magical effect requires the expenditure of reagents, the character must spend 25\% more of the reagent for each additional check against their Magical Skill. If they run out of the reagent, they cannot make more checks and all progress towards casting the spell is lost. Additionally, if a character's concentration is broken, they lose all progress towards casting the spell. A character doing Extended Casting in combat that suffers a wound must make a Willpower check. On a failure, they lose all progress towards casting the spell. 
+If a magical effect requires the expenditure of reagents, the character must spend 25\% more of the reagent for each additional check against their Magical Skill. If they run out of the reagent or lose contact with a required spell focus, they cannot make additional checks and all progress towards casting the spell is lost. Additionally, if a character's concentration is broken, they lose all progress towards casting the spell. A character doing Extended Casting in combat that suffers a wound must make a Willpower check. On a failure, they lose all progress towards casting the spell. 
+
+\subsection{Terror}
+Terror is a natural reaction to witnessing magical effects. Realizing that someone in your presence can defy the laws that govern reality itself usually has a devastating effect on one's sense of security. 
+
+Whenever a character would experience Terror, they must make a check against their Willpower rating. This check suffers a penalty according to the level of success required to manifest the magical effect the character just witnessed. A Green through Black success inflicts a penalty of 1 through 4, respectively. If the character fails this check, they are filled with Terror for 1+1d4 turns, and suffer a -3 penalty to all checks made until the Terror ends. They must make an additional Willpower check to move towards the subject of their Terror or target that subject with a Skill or attack. If this check is failed, they do nothing.  
 
 \end{multicols}
 
@@ -1036,7 +1054,7 @@ The table above depicts the distance a character can crawl, walk, jog, or sprint
 Certain types of movement cause a character to become fatigued, with different consequences depending on the type of action. 
 
 \subsubsection{Crawling and Walking}
-Crawling and walking do not cause fatigue in the same sense as other types of movement. A character can continually walk or crawl at the rate listed in the table above indefinitely, as long as they take 8 hours of sleep for every 24-hour period. 
+Crawling and walking do not cause fatigue in the same sense as other types of movement. A character can continually walk or crawl indefinitely, as long as they take 8 hours of sleep for every 24-hour period. If the character will be walking for more than a few days, refer to the section entitled "Long-Distance Travel" to see how far they can travel in a day.
 
 \subsubsection{Jogging}
 A character may jog at the rate listed on the table above for a number of hours equal to either their Toughness or General Physical rating, up to a maximum of 16 hours, in a single day. A character with a value of zero in both of those ratings can jog for a single hour in a day. After jogging for their maximum time, the character must rest for 1 hour. A character who has exceeded their maximum jogging time can no longer jog until they get 8 hours of sleep. 
@@ -1066,7 +1084,7 @@ Characters without training in the Swimming skill can only tread water or doggy 
 Characters with the Swimming talent can swim at their walking rate as listed in the Movement Rate table above. They can swim at this rate for as long as they can walk: indefinitely, as long as they somehow find a means to sleep for 8 hours every 24-hour period. They can also swim their jogging speed for a number of minutes equal to their Toughness or General Physical rating. 
 
 \section{Long-Distance Travel}
-A character's walking speed in battle or when walking short distances is much greater than the pace that would be comfortable for them to maintain during a long march. Any character (including animals) can cover a distance of (15 + 1/2 their Speed or General Physical rating) miles each day. This distance is lessened if they must travel through harsh weather or unfavorable terrain. Some typical reductions are 1/2 if traveling through a desert or 1/3 if traveling through a mountainous region. For each river the character has to ford while traveling on a specific day, subtract 1/2 of a mile from the total distance they can travel that day.  
+A character's walking speed in battle or when walking short distances is much greater than the pace that would be comfortable for them to maintain during a long march (more than a few days). Any character (including animals) can cover a distance of (15 + 1/2 their Speed or General Physical rating) miles each day. This distance is lessened if they must travel through harsh weather or unfavorable terrain. Some typical reductions are 1/2 if traveling through a desert or 1/3 if traveling through a mountainous region. For each river the character has to ford while traveling on a specific day, subtract 1/2 of a mile from the total distance they can travel that day.  
 
 An animal carrying a rider can only travel 2/3 its typical distance (as determined above) each day. If it is pulling a vehicle, the animal can travel 1/2 its typical distance each day. 
 
