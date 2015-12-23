@@ -6,15 +6,37 @@
   linkcolor    = blue,    % Colour of internal links
   citecolor    = red      % Colour of citations
 }
+\usepackage{tabularx}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{nonfloat}
 \usepackage{multicol}
 \usepackage{graphicx}
 \setcounter{secnumdepth}{0}
 \makeatletter
-\renewcommand{\@dotsep}{10000} 
+\renewcommand{\@dotsep}{10000}
+
+%thick horizontal line for tables 
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+
+%thick vertical line to go on the left side of a table
+\newcolumntype{+}{@{\vrule width 1pt\hskip\tabcolsep}}
+
+%thick vertical line to go between columns
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+
+%thick vertical line to go on the right side of a table
+\newcolumntype{=}{@{\hskip\tabcolsep\vrule width 1pt}}
+
 \makeatother
 \raggedbottom
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
 \begin{document}
 
 \frontmatter
@@ -60,16 +82,16 @@ Spinachcat
 \url{http://forum.rpg.net/showthread.php?206835} Where it all started }
 
 
-\paragraph{The author was not personally involved in the ZeFRS project and lays no claims of ownership to said body of work. The same can be said for the original work by Zeb Cook. Parts of this work, most especially the conflict resolution system and certain hazard rules are taken directly from ZeFRS itself. The author feels many other areas of the ZeFRS project have been modified enough to warrant a distinct publication. \\ \\
+\paragraph{The author was not personally involved in the ZeFRS project and lays no claims of ownership to said body of work. The same can be said for the original work by Zeb Cook. Parts of this work, most especially the conflict resolution system and certain hazard rules are taken from ZeFRS itself. The author feels many other areas of the ZeFRS project have been modified enough to warrant a distinct publication. \\ \\
 This work may be freely distributed as long as it remains complete and intact, which includes this credits page. The text of this work is designated as "copyleft," which means it can be used, modified, and reproduced at no cost. It would be appreciated, however, if credit would be given to the original author, Dave "Zeb" Cook, and those involved in the ZeFRS project.}
 
-\paragraph{The author would like to extend a heartfelt thanks to Dalton Burchardt for providing much-needed editing and direction.}
+\paragraph{The author would like to extend a heartfelt thanks to Dalton Burchardt for providing much-needed editing.}
 
 \tableofcontents
 
 \chapter{Introduction}
 
-While THIZ was inspired by a set of rules intended for a Swords n' Sorcery role-playing experience, THIZ strives to be a system that facilitates any and all settings and genres. The fluff is left to the Referee, while THIZ provides a full-fledged set of rules that strives to leave the players feeling powerful without bogging down gameplay. There are no races, very few restrictions with regard to magic, and a potentially limitless number of skills for player characters to master. 
+While THIZ was inspired by a set of rules intended for a Sword \& Sorcery role-playing experience, THIZ strives to be a system that facilitates any and all settings and genres. The fluff is left to the Referee, while THIZ provides a full-fledged set of rules that strives to leave the players feeling powerful without bogging down gameplay. There are no races, very few restrictions with regard to magic, and a potentially limitless number of skills for player characters to master. 
 
 \section*{The Obligatory Explanation of Role-playing Games}
 
@@ -79,7 +101,7 @@ THIZ fits into this picture by adding an element of order and providing a means 
 
 \section*{Requisite Supplies}
 
-You'll need a referee and at least one other player. A pencil and paper will be useful, as will the character sheet included at the end of this book. Additionally, you will need to be able to randomly generate a number between 1 and 100. This is normally achieved using a pair of ten-sided dice, often referred to as a d100, or percentile dice.  This set of dice typically has one die with numbers from 10 to 100 and one die that ranges from 0 to 9, but alternately you could use two dice with a similar range of numbers, as long as they are of a different color, and you consistently designate one color to serve as one part of the percentage. Finally, you will need a copy of the resolution table that is included in this book. This is used to resolve any conflicts or contests between characters. Once a d100 has been rolled and a random number generated, this number will be used in conjunction with the resolution table to determine the level of success of a character's actions. Enough talk. Let's get to the game!
+You'll need a referee and at least one other player. A pencil and paper will be useful, as will the character sheet included at the end of this book. Additionally, you will need to be able to randomly generate a number between 1 and 100. This is normally achieved using a pair of ten-sided dice, often referred to as a d100, or percentile dice.  This set of dice typically has one die with numbers from 10 to 100, by tens, and one die that ranges from 0 to 9, but alternately you could use two dice with a similar range of numbers, as long as they are of a different color, and you consistently designate one color to serve as one part of the percentage. Finally, you will need a copy of the resolution table that is included in this book. This is used to resolve any conflicts or contests between characters. Once a d100 has been rolled and a random number generated, this number will be used in conjunction with the resolution table to determine the level of success of a character's actions. Enough talk. Let's get to the game!
 
 \mainmatter
 \pagenumbering{gobble}
@@ -98,7 +120,7 @@ A Rating of 0 in a Skill denotes average human ability in that skill. A Rating o
  \newpage
 \begin{multicols}{2}
 \section{Creating a Character}
-Usually a character begins with a concept. Would you like to play as a taciturn warrior who charges into the battlefield wielding two spiked shields, bashing their enemies until either he or they stop moving? A fast-talking necromancer with a weakness for drink and a fear of the sun? An unusually short archer with a seething hatred for the fair-skinned folk of \emph{Dwyrain}?  Coming up with a basic concept can sometimes be the most difficult part of character creation. Sometimes it may be easier to choose which skills you'd like your next character to have and come up with the concept later, but establishing a back-story for your character is an integral step in the character creation process. It may not be very fun for the other players if they have to adventure with "Guard \#12." Record this back-story in the "The Story Begins" section of your character sheet. The following three sections will help you to flesh out this section.
+Usually a character begins with a concept. Would you like to play as a taciturn warrior who charges into the battlefield wielding two spiked shields, bashing his enemies until either he or they stop moving? A fast-talking necromancer with a weakness for drink and a fear of the sun? An unusually short archer with a seething hatred for the fair-skinned folk of \emph{Dwyrain}?  Coming up with a basic concept can sometimes be the most difficult part of character creation. Sometimes it may be easier to choose which skills you'd like your next character to have and come up with the concept later, but establishing a back-story for your character is an integral step in the character creation process. It may not be very fun for the other players if they have to adventure with "Guard \#12." Record this back-story in the "The Story Begins" section of your character sheet. The following three sections will help you to flesh out this section.
 
 \subsection{Your Character's Name}
 Coming up with a name for your character is also an important step in creating a character. As your character's fame (or infamy) grows, their name will often precede them, spreading across the land with tales of their exploits and derring-do. As such, it would be a good idea to ensure that the name is enjoyable to you and fits into the setting of your campaign. Often, a character with a single name and an eponym is sufficient. If you need inspiration, as either a player or referee, \emph{Gary Gygax's Extraordinary Book of Names} is a great resource.
@@ -111,16 +133,15 @@ The homeland of your character is determined as much by the physical location of
 Your character is automatically proficient in the common language of their homeland, as well as any one language which their parents use to communicate. They can speak both of these languages, but they do not necessarily have to be proficient in reading or writing either of them. At the referee's discretion, one of these languages may be a sort of \emph{lingua franca} used by all of the neighboring nations. 
 
 \subsection{Parents}
-Your character should have at least one parent or legal guardian, and while this book may refer to parents in the plural, it is perfectly acceptable for a character to have a single parent. Even if it's simply the matron (or patron) of a rural orphanage, at some point your character had someone else to care for or mentor them. Decide on a name for your character's parents, as well as their careers. Careers can be based on any of the skills listed Chapter 2, or can be some profession of your own creation. Keep in mind that, at character creation, your character will have to invest at least one skill point in a skill that represents one of their parent's careers. This is meant to represent the career path that your character would have chosen had they not heeded the call of adventure. As such, if their back-story dictates that they have some sort of mentor that isn't one of their parents, a skill may be chosen to represent that person's career.
+Your character should have at least one parent or legal guardian, and while this book may refer to parents in the plural, it is perfectly acceptable for a character to have a single parent. Even if it's simply the matron (or patron) of a rural orphanage, at some point your character had someone else to care for or mentor them. Decide on a name for your character's parents, as well as their careers. Careers can be based on any of the skills listed Chapter 2, or can be some profession of your own invention. Keep in mind that, at character creation, your character will have to invest at least one skill point in a skill that represents one of their parent's careers. This is meant to represent the career path that your character would have chosen had they not heeded the call of adventure. As such, if their back-story dictates that they have some sort of mentor that isn't one of their parents, a skill may be chosen to represent that person's career.
 
 Now that you've finished choosing a name, homeland, and some details regarding your character's parents, you can fill in the section on your character sheet that reads "The Story Begins."
 
 \section{Your Character's Skills}
 Skills are the real meat of your character. They define the sum of your character's experiences and knowledge. At character creation, you have 20 skill points to allocate to your character. Each point may be exchanged at a 1:1 ratio to increase your rating in that skill. Each character begins with all skills at a rating of zero. You may allocate points to any skill in the table below as well as any skills that your referee may have added to the skill pool, with the following restrictions:
 	\begin{itemize}
-		\item{ \small You must allocate at least five points each on both \textbf{Hard Skills} and \textbf{Soft Skills}}
 		\item{ \small You may allocate no more than 5 points on any one skill}
-		\item{ \small You must allocate at least one point to skill representing a parent or mentor's profession}
+		\item{ \small You must allocate at least one point to a skill representing a parent or mentor's profession}
 		\item{ \small You must not allocate points to any skills which your referee has deemed incompatible with the setting}
 \end{itemize}	
 
@@ -138,11 +159,11 @@ To further customize your character, you may choose to give them \textbf{Weaknes
 \begin{tabular}{|c|c|}
 \hline
 \rowcolor[HTML]{000000} 
-{\color[HTML]{FFFFFF} \textbf{Hard Skills}} & {\color[HTML]{FFFFFF} Soft Skills}         \\ \hline
+{\color[HTML]{FFFFFF} \textbf{Hard Skills}} & {\color[HTML]{FFFFFF} \textbf{Soft Skills}}         \\ \hline
 \rowcolor[HTML]{656565} 
 {\color[HTML]{FFFFFF} \textbf{Mettle}}      & {\color[HTML]{FFFFFF} \textbf{Expertise}}  \\ 
 \rowcolor[HTML]{9B9B9B} 
-\multicolumn{1}{|l|}{\cellcolor[HTML]{9B9B9B}{\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}l@{}}\\ Reflexes {[}P{]}\\ Speed {[}P{]}\\ Strength {[}P{]}\\ Toughness {[}P{]}\\ Willpower {[}M{]}\end{tabular}}}} & \multicolumn{1}{l|}{\cellcolor[HTML]{9B9B9B}\textbf{\begin{tabular}[c]{@{}l@{}}Appraise {[}M{]}\\ Artisan (Choose one) {[}M{]} \\ Forgery {[}M{]} \\ Knowledge (Choose one) {[}M{]}\\ Lock-picking {[}M{]}\\ Persuasion {[}M{]}\\ Profession (Choose one) {[}M{]}\\Trade (Choose one) {[}P{]}\\ Trapping {[}M{]}\end{tabular}}}   \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{9B9B9B}{\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}l@{}}\\ Reflexes {[}P{]}\\ Speed {[}P{]}\\ Strength {[}P{]}\\ Toughness {[}P{]}\\ Willpower {[}M{]}\end{tabular}}}} & \multicolumn{1}{l|}{\cellcolor[HTML]{9B9B9B}\textbf{\begin{tabular}[c]{@{}l@{}}Appraise {[}M{]}\\ Artisan (Choose one) {[}M{]} \\ Forgery {[}M{]} \\ Knowledge (Choose one) {[}M{]}\\ Lock-picking {[}M{]}\\ Profession (Choose one) {[}M{]}\\Trade (Choose one) {[}P{]}\\ Trapping {[}M{]}\end{tabular}}}   \\ \hline
 \rowcolor[HTML]{656565} 
 {\color[HTML]{FFFFFF} \textbf{Efficacy}}    & {\color[HTML]{FFFFFF} \textbf{Body}}       \\ 
 \rowcolor[HTML]{9B9B9B} 
@@ -150,7 +171,7 @@ To further customize your character, you may choose to give them \textbf{Weaknes
 \rowcolor[HTML]{333333} 
 {\color[HTML]{FFFFFF} \textbf{Magic Skills}}  & \cellcolor[HTML]{656565}{\color[HTML]{FFFFFF} \textbf{Awareness}}    \\
 \rowcolor[HTML]{9B9B9B} 
-\multicolumn{1}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{\begin{tabular}[c]{@{}l@{}}Alchemy\\ Artifice \\ Druidism \\ Elementalism\\ Insight\\ Mentalism\\ Necromancy\\ Psychokinesis\\ Reiki\\ Shamanism\\ Summoning\end{tabular}}}                          & \multicolumn{1}{l|}{\cellcolor[HTML]{9B9B9B}\textbf{\begin{tabular}[c]{@{}l@{}}Animal Handling {[}M{]}\\ Fast Talk {[}M{]}\\ First Aid {[}M{]}\\ Magic Sense {[}P{]}\\ Navigation {[}M{]}\\ Perception {[}P{]}\\ Pilot (Choose One) {[}M{]}\\ Pocket-Picking {[}P{]}\\ Scrutiny {[}M{]}\\ Seduce {[}M{]}\\ Tracking {[}P{]} \\ Weather Sense {[}M{]}\end{tabular}}} \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{\begin{tabular}[c]{@{}l@{}}Alchemy\\ Artifice \\ Druidism \\ Elementalism\\ Insight\\ Mentalism\\ Necromancy\\ Psychokinesis\\ Reiki\\ Shamanism\\ Summoning\end{tabular}}}                          & \multicolumn{1}{l|}{\cellcolor[HTML]{9B9B9B}\textbf{\begin{tabular}[c]{@{}l@{}}Animal Handling {[}M{]}\\ First Aid {[}M{]}\\ Magic Sense {[}P{]}\\ Navigation {[}M{]}\\ Perception {[}P{]}\\ Pilot (Choose One) {[}M{]}\\ Pocket-Picking {[}P{]}\\ Scrutiny {[}M{]}\\ Tracking {[}P{]} \\ Weather Sense {[}M{]}\end{tabular}}} \\ \hline
 \end{tabular}
 \end{table}
 
@@ -234,16 +255,6 @@ Whenever a character would search their breadth of knowledge for a particular fa
 \subsubsection{Lock-picking [M]}
 This skill is used by characters in order to open locked doors and containers. A character should make a check against their Lock-picking rating for each tumbler in the lock. Any level of success means that the character has successfully set the pin in that tumbler. A Green success means that this process took 1 minute, Yellow 45 seconds, Red 30 seconds, and Black 10 seconds (or lower, at the referee's discretion). A single failure simply means that the character must try to set that pin again. Two failures in a row resets all the pins that had been set, forcing the character to start picking the lock over again. If the setting supports this, three failures in a row triggers an external alarm of some sort, possibly alerting nearby characters.
 
-\subsubsection{Persuasion [M]}
-This skill is used in order to convince a character (usually an NPC) to take an action that they normally wouldn't be inclined to, or to permanently change their viewpoint on a particular matter. A character usually refuses to take an action because of material, moral, or mortal concerns. 
-
-Convincing a character to take an action that would cause them a small material loss will take a Green success, whereas an action that would incur a greater loss of wealth or other possessions would take a Yellow or Red success, depending on the magnitude of the cost. A Black success would only be required to convince a character to take an action that would cause them to lose the entirety of their wealth. 
-
-Convincing a character to take an action that is against the tenets of their culture or religion might require anywhere from a Green to Black success, depending on the fervency of their beliefs, and the level of taboo that particular action holds. Convincing a zealot to make even a small slight against their god might take a Black success, while convincing a casual believer to condemn themselves to damnation might take a Red success. Cultural norms are usually easier to get a character to ignore, and so a Black success would likely only be required for something as grave to them as murder is to most cultures.
-
-Convincing a character to take an action that would put themselves or a family member in mortal danger might take a Red or Black success, depending on how assured their destruction seems. Convincing them to put a stranger in mortal danger might take a Yellow or Red success, also depending on how assured their destruction seems. 
-If a player roleplays their speech to the character particularly well, the referee may decide to lower the required level of success, at their discretion. Also at the referee's discretion, this skill may be checked against in order to move a crowd with a speech.
-
 \subsubsection{Profession [M]}
 This skill is for characters who wish to pursue a career in a more "learned" field, such as Education (educating others), Mathematics, Engineering, Architecture, Surgery, Butchery, etc... A character may have multiple instances of the Profession skill for each intellectual pursuit they wish to follow. Of course, they must allocate points to each of these skills separately in order to increase their ratings. 
 
@@ -253,7 +264,7 @@ As Surgery falls under this skill, please see the chapter entitled \textbf{Comba
 \subsubsection{Trade [P]}
 This skill represents a character's knowledge of and ability in a tradeskill, such as Woodworking, Carpentry, Plumbing (if setting-appropriate), Blacksmithing, etc... Professions that fall under this skill's purview are those that are typically considered "blue-collar."  A character may have multiple instances of the Trade skill for each trade they wish to pursue. Of course, they must allocate points to each of these skills separately in order to increase their ratings. 
 
-\subsubsection{Trapping}
+\subsubsection{Trapping [M]}
 This skill is used by characters who wish to construct and lay traps. This skill also represents a character's knowledge and intuition of where best to lay traps. This skill can be used to construct or detect outdoor traps for creatures up to human size. Spike pits, snares, and net traps fall under the umbrella of this skill. Indoor or mechanical traps are not governed by this skill, which would more likely fall under Engineering (a subset of Profession).
 
 If the trap is intended to catch unintelligent prey, the referee makes a check against the character's Trapping rating, and they catch some sort of prey on any degree of success. The quality and/or quantity of prey increases as the level of success gets greater. 
@@ -299,16 +310,13 @@ This skill is used by a character to train and command animals. This skill is mo
 
 A character with this skill can rear an animal from birth, training it for any sort of purpose they wish (as long as the referee feels that purpose is not too complex for its intelligence). This training takes a period of one year for the creature to obey without fault or hesitation. This training can occur as the character travels on adventures, as long as the creature accompanies the character. 
 
-\subsubsection{Fast Talk [M]}
-This skill is perfect for characters who wish to master the art of the grift. This skill is used by a character to convince another character of a fact that they would not otherwise believe to be true. A character who has been duped by a successful use of the Fast Talk skill will realize the deception after 10+1d10 minutes. The level of success require to successfully swindle another character depends on the unbelievability of the lie, at the referee's discretion. The difficulty can also be lowered one step if the character has role-played their attempt particularly well, also at the referee's discretion. 
-
 \subsubsection{First Aid [M]}
 This skill is used by characters to quickly heal minor wounds that they or other characters have incurred during their adventures. Please see the chapter on Combat to read more about recovering from damage.
 
 \subsubsection{Magic Sense [P]}
 This skill is used by characters who, by some means or another (most likely due to some physical mutation or knowledge of telltale physical clues), are able to identify magical effects and magic users themselves. A character with points in this skill will be able to detect magical effects or objects at a distance of 10 feet * their rating in this skill. Additionally, a character may make a check against this skill in order to determine if another character has any magical abilities. A Black success can detect a character with the tiniest vestige of magic (a rating of 1 in a single magical skill), whereas a Yellow success can detect a character with a rating of 5 or higher in a single magical skill, Red can detect a character with a rating of 9 or higher, and Green  can detect a character with a rating of 15 or higher in a single magical skill or a general Magical rating of 1 or higher. A character using this skill simply knows that something is magical, they have no knowledge (through of this skill) of the nature or strength of that magic. 
 
-\subsubsection{Navigation}
+\subsubsection{Navigation [M]}
 This skill allows characters to find their bearings while traveling. The level of success required to successfully reach a destination is determined by the number of known landmarks along the way and how cloudy the sky is (whether the sun is visible if traveling by day or an appropriate number of stars is visible if traveling by night). This skill can also be used to determine which direction the character is currently facing at night (a trivial task during the day if the sun is visible, impossible by use of this skill otherwise). To gain their bearings at night, a character must simply make a check against their Navigation rating at any level of success. Otherwise, on a failure, the character mistakenly believes they are going the direction they desire. The referee randomly determines which direction they are actually traveling.
 
 \subsubsection{Perception [P]}
@@ -338,9 +346,6 @@ This skill represents the character's ability to search for clues, find hidden o
  The player should make a check against the character's Scrutiny rating, noting a 1, 2, 3, or 4 for a Green, Yellow, Red, or Black success, respectively. Subtract this number from that representing the difficulty of the search. If the difficulty is now 0 or lower, the search was successful. Else, the character may continue making checks in this manner until the difficulty has been reduced to 0 or lower, at which point they have found the clue. Each check represents 1 + 1d4 minutes passing as the character searches for the clue. Of course, at the referee's discretion, an event that prevents the character from continuing to search may happen at any time, and so the passage of time should be calculated between each resolution check. 
 
 If a character wishes to find a hidden character or object, or discover a forgery, the process is very similar to that of finding a clue, the only difference being that the difficulty is replaced with a \textbf{Hide Score} or \textbf{Forgery Score}, as appropriate. Also, in the case of discovering forgeries, each check represents 1+1d4 hours of Scrutiny, rather than minutes. 
-
-\subsubsection{Seduce [M]}
-This skill is used by a character to use their appearance and wiles to get a character to lower their guard or act in a manner that may get them into legal or personal trouble afterwards. A character cannot seduce another character that is not normally attracted to their gender or race, and they cannot use Seduce to get them to do something they would never possibly do otherwise. A character requires a Green success to Seduce a character that is already friendly towards them, a Yellow success to seduce an acquaintance, a Red success to seduce a stranger, and Black success to Seduce someone that dislikes them. Someone who has a deep personal hatred for the character or is currently in combat with the character cannot be seduced by them.
 
 \subsubsection{Tracking [P]}
 Tracking is the art of finding and following a trail left behind by some sort of of quarry, whether human or animal. When a character wishes to follow the trail left behind by another character, they must make a check against their Tracking Skill. Any level of success means they have found some sort of trail they can follow.
@@ -388,7 +393,7 @@ A character can use Artifice to imbue crafted objects with magical effects. They
 		\item{ \small A child-sized Golem that slowly moves light objects from one place to another [G]}
 		\item{ \small An object that permanently casts off a dim light [G]}
 		\item{ \small An object that glows in the immediate presence of a particular creature [Y]}
-		\item{ \small A ring that gives a +1 to a single soft skill [R]}
+		\item{ \small A ring that gives a +1 to a single soft skill [Y]}
 		\item{ \small A weapon that always adds +2 to its wielder's attack roll [R]}
 		\item{ \small Armor that provides a +2 against a specific damage type (like piercing) [R]}
 	\end{itemize}
@@ -401,7 +406,7 @@ A character can use Artifice to imbue crafted objects with magical effects. They
   		\item{ \small Making a single piece of armor provide +1 against a specific damage type for 1+1d4 turns [G]}
   		\item{ \small Making a single weapon add +1 to its wielder's Attack Bonus for 2+1d6 turns [Y]}
   		\item{ \small Making all nearby swords sharper, adding +1 to their wielders' attack rolls for 1+1d4 turns [R]}
-  		\item{ \small Imbuing a weapon with fire, adding a chance to set enemies ablaze for 1+1d4 turns [R]}
+  		\item{ \small Imbuing a weapon with fire, causing it to set enemies ablaze for 1+1d4 turns upon a successful attack [R]}
 	\end{itemize}
 Black successes could cause effects similar to those above (in or out of combat), but at greater magnitudes, left to the referee's discretion.
 
@@ -437,13 +442,13 @@ Druidism is borne of a spellcaster spending much time in nature, communing with 
 \subsubsection{Elementalism}
 An Elementalist is a spellcaster that has attained mastery over the  wild forces that shape the world: Earth, Wind, Fire, and Water. These powers may be the consequence of pacts made with ancient Elemenals, the product of years of academic study, or simply the result of sheer force of will. No matter its source, an Elementalist's knowledge is most often used to wreak terrible havoc both unto their enemies and the environment around them. 
 
-An Elementalist of average power must normally be in the presence of an element in order to bend it to their will. For example, if they wished to set an enemy alight, they would normally have to be near an open flame. An elementalist can attack an enemy within a range of 10 feet for every 5 ranks they have in this skill. To make a simple attack using elementalism, a character can declare the element they wish to use, so long as there is a source. They must then make a check against their Elementalism skill, inflicting a wound based on the level of success as if it were any other type of attack. For ranged attacks, they must roll on the  random body location chart like any other missile attack.
+An Elementalist of average power must normally be in the presence of an element in order to bend it to their will. For example, if they wished to set an enemy alight, they would normally have to be near an open flame. An elementalist can attack an enemy within a range of 10 feet, plus and additional 10 feet for every 5 ranks they have in this skill. To make a simple attack using elementalism, a character can declare the element they wish to use, so long as there is a source. They must then make a check against their Elementalism skill, inflicting a wound based on the level of success as if it were any other type of attack. For ranged attacks, they must roll on the  random body location chart like any other missile attack.
 
 \textbf{Example Elementalism Effects}:
 	\begin{itemize}
 		\setlength{\itemsep}{0cm}%
   		\setlength{\parskip}{0cm}%
-		\item{ \small Erect a small wall sufficient to protect one character [G]}
+		\item{ \small Erect a small earthen wall sufficient to protect one character [G]}
 		\item{ \small Build an icy staircase or ladder to a 20-foot height [Y]}
 		\item{ \small Conjure high winds in a 15-foot area, giving a -2 penalty to incoming missile attacks [R]}
 		\item{ \small Cover a typical building in flames with a Fire Rating of 25  [B]}
@@ -960,7 +965,7 @@ Like all skills, Magical Skills require a cost of 5 Skill Points to learn after 
 
 All Magic Skills require a 6-month period of study. The character must spend every day learning the Magic Skill with their tutor. After this period, the character has a rating of 1 that Magic Skill and may increase it in the same manner as any other skill: spending a Skill Point earned at the end of a session or campaign. Only one Magic Skill may be learned at a time. Once a character acquires a new Magic Skill, they must acquire a new Mental or Magical Weakness
 
-If the tutor and the character wish, the character may travel or adventure while studying with their tutor, so long as the they spend some time each day studying the desired Magic Skill. Characters studying a Magic Skill in this way must spend 1/3rd more time studying their Magic Skill. That means, a character studying a Magic Skill on the go must spend 6 months + 3 additional months studying, for a total of 12 months. 
+If the tutor and the character wish, the character may travel or adventure while studying with their tutor, so long as the they spend some time each day studying the desired Magic Skill. Characters studying a Magic Skill in this way must spend 1/3rd more time studying their Magic Skill. That means, a character studying a Magic Skill on the go must spend 6 months + 2 additional months studying, for a total of 8 months. 
 
 Lastly, a character that has spent time studying a Magic Skill under a tutor may gain a \textbf{Special} in that Magic Skill. The section "Training" in the chapter \textbf{Character Advancement \& Time Management} has more information on Specials, but they are essentially personalized specialties that a character develops while mastering a skill. This can take the form of a +3 to the Magic Skill in a specific environment or time period, or a specific magical effect that the character can manifest at an easier level of success than normal. The Special is unique to the character, but may also exhibit the influence of their tutor, as well. A character that already knows a Magic Skill and wishes to develop a Special for said Magic Skill must spend 3 months with a tutor who knows that Magic Skill. A character can only have one Special for each Magic Skill they possess, but they may seek further training to develop a new Special in place of their old one.
 
@@ -974,7 +979,7 @@ Obviously, not every time a character attempts to manifest a magical effect will
 
 All is not lost, however, as a character may choose to continue attempting to cast the spell, maintaining a partial level of success until they succeed. Each check takes up a single combat turn (or some amount of time at the referee's discretion outside of combat), as normal. Each level of success requires two checks resulting a level of success directly below it. 
 
-For example, in the middle of combat, Bertold is attempting to use Artifice to add +1 to attack bonus of all nearby firearms. This requires a Red success. On his first turn, he only achieves a Green success. He chooses to continue the same spell until he succeeds. On his next turn, he gets a Yellow success. He now has a Green and a Yellow success, but no Red success, so the spell is not successful. On his third turn, he gets another Green success. Two Green successes make another Yellow success, and two Yellow success make a Red success. The spell is finally cast!
+For example, in the middle of combat, Bertold is attempting to use Artifice to add +1 to the attack bonus of all nearby firearms. This requires a Red success. On his first turn, he only achieves a Green success. He chooses to continue the same spell until he succeeds. On his next turn, he gets a Yellow success. He now has a Green and a Yellow success, but no Red success, so the spell is not successful. On his third turn, he gets another Green success. Two Green successes make another Yellow success, and two Yellow success make a Red success. The spell is finally cast!
 
 If a magical effect requires the expenditure of reagents, the character must spend 25\% more of the reagent for each additional check against their Magical Skill. If they run out of the reagent or lose contact with a required spell focus, they cannot make additional checks and all progress towards casting the spell is lost. Additionally, if a character's concentration is broken, they lose all progress towards casting the spell. A character doing Extended Casting in combat that suffers a wound must make a Willpower check. On a failure, they lose all progress towards casting the spell. 
 
@@ -1546,5 +1551,37 @@ This appendix contains multiple renditions of the resolution chart, as there has
 \end{tabular}
 \end{table}
 
+\chapter{Character Sheet}
+
+\paragraph{The pages below contain a suggested character sheet on which you can write the details of your character's backstory, make a note of their skills, and keep track of their progress throughout their adventures.}
+\newpage
+
+\centering
+\begin{tabularx}{\textwidth}{+l"X"l"X=}
+\thickhline
+\textbf{NAME} &  & \textbf{PLAYER} &  \\ \thickhline
+\end{tabularx}
+\begin{tabularx}{\textwidth}{+l">{\setlength\hsize{0.1\hsize}\centering}X"l">{\setlength\hsize{0.25\hsize}\centering}X"l">{\setlength\hsize{0.25\hsize}\centering}X"l">{\setlength\hsize{1.4\hsize}\centering}X=}
+\thickhline
+\textbf{GENDER} & & \textbf{HEIGHT} & & \textbf{WEIGHT} & & \textbf{HOMELAND} & \\ \thickhline
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\begin{tabularx}{\textwidth}{+>{\centering\arraybackslash}X=}
+\thickhline
+\textbf{THE STORY BEGINS} \\ \thickhline
+  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt} \\ \rule{0.95\textwidth}{.1pt} \\ \\
+\thickhline
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\begin{tabularx}{\textwidth}{+>{\centering\arraybackslash}X=}
+\thickhline
+\textbf{NOTES} \\ \thickhline
+  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt} \\ \rule{0.95\textwidth}{.1pt} \\ \\
+\thickhline
+\end{tabularx}
 
 \end{document}
