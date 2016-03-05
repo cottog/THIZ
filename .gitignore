@@ -3,3 +3,7 @@ THIZ.log
 THIZ.toc
 THIZ.synctex.gz
 THIZ.out
+table.synctex.gz
+*.aux
+*.log
+char_sheet.synctex.gz

@@ -13,6 +13,7 @@
 \usepackage{graphicx}
 \setcounter{secnumdepth}{0}
 \makeatletter
+\newcommand{\comment}[1]{}
 \renewcommand{\@dotsep}{10000}
 
 %thick horizontal line for tables 
@@ -47,7 +48,7 @@
 \maketitle
 
 \pagenumbering{gobble}
-\paragraph{As the subtitle suggests, this work is inspired by ZeFRS, a role-playing system that is adapted from an original body of rules written by Dave "Zeb" Cook. This rulebook has been written and compiled by Big Tex} 
+\paragraph{As the subtitle suggests, this work is inspired by ZeFRS, a role-playing system that is adapted from an original body of rules written by Dave "Zeb" Cook. This rulebook has been written and compiled by cottog.} 
 
 \paragraph{The author would like to extend a great thanks to Zeb Cook, as well as the author of ZeFRS, Mark Krawec. Additional thanks are due to everyone else involved in the ZeFRS project: \\}
 
@@ -85,8 +86,6 @@ Spinachcat
 \paragraph{The author was not personally involved in the ZeFRS project and lays no claims of ownership to said body of work. The same can be said for the original work by Zeb Cook. Parts of this work, most especially the conflict resolution system and certain hazard rules are taken from ZeFRS itself. The author feels many other areas of the ZeFRS project have been modified enough to warrant a distinct publication. \\ \\
 This work may be freely distributed as long as it remains complete and intact, which includes this credits page. The text of this work is designated as "copyleft," which means it can be used, modified, and reproduced at no cost. It would be appreciated, however, if credit would be given to the original author, Dave "Zeb" Cook, and those involved in the ZeFRS project.}
 
-\paragraph{The author would like to extend a heartfelt thanks to Dalton Burchardt for providing much-needed editing.}
-
 \tableofcontents
 
 \chapter{Introduction}
@@ -97,17 +96,17 @@ While THIZ was inspired by a set of rules intended for a Sword \& Sorcery role-p
 
 Many people reading this rulebook likely already know what a role-playing game is. For those who are net yet part of this fortunate group, a role-playing game is a shared narrative, in which all participants have an opportunity (and perhaps an obligation) to tell the story as it unfolds. Each character has a role not only in the party but in 
 the world as a whole. Each player's actions, reactions to events, and interactions with non-player characters (NPCs for the uninitiated) coalesce to form a living world, a compelling backdrop for a grand adventure (or series of adventures). \\
-THIZ fits into this picture by adding an element of order and providing a means to not only define each character but also their ability to act upon the world around them. This rulebook provide a means for the referee (sometimes referred to as the Game Master) to arbitrate contests or conflicts between different characters. The Referee is the player who tells most of the story, providing the backdrop and setting the stage for the other players. Each player is in control of one or more characters, who act as their avatars in the game. 
+THIZ fits into this picture by adding an element of order and providing a means to not only define each character but also their ability to act upon the world around them. This rulebook provides a means for the Referee (sometimes referred to as the Game Master) to arbitrate contests or conflicts between different characters. The Referee is the player who tells most of the story, providing the backdrop and setting the stage for the other players. Each other player is in control of one or more characters, who act as their avatars in the game. 
 
 \section*{Requisite Supplies}
 
-You'll need a referee and at least one other player. A pencil and paper will be useful, as will the character sheet included at the end of this book. Additionally, you will need to be able to randomly generate a number between 1 and 100. This is normally achieved using a pair of ten-sided dice, often referred to as a d100, or percentile dice.  This set of dice typically has one die with numbers from 10 to 100, by tens, and one die that ranges from 0 to 9, but alternately you could use two dice with a similar range of numbers, as long as they are of a different color, and you consistently designate one color to serve as one part of the percentage. Finally, you will need a copy of the resolution table that is included in this book. This is used to resolve any conflicts or contests between characters. Once a d100 has been rolled and a random number generated, this number will be used in conjunction with the resolution table to determine the level of success of a character's actions. Enough talk. Let's get to the game!
+You'll need a Referee and at least one other player. A pencil and paper will be useful, as will the character sheet included at the end of this book. Additionally, you will need to be able to randomly generate a number between 1 and 100. This is normally achieved using a pair of ten-sided dice, often referred to as a d100, or percentile dice.  This set of dice typically has one die with numbers from 10 to 100, by tens, and one die that ranges from 0 to 9, but alternately you could use two dice with a similar range of numbers, as long as they are of a different color, and you consistently designate one color to serve as one part of the percentage. Finally, you will need a copy of the resolution table that is included in this book. This is used to resolve any conflicts or contests between characters. Once a d100 has been rolled and a random number generated, this number will be used in conjunction with the resolution table to determine the level of success of a character's actions. Enough talk. Let's get to the game!
 
 \mainmatter
 \pagenumbering{gobble}
 
 \chapter{Character Creation}
-Every player in THIZ needs a character, through which they interact with the other players and the referee.
+Every player in THIZ needs a character, through which they interact with the other players and the Referee.
 
 \section{What Exactly is a \emph{Character?}}
 As you may have guessed, this chapter intends to outline the process of creating a character. In order to create a character, it is necessary to understand what exactly defines a character in the world of THIZ. Characters in THIZ have a name and a homeland, both of which are mostly fluff; and a set of skills, which defines the limits of what they can do.
@@ -120,38 +119,38 @@ A Rating of 0 in a Skill denotes average human ability in that skill. A Rating o
  \newpage
 \begin{multicols}{2}
 \section{Creating a Character}
-Usually a character begins with a concept. Would you like to play as a taciturn warrior who charges into the battlefield wielding two spiked shields, bashing his enemies until either he or they stop moving? A fast-talking necromancer with a weakness for drink and a fear of the sun? An unusually short archer with a seething hatred for the fair-skinned folk of \emph{Dwyrain}?  Coming up with a basic concept can sometimes be the most difficult part of character creation. Sometimes it may be easier to choose which skills you'd like your next character to have and come up with the concept later, but establishing a back-story for your character is an integral step in the character creation process. It may not be very fun for the other players if they have to adventure with "Guard \#12." Record this back-story in the "The Story Begins" section of your character sheet. The following three sections will help you to flesh out this section.
+Usually a character begins with a concept. Would you like to play as a taciturn warrior who charges into the battlefield wielding two spiked shields, bashing his enemies until either he or they stop moving? A fast-talking necromancer with a weakness for drink and a fear of the sun? An unusually short archer with a seething hatred for the fair-skinned folk of \emph{Dwyrain}?  Coming up with a basic concept can sometimes be the most difficult part of character creation. Occasionally, it may be easier to choose which skills you'd like your next character to have and come up with the concept later, but establishing a back-story for your character is an integral step in the character creation process. It may not be very fun for the other players if they have to adventure with "Guard \#12." Record this back-story in the "The Story Begins" section of your character sheet.
 
 \subsection{Your Character's Name}
-Coming up with a name for your character is also an important step in creating a character. As your character's fame (or infamy) grows, their name will often precede them, spreading across the land with tales of their exploits and derring-do. As such, it would be a good idea to ensure that the name is enjoyable to you and fits into the setting of your campaign. Often, a character with a single name and an eponym is sufficient. If you need inspiration, as either a player or referee, \emph{Gary Gygax's Extraordinary Book of Names} is a great resource.
+Coming up with a name for your character is also an important step in creating a character. As your character's fame (or infamy) grows, their name will often precede them, spreading across the land with tales of their exploits and derring-do. As such, it would be a good idea to ensure that the name is enjoyable to you and fits into the setting of your campaign. Often, a character with a single name and an eponym is sufficient. If you need inspiration, as either a player or Referee, \emph{Gary Gygax's Extraordinary Book of Names} is a great resource.
 
 \subsection{Homeland}
 Your character's homeland is the place of their birth. This will affect the way they look, their customs, and their native tongue. Their homeland may also restrict the skills they start the game with. A character born in the capital city of a very industrialized nation may not have any need to learn the arts of Tracking, for example. 
 
 The homeland of your character is determined as much by the physical location of their birth as by the heritage(s) of their parents. 
 
-Your character is automatically proficient in the common language of their homeland, as well as any one language which their parents use to communicate. They can speak both of these languages, but they do not necessarily have to be proficient in reading or writing either of them. At the referee's discretion, one of these languages may be a sort of \emph{lingua franca} used by all of the neighboring nations. 
+Your character is automatically proficient in the common language of their homeland, as well as any one language which their parents use to communicate. They can speak both of these languages, but they do not necessarily have to be proficient in reading or writing either of them. At the Referee's discretion, one of these languages may be a sort of \emph{lingua franca} used by all of the neighboring nations. 
 
 \subsection{Parents}
-Your character should have at least one parent or legal guardian, and while this book may refer to parents in the plural, it is perfectly acceptable for a character to have a single parent. Even if it's simply the matron (or patron) of a rural orphanage, at some point your character had someone else to care for or mentor them. Decide on a name for your character's parents, as well as their careers. Careers can be based on any of the skills listed Chapter 2, or can be some profession of your own invention. Keep in mind that, at character creation, your character will have to invest at least one skill point in a skill that represents one of their parent's careers. This is meant to represent the career path that your character would have chosen had they not heeded the call of adventure. As such, if their back-story dictates that they have some sort of mentor that isn't one of their parents, a skill may be chosen to represent that person's career.
+Your character should have at least one parent or legal guardian, and while this book may refer to parents in the plural, it is perfectly acceptable for a character to have a single parent. Even if it's simply the matron (or patron) of a rural orphanage, at some point your character had someone else to care for or mentor them. Decide on a name for your character's parents, as well as their careers. Careers can be based on any of the skills listed in Chapter 2, or can be some profession of your own invention. Keep in mind that, at character creation, your character will have to invest at least one skill point in a skill that represents one of their parents' careers. This is meant to represent the career path that your character would have chosen had they not heeded the call of adventure. As such, if their back-story dictates that they have some sort of mentor that isn't one of their parents, a skill may be chosen to represent that person's career.
 
-Now that you've finished choosing a name, homeland, and some details regarding your character's parents, you can fill in the section on your character sheet that reads "The Story Begins."
+Once you've finished choosing a name, homeland, and some details regarding your character's parents, you can fill in the section on your character sheet that reads "The Story Begins."
 
 \section{Your Character's Skills}
-Skills are the real meat of your character. They define the sum of your character's experiences and knowledge. At character creation, you have 20 skill points to allocate to your character. Each point may be exchanged at a 1:1 ratio to increase your rating in that skill. Each character begins with all skills at a rating of zero. You may allocate points to any skill in the table below as well as any skills that your referee may have added to the skill pool, with the following restrictions:
+Skills are the real meat of your character. They define the sum of your character's experiences and knowledge. At character creation, you have 20 Skill Points to allocate to your character. These points are to be allocated to your character's Skills, and each point spent in a Skill increases that Skill's rating by 1. Every character begins with all Skills at a rating of zero. You may allocate points to any Skill in the table below as well as any Skills that your Referee may have added to the Skill pool, with the following restrictions:
 	\begin{itemize}
-		\item{ \small You may allocate no more than 5 points on any one skill}
-		\item{ \small You must allocate at least one point to a skill representing a parent or mentor's profession}
-		\item{ \small You must not allocate points to any skills which your referee has deemed incompatible with the setting}
+		\item{ \small You may allocate no more than 5 points on any one Skill}
+		\item{ \small You must allocate at least one point to a Skill representing a parent or mentor's profession}
+		\item{ \small You must not allocate points to any Skills which your Referee has deemed incompatible with the setting}
 \end{itemize}	
 
-There is an additional restriction on choosing Magical Skills: for each unique magical skill your character begins play with, you must choose a \textbf{Weakness} for that character to also possess. Weaknesses incurred for this reason should be chosen from the Mental or Magical Weaknesses. More information on weaknesses can be found in Chapter 3.
+There is an additional restriction on choosing Magical Skills: for each unique Magical Skill your character begins play with, you must choose a \textbf{Weakness} for that character to also possess. Weaknesses incurred for this reason should be chosen from the Mental or Magical Weaknesses. More information on weaknesses can be found in Chapter 3.
 
-When choosing skills, you should also keep in mind that for your character to learn a new skill after character creation, you must spend 5 skill points to get a rating of 1 in that skill. To learn more about each of these skills, refer to Chapter 2, where each is described in detail.
+When choosing Skills, you should also keep in mind that for your character to learn a new Skill after character creation, you must spend 5 Skill points to get a rating of 1 in that Skill. To learn more about each of these Skills, refer to Chapter 2, where they are described in detail.
 
-To further customize your character, you may choose to give them \textbf{Weaknesses} or \textbf{Quirks}. These are described in detail in Chapter 3. Choosing a Weakness (beyond those you may have incurred for learning a magical skill) grants you 5 more skill points to allocate to your character. Alternatively, adding a Quirk to your character costs 5 skill points. As you may have guessed, Weaknesses negatively affect your character: they may restrict what other skills they may learn or impose penalties under certain conditions. Quirks, on the other hand, may provide small perks or skill boosts when making certain resolution checks.
+To further customize your character, you may choose to give them \textbf{Weaknesses} or \textbf{Quirks}. These are described in detail in Chapter 3. Choosing a Weakness (beyond those you may have incurred for learning a magical skill) grants you 5 more Skill points to allocate to your character. Alternatively, adding a Quirk to your character costs a number of Skill points, depending on the quirk. As you may have guessed, Weaknesses negatively affect your character: they may restrict what Skills they may learn or impose penalties under certain conditions. Quirks, on the other hand, may provide small perks or Skill boosts when making certain resolution checks.
 \end{multicols}
-\newpage
+
 \section{Table of Skills}
 
 
@@ -176,19 +175,18 @@ To further customize your character, you may choose to give them \textbf{Weaknes
 \end{table}
 
 \section{General Skill Ratings}
-In addition to the actual skill ratings your character possesses, they also have three general skill ratings: \textbf{Physical}, \textbf{Mental}, and \textbf{Magical}. These scores are calculated by taking your character's rating in the appropriate skills, summing these ratings, and dividing the result by ten, rounding down. The skills in the above chart marked with a [P] contribute to your character's Physical rating, whereas those marked with a [M] contribute to their Mental rating. All Magic Skills contribute to their Magical rating. 
+In addition to the actual skill ratings your character possesses, they also have three General Skill ratings: \textbf{Physical}, \textbf{Mental}, and \textbf{Magical}. These scores are calculated by taking your character's rating in the appropriate Skills, summing these ratings, and dividing the result by ten, rounding down. The Skills in the above chart marked with a [P] contribute to your character's Physical rating, whereas those marked with a [M] contribute to their Mental rating. All Magic Skills contribute to their Magical rating. 
 
-\onecolumn
 \section{Starting Equipment}
-A character in THIZ typically starts with very little equipment. They are just beginning their life of adventure, often setting out from home to seek better fortunes elsewhere. A character typically starts play with a single weapon, 1d8 gold coins, and two pieces of mundane equipment. This equipment could be anything from a piece of armor, to a length of rope (100 feet) and a grapple, to a set of tailor's tools, to a small horse or mule, or anything else of that sort. 
+A character in THIZ typically starts with very little equipment. They are just beginning their life of adventure, often setting out from home to seek better fortunes elsewhere. A character typically starts play with a single weapon, 1d8 gold coins, and two pieces of mundane equipment. This equipment could be anything from a piece of armor to a length of rope (100 feet) and a grapple, a set of tailor's tools, a small horse or mule, or anything else of that sort. 
 
 \section{Luck}
-Every player character in THIZ is destined for greatness. As such, fate itself may intervene before the character can come to an untimely end. Of course, the character can forge their own destiny, and, at times, it seems their whims dictate the events that unfold around them.  At character creation, the referee secretly rolls 1d10 for each player character. This number should not be revealed to the player, but the referee should remember this number for the duration of the campaign. To see how Luck can be used during play, please see the appropriate section in the chapter on \textbf{Character Advancement and Time Management}.
+Every player character in THIZ is destined for greatness. As such, fate itself may intervene before the character can come to an untimely end. Of course, the character can forge their own destiny, and, at times, it seems their whims do indeed dictate the events that unfold around them.  At character creation, the Referee secretly rolls 1d10 for each player character. This number should not be revealed to the player, but the Referee should remember this number for the duration of the campaign. To see how Luck can be used during play, please see the appropriate section in the chapter on \textbf{Character Advancement and Time Management}.
 
 \chapter{Skills}
-This chapter discusses the various skills available to your character in greater detail. Those marked with an [M] or [P] contribute to a character's Magical or Physical general skill rating. All Magic Skills contribute to their Magical general rating.
+This chapter discusses the various Skills available to your character in greater detail. Those marked with an [M] or [P] contribute to a character's Magical or Physical General Skill rating. All Magic Skills contribute to their Magical general rating.
 
-With the exception of Magic Skills, which cannot be used unless a character has learned them, a character makes resolution checks using the higher between their rating in the appropriate skill or that skill's governing general rating (Physical or Mental). For example, a character with no rating in Unarmed Combat and Physical rating of 4 makes resolution checks for Unarmed Combat against a base rating of 4 (situational modifiers may affect this rating as any other). A character attempting to make a check against an Artisan, Trade, or Profession skill for which they must use their General Rating (they are untrained in said Skill) takes a -5 to that General Rating for their lack of specialized training or knowledge.
+With the exception of Magic Skills, which cannot be used unless a character has learned them, a character makes resolution checks using the higher between their rating in the appropriate Skill or that Skill's governing general rating (Physical or Mental). For example, a character with no rating in Unarmed Combat and Physical rating of 4 makes resolution checks for Unarmed Combat against a base rating of 4 (situational modifiers may affect this rating as any other). A character attempting to make a check against an Artisan, Trade, or Profession Skill for which they must use their General Rating (they are untrained in said Skill) takes a -5 to that General Rating for their lack of specialized training or knowledge.
 
 \begin{multicols}{2}
 
@@ -203,7 +201,7 @@ If a character delays their action in combat and wishes to take an action \emph{
 This skill determines a character's movement speed, and is also used by characters to avoid enemy attacks. Movement speed is discussed in the chapter entitled \textbf{Movement}.
 
 \subsubsection{Strength [P]}
-This skill determines how heavy of an object a character can lift, as well as how heavy of a load they can carry on their backs as they travel. A character can lift overhead 100 pounds plus an additional 10 pounds for every point of Strength. A character can lift up to double this amount off the ground. If they are lifting 90\% or more of their maximum load, they move as if they had a Speed rating of 0. They can move in this way for the same amount of time they can Sprint (see the chapter on Movement). Also similar to sprinting, they must rest for 30 minutes if they use up all of this time.  
+This skill determines how heavy of an object a character can lift, as well as how heavy of a load they can carry on their backs as they travel. A character can lift overhead 100 pounds plus an additional 20 pounds for every point of Strength. A character can lift up to double this amount off the ground. If they are lifting 90\% or more of their maximum load, they move as if they had a Speed rating of 0. They can move in this way for the same amount of time they can Sprint (see the chapter on Movement). Also similar to sprinting, they must rest for 30 minutes if they use up all of this time.  
 
 Additionally, characters receive a +1 bonus to melee attack rolls for every 10 full points they have in Strength (1 at 10, 1 at 15, 2 at 20).
 
@@ -216,18 +214,19 @@ Willpower governs a character's ability to resist their internal compulsions and
 \\
 \subsection{Efficacy}
 \subsubsection{Dual-Wield [P]}
-This skill allows a character to use a pair of any two one-handed weapons together in combat, usually attacking with both of them at once (see the chapter entitled Combat). A new instance of this skill must be learned and allocated its own points for each combination of weapons the character wishes to use. The character must also be trained in the use of both weapons. 
+This skill allows a character to use a pair of any two one-handed weapons together in combat, usually attacking with both of them each turn (see the chapter entitled Combat). A new instance of this skill must be learned and allocated its own points for each combination of weapons the character wishes to use. The character must also be trained in the use of both weapons. 
 
 For example, a character can put 3 points into Dual-Wielding [Rapier, Pistol] and 5 points into Dual-Wielding [Falchion, Axe] to get a rating of 3 and 5 in those skills respectively. When taking this skill, the character must list the two weapons such that the weapon they are wielding in their main hand is listed first. A character suffers a -2 penalty for wielding weapons in the wrong hand. A character may declare a spiked piece of armor as part of a weapon combination, if they are trained in its use. 
 
 \subsubsection{Grappling [P]}
 This skill is used by characters when they grapple with or attempt to pin an opponent. Please see the chapter on Combat for more information on grappling.
 
-\subsubsection{Tactics [M]}
+\comment{\subsubsection{Tactics [M]}
 This skill is for characters who wish to direct their ally's actions on the battlefield, informing them how best to defeat their enemies in any situation. Whenever three or more allies are in combat with a specific enemy, a character may use their combat turn to make a check against their Tactics skill. Based on their level of success, each ally in combat with that specific enemy at the time of this check receive a bonus on their next turn on any resolution checks involving combat with that enemy. This bonus is lost at the end of the next turn, and bonuses from multiple Tactics checks do not stack. The magnitude of this bonus ranges from +1 to +4, for Green through Black successes respectively. 
+}
 
 \subsubsection{Unarmed Combat [P]}
-This skill is used by characters when they are attacking an enemy using a part of their body, eschewing the use of any weapons. Attacking in this manner normally cannot damage armored Adversaries. If a character has a Strength rating that is triple the Armor Bonus of the targeted area, however, they can deal damage to an armored Adversary. A character can mitigate this Strength requirement with the use of fist weapons, such as a cestus or spiked gauntlet. See the chapter on \textbf{Combat} for more information regarding Adversaries, as well as Unarmed Combat. 
+This skill is used by characters when they are attacking an enemy using a part of their body, eschewing the use of any weapons. Attacking in this manner normally cannot damage armored Adversaries. If a character has a Strength rating that is triple the Armor Bonus of the targeted area, however, they can deal damage to an armored Adversary (there is no such restriction on damaging armored Mooks). A character can mitigate this Strength requirement with the use of fist weapons, such as a cestus or spiked gauntlet. See the chapter on \textbf{Combat} for more information regarding Adversaries, as well as Unarmed Combat. 
 
 \subsubsection{Weapon Skill [P]}
 This skill is used by a character when they wish to attack or perform maneuvers with a weapon. A new instance of this skill should be chosen for every weapon the character is proficient in, each with its own rating determined by points that have been allocated to it specifically. Armor spikes are considered weapons for the purposes of this skill. Characters wishing to attack with them should allocate points to this skill in order to use them effectively.
@@ -241,19 +240,20 @@ This skill is used to appraise the value of trade goods and the works of artisan
 
 The level of success of this check determines the width of the price range a character may determine for a particular object. A Green success would result in a range that is $\pm$ 20\% of the object's value, Yellow would result in $\pm$ 10\%, Red $\pm$ 5\%, and a Black success would give the object's exact value.
 \subsubsection{Artisan [M]}
-This skill is intended for character's that intend to pursue a more artistic profession. When learning this profession, a character must choose an artistic calling, such as Goldsmithing (making jewelry from gems and precious metals), Silversmithing (making silverware, flatware, hollowware, and other such items from gems and precious metals), Painting, Sculpture etc... A character may have multiple instances of the Artisan skill for each artistic pursuit they wish to follow. Of course, they must allocate points to each of these skills separately in order to increase their ratings. 
+This skill is for characters that intend to pursue a more artistic profession. When learning this profession, a character must choose an artistic calling, such as Goldsmithing (making jewelry from gems and precious metals), Silversmithing (making silverware, flatware, hollowware, and other such items from gems and precious metals), Painting, Sculpture etc... A character may have multiple instances of the Artisan skill for each artistic pursuit they wish to follow. Of course, they must allocate points to each of these skills separately in order to increase their ratings. 
 
 \subsubsection{Forgery [M]}
 This skill governs a character's ability to create forged documents in any language they can read and write. In order for a character to forge a specific document, they must have a copy of that document to reference while creating the document. For each full 4-hour period a character has to work on their forgery, with a minimum of 1 (less than 8 hours) and up to a maximum of 6 (24 hours or more), they may make a resolution check against their Forgery rating. For each check, the player should write down a 1, 2, 3, or 4 for a Green, Yellow, Red, or Black success, respectively. After all checks have been made, the player should sum the numbers they have written down. This sum is the forged document's \textbf{Forgery Score}. A Forgery Score of 0 means the character has failed; otherwise, they have successfully created a forgery. The Forgery Score is important if another character attempts to discover the ruse.
 
-A character wishing to create a forgery of the product of a artisan or tradesman, they must have the appropriate Artisan or Trade skill. The process of creating a forgery with one of those skills is identical to that of creating a forgery using this skill.
+A character wishing to create a forgery of the product of a artisan or tradesman must have the appropriate Artisan or Trade skill. The process of creating a forgery with one of those skills is identical to that of creating a forgery using this skill.
+
 \subsubsection{Knowledge [M]}
-This skill represents the character's breadth of knowledge and experience with a subject. When learning this skill, pick any broad topic, such as a particular nation's (or world) history, battlefield tactics, herbalism, literature, etc... A character may have multiple instances of the Knowledge skill, representing their knowledge of different domains. As usual, they must allocate skill points to these skills separately in order to increase their ratings.
+This skill represents the character's breadth of knowledge of and experience with a subject. When learning this skill, pick any broad topic, such as a particular nation's (or world) history, battlefield tactics, herbalism, literature, etc... A character may have multiple instances of the Knowledge skill, representing their knowledge of different domains. As usual, they must allocate skill points to these skills separately in order to increase their ratings.
 
 Whenever a character would search their breadth of knowledge for a particular fact, they may make a resolution check against their Knowledge rating for the topic under which that fact falls. The level of success required to remember a fact is determined by how specialized this particular fact is. For example, if a character wished to remember the minutiae of a particular year in a relatively unknown Classical poet's life, they would be required to make a Black success. At any other level of success, while they may remember something about that author's life or works from that year, they won't recall anything at the level of detail they may have hoped for.
 
 \subsubsection{Lock-picking [M]}
-This skill is used by characters in order to open locked doors and containers. A character should make a check against their Lock-picking rating for each tumbler in the lock. Any level of success means that the character has successfully set the pin in that tumbler. A Green success means that this process took 1 minute, Yellow 45 seconds, Red 30 seconds, and Black 10 seconds (or lower, at the referee's discretion). A single failure simply means that the character must try to set that pin again. Two failures in a row resets all the pins that had been set, forcing the character to start picking the lock over again. If the setting supports this, three failures in a row triggers an external alarm of some sort, possibly alerting nearby characters.
+This skill is used by characters in order to open locked doors and containers. A character should make a check against their Lock-picking rating for each tumbler in the lock. Any level of success means that the character has successfully set the pin in that tumbler. A Green success means that this process took 1 minute, Yellow 45 seconds, Red 30 seconds, and Black 10 seconds (or lower, at the Referee's discretion). A single failure simply means that the character must try to set that pin again. Two failures in a row resets all the pins that had been set, forcing the character to start picking the lock over again. If the setting supports this, three failures in a row triggers an external alarm of some sort, possibly alerting nearby characters.
 
 \subsubsection{Profession [M]}
 This skill is for characters who wish to pursue a career in a more "learned" field, such as Education (educating others), Mathematics, Engineering, Architecture, Surgery, Butchery, etc... A character may have multiple instances of the Profession skill for each intellectual pursuit they wish to follow. Of course, they must allocate points to each of these skills separately in order to increase their ratings. 
@@ -265,32 +265,31 @@ As Surgery falls under this skill, please see the chapter entitled \textbf{Comba
 This skill represents a character's knowledge of and ability in a tradeskill, such as Woodworking, Carpentry, Plumbing (if setting-appropriate), Blacksmithing, etc... Professions that fall under this skill's purview are those that are typically considered "blue-collar."  A character may have multiple instances of the Trade skill for each trade they wish to pursue. Of course, they must allocate points to each of these skills separately in order to increase their ratings. 
 
 \subsubsection{Trapping [M]}
-This skill is used by characters who wish to construct and lay traps. This skill also represents a character's knowledge and intuition of where best to lay traps. This skill can be used to construct or detect outdoor traps for creatures up to human size. Spike pits, snares, and net traps fall under the umbrella of this skill. Indoor or mechanical traps are not governed by this skill, which would more likely fall under Engineering (a subset of Profession).
+This skill is used by characters who wish to construct and lay traps. This skill also represents a character's knowledge and intuition of where best to lay traps. This skill can be used to construct or detect outdoor traps for creatures up to human size. Spike pits, snares, and net traps fall under the umbrella of this skill. Larger, more complex traps, or those that would could be placed indoors are not governed by this skill; these would most likely fall under Engineering (a subset of Profession).
 
-If the trap is intended to catch unintelligent prey, the referee makes a check against the character's Trapping rating, and they catch some sort of prey on any degree of success. The quality and/or quantity of prey increases as the level of success gets greater. 
+If the trap is intended to catch unintelligent prey, the Referee makes a check against the character's Trapping rating, and they catch some sort of prey on any degree of success. The quality and/or quantity of prey increases as the level of success gets greater. 
 \\
 \\
 \subsection{Body}
 \subsubsection{Acrobatics [P]}
-This is a skill that is used by characters that wish to jump across gaps or over obstacles. This skill would also be used if a character wished to swing from a rope or perform any other such stunts. Please see the chapter entitled \textbf{Movement} for more information regarding Acrobatics.
+This skill is used by characters that wish to jump across gaps or over obstacles. This skill would also be used if a character wished to swing from a rope or perform any other such stunts. Please see the chapter entitled \textbf{Movement} for more information regarding Acrobatics.
 
 A character wishing to long jump may make a resolution check against their Acrobatics skill. For a standing long jump, the character can jump 8, 9, 10, or 11 feet, for Green through Black successes respectively.
-If the character can run at least their jogging distance before attempting the long jump, they can jump 20, 22, 24, or 26 feet, for Green through Black successes respectively.
+If the character can run for a turn before attempting the long jump, they can jump 20, 22, 24, or 26 feet, for Green through Black successes respectively.
 
-A character attempting a vertical jump from standing can reach heights of 32, 34, 36, or 38 inches, for Green through Black successes. A character that can run at least their jogging distance before attempting a high jump can reach a height of 60, 68, 76, or 84 inches for Green through Black successes.
+A character attempting a vertical jump from standing can reach heights of 32, 34, 36, or 38 inches, for Green through Black successes. A character that can run for a turn before attempting a high jump can reach a height of 60, 68, 76, or 84 inches for Green through Black successes.
 \subsubsection{Climbing [P]}
 This skill is used by a character when they are scaling towers or large walls. Any character can climb a short distance, but for a character to successfully climb for an extended period of time over a large distance, they need some knowledge and experience. The chapter on Movement has more information regarding climbing. 
 
 \subsubsection{Sleight of Hand [P]}
-This skill governs the ability of a character to successfully make an object appear or disappear from within one of their pockets. The difficulty required for a character to hide or reveal a particular object successfully depends on the size of the object, according to the referee's discretion. Something discrete like a coin may require only a Green Success, whereas something the size of a human head or larger would require a Black success. Any level of success below the threshold established by the referee means that the item was spotted, at least in passing, by a nearby character that was actively observing the character attempting to use Sleight of Hand. The implications of this observation is up to the referee's discretion. A failure means that the character has dropped the item. 
+This skill governs the ability of a character to successfully make an object appear or disappear from within one of their pockets. The difficulty required for a character to hide or reveal a particular object successfully depends on the size of the object, according to the Referee's discretion. Something discrete like a coin may require only a Green Success, whereas something the size of a human head or larger would require a Black success. Any level of success below the threshold established by the Referee means that the item was spotted, at least in passing, by a nearby character that was actively observing the character attempting to use Sleight of Hand. The implications of this observation is up to the Referee's discretion. A failure means that the character has dropped the item. A character may also attempt to cheat at a game of chance with their Sleight of Hand skill. Any level of success means that their cheating has, so far, gone undetected. 
 
-A character may also attempt to cheat at a game of chance with their Sleight of Hand skill. Any level of success means that their cheating has so far gone undetected. 
 Whenever a character makes a Sleight of Hand check, subtract the highest Perception rating among all the characters who are actively observing the character making the check. 
 
 \subsubsection{Stealth [P]}
-This skill allows a character to attempt to hide from others or move unseen. A character wishing to use stealth to move must make a check against their stealth rating minus the highest Perception rating among all the characters actively searching for them (but not currently looking at them). If they succeed, they may move up to 1, 2, 3, or 4 (for a Green through Black success, respectively) times their walking speed before they must make a stealth check again. On a failure, they have been spotted. A character automatically fails a stealth attempt if they are being directly observed by a character that is searching for them or would immediately reveal their location to someone searching for them. If they are currently being observed, they must first move out of sight before attempting stealth. 
+This skill allows a character to attempt to hide from others or move unseen. A hidden character wishing to move stealthily must make a check against their stealth rating minus the highest Perception rating among all the characters actively searching for them. If they succeed, they may move up to 1, 2, 3, or 4 (for a Green through Black success, respectively) times their walking speed before they must make a stealth check again. On a failure, they have been spotted or otherwise revealed themselves. A character automatically fails a stealth attempt if they are being directly observed by a character that is searching for them or would immediately reveal their location to someone searching for them. If they are currently being observed, they must first move out of sight before attempting stealth. 
 
-If a character is attempting to hide from someone pursuing them, that person doesn't currently have them in sight, they make make a check against their stealth rating to enter a hiding spot, hide an object they are holding, or hide a character that is adjacent to them into a hiding spot of sufficient size that is nearby.
+If a character is attempting to hide from someone pursuing them, and that person doesn't currently have them in sight, they may make a check against their stealth rating to enter a hiding spot, hide an object they are holding, or hide a willing character that is adjacent to them.
 
  For each full one-minute period the character has to attempt to hide, they may make a resolution check against their Stealth skill. They may make a minimum of 1 check (if they have less than two minutes to hide) and a maximum of 6 (they have 6 minutes or more to hide). As the player makes each of these resolution checks, they should write down a 1, 2, 3, or 4 if they achieved a Green, Yellow, Red, or Black success, respectively. After all checks are made, the player should sum these numbers. This sum is the character's \textbf{Hide Score}. A Hide Score greater than 0 means the character has successfully hidden whatever it is they were attempting to hide. A Hide Score of 0 means the character has failed. The Hide Score is important if another character attempts to find the hidden character or object.
 
@@ -300,15 +299,13 @@ See the description of the skills \textbf{Perception} and \textbf{Scrutiny} to l
 Without this skill, a character can only tread water or doggy paddle in the water. In order to move any appreciable distance in the water, or to stay afloat for an extended amount of time, a character must have a rating above 0 in the Swimming skill. Please see the chapter on Movement for more information.
 
 \subsubsection{Throwing [P]}
-This skill is used whenever a character attempts to throw a non-weapon object across any distance. A character can make a check against this skill to throw a 16-pound object 64, 68, 72, or 76 inches on Green through Black successes, respectively. This distance is inversely correlated to the object's weight. If the object were to double in weight, the possible distance it could be thrown would be halved. 
-
-This skill is meant to represent the maximum possible distance a character could throw an object, with ample time to prepare themselves for the throw. If this skill were to be used for combat in an improvised manner, an object of any size can only be thrown a quarter the distance it could normally be thrown.
+This skill is used whenever a character attempts to throw a non-weapon object across any distance. The distance an object can be thrown depends on many factors, especially the weight and shape of the object. It is left to the Referee's discretion to decide how far the object was thrown upon any level of success.
 
 \subsection{Awareness}
 \subsubsection{Animal Handling [M]}
 This skill is used by a character to train and command animals. This skill is most often used to control a mount in abnormal situations. To get a mounted creature to move towards a foe or obstacle that it is terrified of (most usually an exotic or supernatural beast), the character makes a check against their Animal Handling rating. On any level of success, the creature will move towards the foe, but at a maximum rate of 1/4, 1/2, 1, or twice its movement speed, for a Green through Black success, respectively.
 
-A character with this skill can rear an animal from birth, training it for any sort of purpose they wish (as long as the referee feels that purpose is not too complex for its intelligence). This training takes a period of one year for the creature to obey without fault or hesitation. This training can occur as the character travels on adventures, as long as the creature accompanies the character. 
+A character with this skill can rear an animal from birth, training it for any sort of purpose they wish (as long as the Referee feels that purpose is not too complex for its intelligence). This training takes a period of one year for the creature to obey without fault or hesitation. This training can occur as the character travels on adventures, as long as the creature accompanies the character. 
 
 \subsubsection{First Aid [M]}
 This skill is used by characters to quickly heal minor wounds that they or other characters have incurred during their adventures. Please see the chapter on Combat to read more about recovering from damage.
@@ -317,18 +314,18 @@ This skill is used by characters to quickly heal minor wounds that they or other
 This skill is used by characters who, by some means or another (most likely due to some physical mutation or knowledge of telltale physical clues), are able to identify magical effects and magic users themselves. A character with points in this skill will be able to detect magical effects or objects at a distance of 10 feet * their rating in this skill. Additionally, a character may make a check against this skill in order to determine if another character has any magical abilities. A Black success can detect a character with the tiniest vestige of magic (a rating of 1 in a single magical skill), whereas a Yellow success can detect a character with a rating of 5 or higher in a single magical skill, Red can detect a character with a rating of 9 or higher, and Green  can detect a character with a rating of 15 or higher in a single magical skill or a general Magical rating of 1 or higher. A character using this skill simply knows that something is magical, they have no knowledge (through of this skill) of the nature or strength of that magic. 
 
 \subsubsection{Navigation [M]}
-This skill allows characters to find their bearings while traveling. The level of success required to successfully reach a destination is determined by the number of known landmarks along the way and how cloudy the sky is (whether the sun is visible if traveling by day or an appropriate number of stars is visible if traveling by night). This skill can also be used to determine which direction the character is currently facing at night (a trivial task during the day if the sun is visible, impossible by use of this skill otherwise). To gain their bearings at night, a character must simply make a check against their Navigation rating at any level of success. Otherwise, on a failure, the character mistakenly believes they are going the direction they desire. The referee randomly determines which direction they are actually traveling.
+This skill allows characters to find their bearings while traveling. The level of success required to successfully reach a destination should be determined by the Referee,  based on the number of known landmarks along the way and how cloudy the sky is (whether the sun is visible if traveling by day or an appropriate number of stars is visible if traveling by night). This skill can also be used to determine which direction the character is currently facing at night (a trivial task during the day if the sun is visible, impossible by use of this skill otherwise). To gain their bearings at night, a character must simply make a check against their Navigation rating at any level of success. Otherwise, on a failure, the character mistakenly believes they are going the direction they desire. The Referee randomly determines which direction they are actually traveling.
 
 \subsubsection{Perception [P]}
-This skill is used whenever a character needs to quickly spot any feature in their surroundings, such as an approaching character at the top of a hill, an ambusher's elbow poking out of a nearby bush, or the telltale signs of a trap. The level of success required to spot an approaching character or party depends on the size of the party and the distance and environmental conditions between them. It is up to the referee's discretion if a character's check against their Perception check is sufficiently successful to spot the approaching party immediately. 
+This skill is used whenever a character needs to quickly spot any feature in their surroundings, such as an approaching character at the top of a hill, an ambusher's elbow poking out of a nearby bush, or the telltale signs of a trap. The level of success required to spot an approaching character or party depends on the size of the party and the distance and environmental conditions between them. It is up to the Referee's discretion if a character's check against their Perception check is sufficiently successful to spot the approaching party immediately. 
 
 A character may also attempt to use Perception to immediately spot a character or object that they believe is hiding in the room. A character wishing to do so must make a check against their Perception rating. The player should write down a 1, 2, 3, or 4, for a Green, Yellow, Red, or Black success, respectively. If this number exceeds the Hide Score (see the section on \textbf{Stealth}) of the hidden object or character, they have found it. Otherwise, they must resort to use of the Scrutiny skill.
 
-A character can also check against their Perception rating to survey their surroundings for interesting information. The referee should describe their surroundings in greater detail as their level of success increases. 
+A character can also check against their Perception rating to survey their surroundings for interesting information. The Referee should describe their surroundings in greater detail as their level of success increases. 
 
 
 \subsubsection{Pilot [M]}
-This skill governs a character's ability to pilot a craft or vehicle. Upon learning this skill, the character should name a specific class of vehicle, such as schooner, brigandine, or perhaps helicopter or tank in a more technologically advanced setting. For vehicles that the referee decides are sufficiently complicated, a character without the appropriate Pilot skill cannot pilot them whatsoever.
+This skill governs a character's ability to pilot a craft or vehicle. Upon learning this skill, the character should name a specific class of vehicle, such as schooner, brigandine, or perhaps helicopter or tank in a more technologically advanced setting. For vehicles that the Referee decides are sufficiently complicated, a character without the appropriate Pilot skill cannot pilot them whatsoever.
 
 A character may have multiple instances of the Pilot skill for each type of vehicle they wish to be able to pilot. Of course, they must allocate points to each of these skills separately in order to increase their ratings.
 See the chapter entitled Movement to learn more about the specific rules concerning vehicles. 
@@ -341,9 +338,9 @@ A character can attempt to use pocket-picking to place an object small enough to
 Normal failure simply means that the character was not swift enough and could not reach into the other character's pocket. If the player rolls 96-100, however, their pocket-picking attempt was not only unsuccessful, but was also detected by their intended target.
 
 \subsubsection{Scrutiny [M]}
-This skill represents the character's ability to search for clues, find hidden objects, and examine objects or documents to determine their authenticity. If a character wishes to search for a specific clue, they should use this skill.  A character that does not know what they are searching for cannot find it with this skill, and should use Perception to survey their surroundings for anything. To represent the difficulty of finding the clue, the referee should establish an integer, with 1 representing a trivial search and 24 representing a monumental undertaking. This may very well be the \textbf{Hide Score} of someone using the Stealth Skill. See the section on \textbf{Stealth} for more.
+This skill represents the character's ability to search for clues, find hidden objects, and examine objects or documents to determine their authenticity. If a character wishes to search for a specific clue, they should use this skill.  A character that does not know what they are searching for cannot find it with this skill, and should use Perception to survey their surroundings for anything. To represent the difficulty of finding the clue, the Referee should establish an integer, with 1 representing a trivial search and 24 representing a monumental undertaking. This may very well be the \textbf{Hide Score} of someone using the Stealth Skill. See the section on \textbf{Stealth} for more.
 
- The player should make a check against the character's Scrutiny rating, noting a 1, 2, 3, or 4 for a Green, Yellow, Red, or Black success, respectively. Subtract this number from that representing the difficulty of the search. If the difficulty is now 0 or lower, the search was successful. Else, the character may continue making checks in this manner until the difficulty has been reduced to 0 or lower, at which point they have found the clue. Each check represents 1 + 1d4 minutes passing as the character searches for the clue. Of course, at the referee's discretion, an event that prevents the character from continuing to search may happen at any time, and so the passage of time should be calculated between each resolution check. 
+ The player should make a check against the character's Scrutiny rating, noting a 1, 2, 3, or 4 for a Green, Yellow, Red, or Black success, respectively. Subtract this number from that representing the difficulty of the search. If the difficulty is now 0 or lower, the search was successful. Else, the character may continue making checks in this manner until the difficulty has been reduced to 0 or lower, at which point they have found the clue. Each check represents 1 + 1d4 minutes passing as the character searches for the clue. Of course, at the Referee's discretion, an event that prevents the character from continuing to search may happen at any time, and so the passage of time should be calculated between each resolution check. 
 
 If a character wishes to find a hidden character or object, or discover a forgery, the process is very similar to that of finding a clue, the only difference being that the difficulty is replaced with a \textbf{Hide Score} or \textbf{Forgery Score}, as appropriate. Also, in the case of discovering forgeries, each check represents 1+1d4 hours of Scrutiny, rather than minutes. 
 
@@ -354,16 +351,16 @@ A character with training in the Tracking skill may use their knowledge to attem
 
 Characters using the Tracking skill move at a reduced rate of speed due to the additional effort of following or hiding a trail. On a Green success, they can travel at 25\% of their normal rate of movement. This speed increases by 25\% with each additional level of success, up to 100\% on a Black success.
 
-For every full hour a trail is cold, any character wishing to follow it suffers a -1 to their Tracking rating when making the skill check. Weather, terrain, and the number of characters traveling together may also add or subtract from the pursuer's Tracking rating, at the referee's discretion.
+For every full hour a trail is cold, any character wishing to follow it suffers a -1 to their Tracking rating when making the skill check. Weather, terrain, and the number of characters traveling together may also add or subtract from the pursuer's Tracking rating, at the Referee's discretion.
 
 \subsubsection{Weather Sense [M]}
 A character may make a resolution check against their Weather Sense rating to determine the weather conditions for the next 12 hours. A Green success or better will allow them to determine the type of precipitation coming (if any), and a Red success or better will also inform them of the general amount of precipitation (if any). A Yellow success or better will also allow them to determine wind speed and direction. A character may make a Weather Sense check every 6 hours.
 
 \section{Magic Skills}
-Magic skills are placed into their own category since they have utility both inside and outside of battle. Each Magic Skill's description will give a brief summary of the sort of effects that fall under the scope of that skill, as well as a list of example effects and the level of success required to manifest that effect. This level of success will be noted by a [G] for a Green Success, [Y] for Yellow, [R] for Red, and a [B] for Black. Players should note that the stresses of battle are not conducive to intricate spells or rituals, and that magic used in combat generally causes diminished effects for a shorter duration than magic used outside of combat. Players should also keep in mind that checks can be made against a particular Magic Skill in order to identify whether something is the effect of that magic skill. Please see the Chapter entitled \textbf{Magic} in order to learn more about how magic is used both in and out of combat. 
+Magic Skills are placed into their own category since they have utility both inside and outside of battle. Each Magic Skill's description will give a brief summary of the sort of effects that fall under the scope of that Skill, as well as a list of example effects and the level of success required to manifest that effect. This level of success will be noted by a [G] for a Green Success, [Y] for Yellow, [R] for Red, and a [B] for Black. Players should note that the stresses of battle are not conducive to intricate spells or rituals, and that magic used in combat generally causes diminished effects for a shorter duration than magic used outside of combat. Players should also keep in mind that checks can be made against a particular Magic Skill in order to identify whether something is an effect of that Magic Skill. Please see the Chapter entitled \textbf{Magic} in order to learn more about how magic is used both in and out of combat. 
 
 \subsubsection{Alchemy}
-This skill is the one of the few magic skills that has little use in combat. It allows a character to transmute metals from one to another, and to brew potions and other magical concoctions. In order to transmute a metal, the character must have a significant amount of the metal in question, and any appropriate reagents dictated by the referee. Depending on how exotic the base metal and the desired metal are, these reagents may be rare enough to require the alchemist to pay an exorbitant sum or go on a quest.
+This skill is the one of the few magic skills that has little use in combat. It allows a character to transmute metals from one to another, and to brew potions and other magical concoctions. In order to transmute a metal, the character must have a significant amount of the metal in question, and any appropriate reagents dictated by the Referee. Depending on how exotic the base metal and the desired metal are, these reagents may be rare enough to require the alchemist to pay an exorbitant sum or go on a quest.
 
 If the character has the proper materials for a transmutation, they may make a check against their Alchemy skill. Their transmutation attempt has an efficiency as indicated in the list below, according to their level of success. This efficiency is given as a percentage of mass transmuted. If, for example, a character is attempting to transmute 30 ounces of \emph{Oolite} into Platinum, a Green success would result in 3 ounces being transmuted, and the rest destroyed in the attempt. 
 
@@ -403,12 +400,12 @@ A character can use Artifice to imbue crafted objects with magical effects. They
 		\setlength{\itemsep}{0cm}%
   		\setlength{\parskip}{0cm}%
   		\item{ \small Repairing a nearby broken weapon or piece of armor [G]}
-  		\item{ \small Making a single piece of armor provide +1 against a specific damage type for 1+1d4 turns [G]}
-  		\item{ \small Making a single weapon add +1 to its wielder's Attack Bonus for 2+1d6 turns [Y]}
-  		\item{ \small Making all nearby swords sharper, adding +1 to their wielders' attack rolls for 1+1d4 turns [R]}
-  		\item{ \small Imbuing a weapon with fire, causing it to set enemies ablaze for 1+1d4 turns upon a successful attack [R]}
+  		\item{ \small Making a single piece of armor provide +1 against a specific damage type for 1+1d4 Initiative Passes [G]}
+  		\item{ \small Making a single weapon add +1 to its wielder's Attack Bonus for 2+1d6 Initiative Passes [Y]}
+  		\item{ \small Making all nearby swords sharper, adding +1 to their wielders' attack rolls for 1+1d4 Initiative Passes [R]}
+  		\item{ \small Imbuing a weapon with fire, causing it to set enemies ablaze for 1+1d4 Initiative Passes upon a successful attack [R]}
 	\end{itemize}
-Black successes could cause effects similar to those above (in or out of combat), but at greater magnitudes, left to the referee's discretion.
+Black successes could cause effects similar to those above (in or out of combat), but at greater magnitudes, left to the Referee's discretion.
 
 \subsubsection{Druidism}
 Druidism is borne of a spellcaster spending much time in nature, communing with the spirits of the forest. As such, Druids have a modicum of control over the plants and animals they encounter in the wild. Of course, creatures that are disharmonious with nature, such a demons, creatures from another plane of existence, or manufactured creatures do not fall under the purview of the Druidism skill.
@@ -432,9 +429,9 @@ Druidism is borne of a spellcaster spending much time in nature, communing with 
   		\setlength{\parskip}{0cm}%
 		\item{ \small Pacify a nearby animal [G]}
 		\item{ \small Cause a nearby root to trip a character [G]}
-		\item{ \small Cause plants underfoot to reduce the Speed of nearby characters by 2 for 1+1d4 turns [Y]}
+		\item{ \small Cause plants underfoot to reduce the Speed of nearby characters by 2 for 1+1d4 Initiative Passes [Y]}
 		\item{ \small Cause a nearby animal to fight for your side [Y]}
-		\item{ \small Cause roots and grasses to reduce the Speed of nearby enemies by 2 for 1+1d4 turns [R]}
+		\item{ \small Cause roots and grasses to reduce the Speed of nearby enemies by 2 for 1+1d4 Initiative Passes [R]}
 		\item{ \small Cause a nearby neutral monstrous creature to fight for your side [R]}
 		\item{ \small Cause a nearby tree to rise and fight for your side [B]}
 	\end{itemize}
@@ -455,7 +452,7 @@ An Elementalist of average power must normally be in the presence of an element 
 	\end{itemize}
 
 \subsubsection{Insight}
-Insight is the art of gleaning information about events that are distant in space, time, or both. This information could be the result of divine revelation or just a spellcaster's natural ability. In order to manifest an Insight spell effect that targets a specific person, the caster must have an object that is connected to that person in some way (they previously owned it, it was once a part of their body). If a spellcaster uses Insight to glean information about the future, it is dependent on the referee's discretion and the setting as to whether or not this future can be changed.
+Insight is the art of gleaning information about events that are distant in space, time, or both. This information could be the result of divine revelation or just a spellcaster's natural ability. In order to manifest an Insight spell effect that targets a specific person, the caster must have an object that is connected to that person in some way (they previously owned it, it was once a part of their body). If a spellcaster uses Insight to glean information about the future, it is dependent on the Referee's discretion and the setting as to whether or not this future can be changed.
 
 \textbf{Example Insight Effects}:
 	\begin{itemize}
@@ -469,7 +466,7 @@ Insight is the art of gleaning information about events that are distant in spac
 	\end{itemize}
 
 \subsubsection{Mentalism}
-Mentalism is what allows a spellcaster to move \emph{information} from one mind to another. This includes, but is not necessarily limited to, reading minds, communicating telepathically, mind control, and creating illusions. The range in which a spellcaster can use Mentalism on another character is about the size of a large city. If the spellcaster has a very strong personal connection with the intended target, they may be able to communicate telepathically outside of this range. The complexity of a task, as well as a target's inclination to carry out such a task, may increase or decrease the required level of success to force them to perform that task, according to the referee's discretion.
+Mentalism is what allows a spellcaster to move \emph{information} from one mind to another. This includes, but is not necessarily limited to, reading minds, communicating telepathically, mind control, and creating illusions. The range in which a spellcaster can use Mentalism on another character is about the size of a large city. If the spellcaster has a very strong personal connection with the intended target, they may be able to communicate telepathically outside of this range. The complexity of a task, as well as a target's inclination to carry out such a task, may increase or decrease the required level of success to force them to perform that task, according to the Referee's discretion.
 
 In combat, a Mentalist can also make a target feel as if they have suffered a wound. This ability can be used on any character within range. Such a wound is identical to any other wound, except that its effects last until the character has spent 10+1d10 minutes resting outside of combat. A character who wishes to use mentalism on any character in combat must make a check against (Mentalism - target's Willpower). The spellcaster may then inflict a wound on the target equal in magnitude to their level of success, on a body area of their choice. Alternately, they may impart an effect similar to those in the "In-combat" chart below.  
 
@@ -491,9 +488,9 @@ In combat, a Mentalist can also make a target feel as if they have suffered a wo
 		\setlength{\itemsep}{0cm}%
   		\setlength{\parskip}{0cm}%
 		\item{ \small Grant yourself a +2 to avoid a specific character's next action [G]}
-		\item{ \small Cause a character to ignore you as an attack target the next 1+1d4 turns [Y]}
-		\item{ \small Grant yourself a +2 to avoid all attacks for the next 1+1d4 turns [R]}
-		\item{ \small Pacify a character for 1+1d4 turns [B]}
+		\item{ \small Cause a character to ignore you as an attack target the next 1+1d4 Initiative Passes [Y]}
+		\item{ \small Blur a character's appearance, granting them a +2 to avoid all attacks for the next 1+1d4 Initiative Passes [R]}
+		\item{ \small Pacify a character for 1+1d4 Initiative Passes [B]}
 	\end{itemize}
 	
 	
@@ -502,9 +499,9 @@ Necromancy is one of the more perverse arts a spellcaster can pursue. It is the 
 
 If a spirit is contacted, they will be compelled to answer any three questions asked by the spellcaster, but they may choose to answer additional questions beyond the first three. Spirits are tied to a physical location or object, and if the spellcaster leaves the area or object, the spirit will dissipate and must be re-conjured.
  
-If a dead character (human or animal) is resurrected bodily, they will perform a single deed (limited by the mental, physical, and magical characteristics they possessed in life) for a limited amount of time (if they are repeating a simple task or it has end state, such as collecting firewood indefinitely or standing guard) or until completion (if the task has an end state, such as moving a set amount of cargo to a set location or painting a house), after which they will die once more. Human characters that are resurrected again will be hostile to the spellcaster, and must be convinced or coerced to act (perhaps through Mentalism). 
+If a dead character (human or animal) is resurrected bodily, they will perform a single deed (limited by the mental, physical, and magical characteristics they possessed in life) for a limited amount of time (if they are repeating a simple task or it has no end state, such as collecting firewood or standing guard indefinitely) or until completion (if the task has an end state, such as moving a set amount of cargo to a set location or painting a house), after which they will die once more. Human characters that are resurrected again will be hostile to the spellcaster, and must be convinced or coerced to act (perhaps through Mentalism). 
 
-Attempting to cast any Necromancy spells, regardless of success, causes the character to suffer a Green wound.
+Attempting to cast any Necromancy spells, regardless of success, causes the character to suffer a Green wound, in a location of the player's choice.
 
 \textbf{Example Out-of-Combat Necromancy Effects}:
 	\begin{itemize}
@@ -523,33 +520,33 @@ Attempting to cast any Necromancy spells, regardless of success, causes the char
   		\setlength{\parskip}{0cm}%
 		\item{ \small Cause a nearby skull or other skeletal remains to move about, filling nearby sensible foes with Terror (see the chapter on Magic)  [G]}
 		\item{ \small Cause a character to suffer a Yellow wound  [Y]}
-		\item{ \small Conjure a black cloud with a 15-foot radius that causes all characters to suffer -2 to their Speed while within and for 1+1d4 turns afterward [Y]}
-		\item{ \small Cause a nearby uncontrolled undead or spiritual character to come under your command for 1+1d4 turns [R]}
+		\item{ \small Conjure a black cloud with a 15-foot radius that causes all characters to suffer -2 to their Speed while within and for 1+1d4 Initiative Passes afterward [Y]}
+		\item{ \small Cause a nearby uncontrolled undead or spiritual character to come under your command for 1+1d4 Initiative Passes [R]}
 		\item{ \small Resurrect a human foe that has died in this combat; it will attack the nearest character, whether former friend or foe [B]}
 	\end{itemize}
  
 \subsubsection{Psychokinesis}
-This skill governs a character's ability to move objects with sheer force of will. This skill is unique in that its use in and out of combat is essentially the same. Characters with this skill are theoretically capable of moving objects of any size at any speed, but their ability to do so is limited by their confidence, experience, and ability to visualize such movements. Characters using this ability are not normally capable of fine manipulations, such as engraving jewelry or defusing a bomb (although a Black success can achieve almost anything). Characters with this skill receive a +2 to all checks to attack with a thrown weapon. 
+This skill governs a character's ability to move objects with sheer force of will. This skill's use in and out of combat is essentially the same. Characters with this skill are theoretically capable of moving objects of any size at any speed, but their ability to do so is limited by their confidence, experience, and ability to visualize such movements. Characters using this ability are not normally capable of fine manipulations, such as engraving jewelry or defusing a bomb (although a Black success can achieve almost anything). Characters with this skill receive a +2 to all checks to attack with a thrown weapon. 
 
-If a character desires to move (or stop) an object or character, they may make a check against Psychokinesis or (Psychokinesis - target's Speed) in the case of a moving target. They can effect a change in the object's momentum, in foot-pounds per second, equal to 50, 100, 200, or 400, whether they achieve a Green, Yellow, Red, or Black success, respectively. As always, the referee can choose to dispose with exact calculations, and judge for themselves the result of a character's level of success.
+If a character desires to move (or stop) an object or character, they may make a check against Psychokinesis or (Psychokinesis - target's Speed) in the case of a moving target. They can effect a change in the object's momentum, in foot-pounds per second, equal to 100, 200, 400, or 800, whether they achieve a Green, Yellow, Red, or Black success, respectively. As always, the Referee can choose to dispose with exact calculations, and judge for themselves the result of a character's level of success.
 
-The object will maintain movement with its new momentum as long as the character can see the object and maintains concentration on the object, forgoing any other actions. If their concentration is broken forcibly, such as if they suffered a physical blow, the object begins moving as it would naturally, most likely under the effect of physical laws such as gravity. If they chose to end their concentration willingly, they may choose to let the object fall or make another check against Psychokinesis if they wish to hit a specific target. Of course, they must make a check against (Psychokinesis - target's Speed) if they wish to hit a target capable of avoiding the attack. The level of success required to hit the target depends on the target's size relative to the projectile being moved, according to the referee's discretion. 
+The object will maintain movement with its new momentum as long as the character can see the object and maintains concentration on the object, forgoing any other actions. If their concentration is broken forcibly, such as if they suffered a physical blow, the object begins moving as it would naturally, most likely under the effect of physical laws such as gravity. If they chose to end their concentration willingly, they may choose to let the object fall or make another check against Psychokinesis if they wish to hit a specific target. Of course, they must make a check against (Psychokinesis - target's Speed) if they wish to hit a target capable of avoiding the attack. The level of success required to hit the target depends on the target's size relative to the projectile being moved, according to the Referee's discretion. 
 
-In times of great desire or desperation, a character can achieve a momentum far greater than those indicated above for their level of success, although they will incur a physical toll afterwards (such as a Yellow wound, a temporary stun, or falling unconscious) as adjudicated by the referee.
+In times of great desire or desperation, a character can achieve a change in momentum far greater than those indicated above for their level of success, although they will incur a physical toll afterwards (such as a Yellow or greater wound, a temporary stun, or falling unconscious) as adjudicated by the Referee.
 
 \subsubsection{Reiki}
-Reiki is the skill of manipulating the flow of latent magical energy present in all beings. Characters using this skill must be within melee range in order to affect another character with it. If they wish to heal a character, they must get within melee range of that character, declare which body location they wish to heal, and make a check against Reiki. They heal the character of one wound that is of equal or lower magnitude to their level of success (a Yellow success heals a Yellow or Green wound). % Alternatively, a Green or higher success can alleviate the negative effects of a Specific Wound for 1+1d4 combat turns. 
+Reiki is the skill of manipulating the flow of latent magical energy present in all beings. Characters using this skill must be within melee range in order to affect another character with it. If they wish to heal a character, they must get within melee range of that character, declare which body location they wish to heal, and make a check against Reiki. They heal the character of one wound that is of equal or lower magnitude to their level of success (a Yellow success heals a Yellow or Green wound). \comment{Alternatively, a Green or higher success can alleviate the negative effects of a Specific Wound for 1+1d4 combat turns.} 
 
-In order to damage an enemy using Reiki, a character must first roll to hit the enemy character using their Unarmed Combat skill. They then make a check against their (Reiki - target's Toughness) skill, inflicting a wound to their enemy equal in magnitude to their level of success. 
+In order to damage an enemy using Reiki, a character must first roll to hit the enemy character using their Unarmed Combat skill. They then make a check against their (Reiki - target's Toughness) skill, inflicting a wound to their enemy equal in magnitude to their level of success. Alternately, a player that has scored a hit on an enemy may wish to inflict a negative status effect on that enemy, such as blindness or a reduction in Speed. The level of success required to inflict an effect in these manner is left to the referee's discretion.
 
 \subsubsection{Shamanism}
 Whereas Necromancy is the skill of dominating the undead and subjugating them to the spellcaster's will, Shamanism is the skill of interacting harmoniously with the undead. That being said, Shamans cannot coerce the dead to act in any way, so their relationships are often those of mutual benefit. They can, however, incapacitate unruly spirits or corporeal undead. They can do the same to controlled undead, but they must make a check against (Shamanism - the Willpower of the undead's controller).
 
 Characters that practice Shamanism are skilled in the art of conferring with the spirits of the dead, and many Shamans often allow spirits with whom they have a deep personal bond to possess their bodies for a short time. Masters of this skill may also enable a spirit to manifest itself physically in their presence. In order for a Shaman to induce these magical effects, they must be holding an object to which a spirit has strong ties, and the spirit itself must allow the spellcaster to do so. 
 
-The spirits that a Shaman interacts with are characters for all intents and purposes. They have skills, and probably quirks and weaknesses as well. When possessed by a spirit, a Shaman receives a bonus to all the skills in which a spirit has a rating (positive or negative), equal to 1/2 the magnitude of that rating. A spirit that is physically manifest has all the skills it possessed in life, and can use them to act on the outside world. A Shaman typically must go on a harrowing quest to find an object to which a spirit has strong ties. The referee (and possibly the player) should take time to flesh out a spirits skills, personality, and desires, as they will likely be the Shaman's close companion.
+The spirits that a Shaman interacts with are characters for all intents and purposes. They have skills, and possibly Quirks and Weaknesses as well. When possessed by a spirit, a Shaman receives a bonus to all the skills in which a spirit has a rating (positive or negative), equal to 1/2 the magnitude of that rating. A spirit that is physically manifest has all the skills it possessed in life, and can use them to act on the outside world. A Shaman typically must go on a harrowing quest to find an object to which a spirit has strong ties. The Referee (and possibly the player) should take time to flesh out a spirit's skills, personality, and desires, as they will likely be the Shaman's close companion.
 
-The effects that can be achieved by making a Shamanism check are similar whether the characters is in or out of combat. In combat, manifesting a spirit has a duration on the order of turns, whereas it lasts on the order of hours out of combat. If a spirit enters or leaves combat, convert the units of time they have left from hours to turns (or vice versa, as appropriate) at a one-to-one ratio. 
+The effects that can be achieved by making a Shamanism check are similar whether the characters is in or out of combat. In combat, manifesting a spirit has a duration on the order of Initiative Passes, whereas it lasts on the order of hours out of combat. If a spirit enters or leaves combat, convert the units of time they have left from hours to Initiative Passes (or vice versa, as appropriate) at a one-to-one ratio. 
 
 \textbf{Example Shamanism Effects}: 
 	\begin{itemize}
@@ -557,9 +554,9 @@ The effects that can be achieved by making a Shamanism check are similar whether
   		\setlength{\parskip}{0cm}%
 		\item{ \small Detect nearby spirits [G]}
 		\item{ \small Speak with nearby spirits [G]}
-		\item{ \small Incapacitate undead for 1+1d4 turns [Y]}
+		\item{ \small Incapacitate undead for 1+1d4 Initiative Passes [Y]}
 		\item{ \small Allow a spirit to possess the caster [R]}
-		\item{ \small Allow a spirit to physically manifest for 2+1d6 hours/turns [B]}
+		\item{ \small Allow a spirit to physically manifest for 2+1d6 hours/Initiative Passes [B]}
 	\end{itemize}
 
 \subsubsection{Summoning}
@@ -582,9 +579,9 @@ Summoned creatures are not of the Summoner's world. As a result, they will inevi
 	\end{itemize}
 
 \section{Creating Skills}
-As the setting demands, the referee may desire to create additional skills for characters to take. 
+As the setting demands, the Referee may desire to create additional skills for characters to take. 
 These skills should function similarly to existing skills, in that they  possess a rating that affects the character's success
-at some sort of task. If the referee wishes to add something they think should be a skill, but a "rating" doesn't quite make sense for it,
+at some sort of task. If the Referee wishes to add something they think should be a skill, but a "rating" doesn't quite make sense for it,
 perhaps the addition should be a Quirk or even a house-rule. 
 
 \end{multicols}
@@ -593,11 +590,11 @@ perhaps the addition should be a Quirk or even a house-rule.
 
 This chapter discusses the various weaknesses a character can possess. Weaknesses are divided into three categories: \textbf{General Weaknesses, Mental Weaknesses, and Magical Weaknesses}. General Weaknesses represent weaknesses of the character's body, whereas Mental Weaknesses are quirks of the character's personality or thinking process that adversely affect their interactions with others. Magical Weaknesses are representative of the adverse effects of studying and performing magical arts.
 
-As stated in the chapter on Character Creation, choosing to give your character a Weakness at that time grants you 5 additional Skill Points (per Weakness chosen) to allocate towards your character's starting skills. A player choosing to give their character a weakness for this reason may only choose General or Mental Weaknesses for their character. 
+As stated in the chapter on Character Creation, choosing to give your character a Weakness at that time grants you 5 additional Skill Points (per Weakness chosen) to allocate towards your character's starting skills. A player choosing to give their character a Weakness for this reason may only choose General or Mental Weaknesses for their character. 
 
 Also discussed in Character Creation are the Weaknesses incurred for possessing Magical Skills. For every Magical Skill a character begins play with (and every Magical Skill they learn thereafter), they must incur a Weakness. These Weaknesses should be chosen from those denoted as Mental or Magical Weaknesses.
 
-The player (and referee) should keep in mind that certain Weaknesses may preclude training in particular Skills, and may prevent their use entirely. The player should also keep in mind that they will be expected to play their character as if they actually possess these Weaknesses. While possibly challenging, this can make for engaging and interesting characters and gameplay.  
+The player (and Referee) should keep in mind that certain Weaknesses may preclude training in particular Skills, and may prevent their use entirely. The player should also keep in mind that they will be expected to play their character as if they actually possess these Weaknesses. While possibly challenging, this can make for engaging and interesting characters and gameplay.  
 \newpage
 \begin{multicols}{2}
 \section{General Weaknesses}
@@ -606,19 +603,19 @@ The character has a serious and violent allergy to a substance. When choosing th
 \subsubsection{Color Blind}
 Characters with this Weakness have an inability to distinguish between different colors. This may result in a -3 to using Perception to detect subtle differences in shade (such as when a hidden enemy is wearing camouflage). This may also result in ridicule or ire when the character fails to coordinate the colors of their own outfit. 
 \subsubsection{Missing Limb}
-The character is missing a limb. While this will certainly hamper the character physically, the player \emph{(and referee)} should keep in mind that this Weakness could have social implications as well. Characters with this Weakness suffer a -5 to all uses of a Skill that requires the use of both arms. While a character missing a limb can learn to do many things that an able-bodied character can do, Dual-Wielding is expressly forbidden for a character missing an arm. A character missing a leg that does not have some sort of prosthetic is considered to have a Speed of -2, regardless of their original rating in that Skill. A character in an appropriate setting with a prosthetic that functions as well as the missing limb is no longer considered to have this Weakness.
+The character is missing a limb. While this will certainly hamper the character physically, the player \emph{(and Referee)} should keep in mind that this Weakness could have social implications as well. Characters with this Weakness suffer a -5 to all uses of a Skill that requires the use of both arms. While a character missing a limb can learn to do many things that an able-bodied character can do, Dual-Wielding is expressly forbidden for a character missing an arm. A character missing a leg that does not have some sort of prosthetic is considered to have a Speed of -2, regardless of their original rating in that Skill. A character in an appropriate setting with a prosthetic that functions as well as the missing limb is no longer considered to have this Weakness.
 \subsubsection{Night-Blind}
 A character with this Weakness cannot see very well (or at all) at night. Characters with this Weakness cannot use Navigation to travel at night, and they suffer a -2 to any action requiring sight performed at night. 
 \subsubsection{Physically Dependent}
-The character requires some sort of substance to function normally, at the player's discretion. Perhaps they have an illness that requires frequent consumption of \emph{Degiik} leaves. Perhaps they have abused Synthehol for too long. Whatever the reason, if the character goes more than three days without consuming this substance, they suffer a -1 to all Skills. Every two days thereafter, this penalty increases by 1. If the character's Toughness skill reaches a rating of 0, they go unconscious. If their Toughness Skill reaches a negative value equal to its original rating, they die. 
+The character requires some sort of substance to function normally, at the player's discretion. Perhaps they have an illness that requires frequent consumption of \emph{Degiik} leaves. Perhaps they have abused \emph{Synthehol} for too long. Whatever the reason, if the character goes more than three days without consuming this substance, they suffer a -2 to all Skills. Every two days thereafter, this penalty increases by 1. If the character's Toughness skill reaches a rating of 0, they go unconscious. If their Toughness Skill reaches a negative value equal to its original rating, they die. 
 
-If the character begins ingesting this substance again, the penalty is reduced by 2 for each day they consume it, until it has been reduced to 0. If the penalty reached a magnitude over 3, they suffer the excess as a permanent reduction to their Toughness Skill. For example, if the character went 11 days without meeting their needs, they will have suffered a -5 to all Skills. Once they satisfy their itch and reduce the penalty to 0, their Toughness Skill is nonetheless permanently reduced by 2. 
+If the character begins ingesting this substance again, the penalty is reduced by 2 for each day they consume it, until it has been reduced to 0. If the penalty reached a magnitude over 3, they suffer the excess as a permanent reduction to their Toughness Skill. For example, if the character went 11 days without meeting their needs, they will have suffered a -6 to all Skills. Once they satisfy their physical dependence and reduce the penalty to 0, their Toughness Skill is nonetheless permanently reduced by 3. 
 
 \subsubsection{Reckless}
 The character is a person of action. Unwilling or unable to stop and think of the consequences of their actions, they often leap into the maw of danger. Characters with this Weakness cannot pass up their turn in combat if physically able to act, nor can they delay an action. 
 
 \subsubsection{Silent. Possibly Deadly.}
-A character with this Weakness is a person of few (if any) words. They are indisposed to or incapable of communicating even with their comrades. Of course, while this may be beneficial if they were to be interrogated, this also means their reticence may prevent them from pointing out any danger they have spotted. 
+A character with this Weakness is a person of few (if any) words. They are indisposed to or incapable of communicating even with their comrades. Of course, while this may be beneficial if they were to be interrogated, this also means their reticence may prevent them from pointing out any danger they have spotted. If the character wishes to speak, they must make a Black Success on a check against either Body or Willpower, depending on the cause of the character's silence. The nature of this check is decided at character creation, and usually cannot be changed. 
 
 \subsubsection{Tin Ear}
 This character is incapable of distinguishing between musical notes. They cannot possess or even test against any Skills involving the musical arts. Their inability to appreciate music may also prove detrimental in social situations. 
@@ -627,14 +624,14 @@ This character is incapable of distinguishing between musical notes. They cannot
 A character with this Weakness is possessed of particularly ill fortune. Whenever they make a check against a skill and get a 98-100, something particularly bad happens to them: their pantaloons fall down while addressing a diplomat; a piton slips out of the cliff face they are attempting to scale; their grenade bounces off a wall and rolls toward their feet. 
 
 \subsubsection{Weak Constitution}
-This character has a particularly feeble stomach, and they tire easily. When making a Toughness check against poison, they suffer a -3. Additionally, they can Sprint as if their Toughness was 3 ranks lower than it actually is.
+This character has a particularly feeble stomach, and they tire easily. When making a Toughness check against poison, they suffer a -3. Additionally, in order to determine the amount of time they can exert themselves physically (Jogging, Sprinting, etc) is calculated as if their Toughness was 3 ranks lower than it actually is.
 
 \section{Mental Weaknesses}
 \subsubsection{Compulsion}
-When choosing this Weakness, the character should choose a circumstance that compels a character to perform a specific action. Before leaving the inn, do they open and close the door three times? Perhaps before bedding down outdoors, they must completely bury their cooking fire and all remains of their meal. Whatever they case may be, if an opportunity arises where they feel they must act out their compulsion, and circumstance prevents them from doing so, they suffer a -3 to all Skills for the next 1d6 hours. If the character falls asleep during this period, the penalty continues the rest of its term once they wake. At the referee's discretion, if the character feels their compulsion once again during this period, and they can act on it, they no longer suffer the penalty. 
+When choosing this Weakness, the character should choose a circumstance that compels a character to perform a specific action. Before leaving the inn, do they open and close the door three times? Perhaps before bedding down outdoors, they must completely bury their cooking fire and all remains of their meal. Whatever they case may be, if an opportunity arises where they feel they must act out their compulsion, and circumstance prevents them from doing so, they suffer a -3 to all Skills for the next 1d6 hours. If the character falls asleep during this period, the penalty continues the rest of its term once they wake. At the Referee's discretion, if the character feels their compulsion once again during this period, and they can act on it, they no longer suffer the penalty. 
 
 \subsubsection{Dependent}
-The character is dependent upon another character. Their self-worth is measured solely in this other character's opinion of them. If they are asked to act in a manner that could harm that character's opinion of them, they must pass a Willpower check or be unable to do so. If that character should begin to dislike or distrust them, they suffer a -3 to all Skills for 1d8 hours. After this period, they must find a new character upon which to become dependent. Additionally, if the character upon which they are dependent is in a combat with them, the character must make a successful Willpower check or delay their turn until the other character has taken an action. 
+The character is dependent upon another character. Their self-worth is measured solely in this other character's opinion of them. If they are asked to act in a manner that could harm that character's opinion of them, they must achieve any level of success on a Willpower check or be unable to do so. If that character should begin to dislike or distrust them, they suffer a -3 to all Skills for 1d8 hours. After this period, they must find a new character upon which to become dependent. Additionally, if the character upon which they are dependent is in a combat with them, the character must make a successful Willpower check or Wait on their turn until the other character has taken an action. 
 
 \subsubsection{Hatred}
 The character has an intense dislike for a specific group. This can be members of another race, spell-casters, a specific species of creature, a political group, or any other group of significant size and distribution. If the character were never to see this group, this wouldn't really be a Weakness. The character will generally steadfastly refuse to help members of this group, and will often seek any opportunity to harm them. If asked to do so by a friend or trusted ally, the character must pass a Willpower check in order to help a member of this group or to stop themselves from harming or outright killing a member of this group they have in their power.
@@ -643,13 +640,15 @@ When taking this Weakness, the player must choose an ideal, a group, an object, 
 \subsubsection{Phobia}
 When choosing this Weakness, the player should choose something of which their character will be terribly frightened. This could be anything their character could encounter frequently enough to impact gameplay. Examples include: magic, water, heights, or gold (particularly bad for a player whose enjoys collecting wealth). When presented with a situation that requires approaching or interacting with an object of their phobia, the character must pass a Willpower check or flee/freeze on the spot, at the player's discretion. If their phobia is something like heights or water, they must pass frequent Willpower checks to continue acting while in or around their phobia, or be frozen in place. If they are in combat with something they fear, even if the character passes their Willpower check, the suffer a -2 to all Skill checks targeting their phobia.
 
-Additionally, the character cannot learn Skills that would require them to interact frequently with their phobia. A fear of heights precludes learning Climbing, for instance. Similarly, a fear of water prevents learning Swimming or Piloting any watercraft. 
+Additionally, the character cannot learn Skills that would require them to interact frequently with their phobia. A fear of heights precludes learning Climbing, for instance. Similarly, a fear of water prevents learning Swimming or Piloting any watercraft.
+\comment{ 
 \subsubsection{Shifty}
 The character lacks certain social cues or acts in a manner that lends them an air of deceit. This could be the result of a poor childhood, past trauma, or years spent shut in a library with only tomes for company. On any Persuasion, Fast Talk, or Seduce checks, the character's level of Success is being treated as one lower (a Green Success is still a Green Success, however). 
+}
 \subsubsection{Tic}
-The character has an observable motor or phonic tic. This could be pronounced, repetitive eye-blinking or throat-clearing, finger-snapping, or uttering a short phrase. While occasionally their tic can be suppressed, in times of great stress, nervousness, or happiness (or any other time at the referee's discretion), the character must make a Red Success on a Willpower check or suffer an outburst. Of course, such a situation could have social implications for the character. 
+The character has an observable motor or phonic tic. This could be pronounced, repetitive eye-blinking or throat-clearing, finger-snapping, or uttering a short phrase. While occasionally their tic can be suppressed, in times of great stress, nervousness, or happiness (or any other time at the Referee's discretion), the character must make a Red Success on a Willpower check or suffer an outburst. Of course, such a situation could have social implications for the character. 
 \subsubsection{Vice}
-When choosing this Weakness, the player should choose a substance or action that the character cannot resist, such as gambling, alcohol, shopping for clothes, or \emph{fraternizing} with members of either gender. Whenever they enter a town after an extended time away, the character must pass a Willpower check or pursue their vice. Of course, if they wish to do so, no check needs to be made.
+When choosing this Weakness, the player should choose a substance or action that the character cannot resist, such as gambling, alcohol, shopping for clothes, or "fraternizing" with members of either gender. Whenever they enter a town after an extended time away, the character must pass a Willpower check or pursue their vice. Of course, if the player wishes for their character to do so, no check needs to be made.
 
 Once a character has gotten a taste of their vice, if they wish to stop, they must pass a Willpower check in order to do so. Each time they satiate their need (such as each time they finish a drink), they may make a new Willpower check. If the character is financially or physically unable to continue, they may also stop. 
 
@@ -660,7 +659,7 @@ Additionally, when presented or bribed with an opportunity to satisfy their "nee
 As a result of arcane experimentation or perhaps some boon from a demonic lord, the character's biology is now alien. The player should choose a mundane, normally inedible substance, such as sand or cloth. The character now receives their sustenance from that substance. As such, this substance should be relatively common. The character no longer has any need to consume normal fare, and in fact it will most likely make them ill. Instead, much to the disgust of their tablemates, they must consume whatever substance the player has chosen. 
 
 \subsubsection{Animal Aversion}
-The character evokes skittish or violent responses from mundane animals, and even from humans with particularly high Perception. Any animal (human with Perception of 7 or greater) within 20 feet of the character can sense their \emph{abnormality}. Domestic animals, or any wild creatures that tend to be skittish, will attempt to flee from the character's presence. Predatory creatures, however, may attempt to do the character harm. Characters with this weakness cannot learn the Animal Handling skill, and they cannot use Druidism to interact with mundane creatures, save on a Black success. 
+The character evokes skittish or violent responses from mundane animals, and even from humans with particularly high Perception. Any animal (human with Perception of 7 or greater) within 20 feet of the character can sense their abnormality. Domestic animals, or any wild creatures that tend to be skittish, will attempt to flee from the character's presence. Predatory creatures, however, may attempt to do the character harm. Characters with this weakness cannot learn the Animal Handling skill, and they cannot use Druidism to interact with mundane creatures, save on a Black success. 
 
 \subsubsection{Disfigured}
 The character's body has been rendered misshapen by their arcane dabblings. These changes should be blatant, but can possibly be hidden with enough effort. Examples include immobile supernumerary limbs, clawed hands, discolored or abnormally textured skin, and ornate, over-large tattoos. 
@@ -669,7 +668,7 @@ The character's body has been rendered misshapen by their arcane dabblings. Thes
 A character with this Weakness is dogged by the persistent company of unseen presences. The character is always accompanied by whispering voices. These voices seem to have hushed conversations with each other, although they are never quite loud enough to glean meaning from. Characters with this Weakness often find others unwilling to remain alone in a room with them very long, and many who have heard the voices previously find it hard to spend time with the character even in a boisterous tavern hall.  
 
 \subsubsection{Poltergeist}
-The character has garnered the attentions of some mischievous force or spirit. Whenever the character packs up after staying in one area for more than a single night, something mundane of theirs (which includes a coinpurse), chosen by the referee, goes missing. The character does not notice that the item is missing until they look for it specifically. At the referee's discretion, the item may reappear some time later when they no longer need it. 
+The character has garnered the attentions of some mischievous force or spirit. Whenever the character packs up after staying in one area for more than a single night, something mundane of theirs (which includes a coinpurse), chosen by the Referee, goes missing. The character does not notice that the item is missing until they look for it specifically. At the Referee's discretion, the item may reappear some time later when they no longer need it. 
 
 \subsubsection{Restless Sleep}
 The character frequently awakes somewhere far from their bed, apparently pursuing some goal which they can no longer recall. Perhaps at the behest of some magical being whose machinations the character cannot possibly comprehend. Whether they remained in their bed the previous night or not, the character feels groggy every morning, taking a -2 to all skills for the first 1d3 hours after waking.  
@@ -679,17 +678,22 @@ The character often finds themselves in the dreams (usually nightmares) of those
 \end{multicols}
 
 \chapter{Quirks}
-Quirks are small modifiers to specific Skills that a player can purchase at Character Creation for their character. Quirks are a good way to garner bonuses for your character while adding to their backstory. Quirks often provide situational bonuses or specific specializations for a particular Skill, although some fundamentally alter the character's abilities. Players should keep in mind that any Weaknesses that prevent learning a particular Skill also prevent purchasing Quirks that modify their use of that particular skill. Additionally, purchasing a Quirk that modifies a specific Skill requires that Skill to be known at Character Creation.  
+Quirks are small modifiers to specific Skills or actions that a player can purchase at Character Creation for their character. Quirks are a good way to garner bonuses for your character while adding to their backstory. Quirks often provide situational bonuses or specific specializations for a particular Skill, although some fundamentally alter the character's abilities. Players should keep in mind that any Weaknesses that prevent learning a particular Skill also prevent purchasing Quirks that modify their use of that particular skill. Additionally, purchasing a Quirk that modifies a specific Skill requires that Skill to be known at Character Creation.  
 
 Most Quirks cost two Skill Points. Those that cost a different amount will have their cost listed above their description. 
 
 \begin{multicols}{2}
+
+\subsubsection{Advanced Age}
+Most characters are young adults just beginning their life of adventure. For whatever reason, a character with this Quirk has decided to strike out and make their mark on the world at an age where most characters would retire. As such, this character suffers a -3 penalty to all Skills that contribute to the Physical General Skill rating. The character's wisdom and years of experience, however, confer them a +3 bonus to all Skills that contribute to the Mental General Skill rating.
+
+
 \subsubsection{Berserk}
 \textbf{\small Cost: 5 Skill Points}
 
-Except in clear cases of mortal damage (decapitation, magical annihilation, etc), the player may spend a Luck Point to keep fighting beyond the point of death. If the character falls in combat with something they particularly hate (the target of a Hatred Weakness), the player must spend this Luck Point (if they have any remaining). A character in this state receives many bonuses and weaknesses.
+Except in clear cases of mortal damage (decapitation, magical annihilation, etc), the player may spend a Luck Point to keep fighting beyond the point of death (or incapacitation). If the character falls in combat with something they particularly hate (the target of a Hatred Weakness), the player must spend this Luck Point (if they have any remaining). A character in this state receives many bonuses and weaknesses.
 
-The Berserk state confers the following bonuses: The character may continue to ignore the effect of any wounds they incur until the end of the combat. Additionally, they receive a +3 bonus to both Strength checks and Willpower checks for the duration of combat. The character also receives a +1 bonus to melee attack rolls for every 5 full points in Strength, as opposed to the usual 10. Lastly, the character can ignore any Phobias they have.
+The Berserk state confers the following bonuses: The character may continue to ignore the effect of any wounds they incur until the end of the combat. Additionally, they receive a +3 bonus to both Strength and Willpower for the duration of combat. The character also receives a +1 bonus to melee attack rolls for every 5 full points in Strength, as opposed to the usual 10. Lastly, the character can ignore any Phobias they have.
 
 The Berserk state has the following drawbacks: The character must focus their attention on the target of any Hatred Weaknesses they have, ignoring other enemies until their Hated targets are dead. If they Hate multiple targets in the combat, they must attack the closest first. Additionally, the character remains in a blood-trance even after all enemies have been vanquished. The closest living creature in sight becomes their next target, continuing until the character can no longer see a living creature, at which point they succumb to their wounds. 
 
@@ -714,22 +718,24 @@ Characters with this Quirk may increase the time they have to find the antidote 
 A character with this Quirk has particularly nimble fingers. Their attempts at picking pockets are only detected on a result of 98-100, rather than 96-100.     
 
 \subsubsection{Luck Everlasting}
-Any time the player chooses to spend a Luck Point, the referee must make a roll against that character's current Luck Point total. On a Black success, the Luck Point has its intended effect, but remains unspent. The result of this check should not be revealed. 
+Any time the player chooses to spend a Luck Point, the Referee must make a roll against that character's current Luck Point total. On a Black success, the Luck Point has its intended effect, but remains unspent. The result of this check should not be revealed. 
 
 \subsubsection{Marathon Runner}
 The character can jog for three more hours or sprint for three more minutes than their Toughness or General Physical rating would allow. The character is still limited to 16 total hours of jogging in each 24-hour period, as well as a need for 8 hours of sleep in each 24-hour period.
 
+\comment{
 \subsubsection{Military Background}
 Characters with this Quirk must have a rating of at least 1 in the Weapon Skill for the standard-issue weapon of their homeland's military. 
 
 Past time spent in the military has taught the character a variety of useful things. Not least of which being how to belittle subordinates. The character gets a +3 bonus to using Fast Talk or Persuade while interacting with non-hostile, rank-and-file members of a militia or military. 
+}
 
 \subsubsection{Polarizing Personality}
 \textbf{\small Cost: 5 Skill Points}
 
-The character's strong force of will and charismatic personality ensures that anyone they interact with quickly develops a very strong opinion of them, whether it be positive or negative; rare is the person who feels ambivalent about the character. Not every NPC is quick to reveal their personal feelings about the character, especially if they are particularly strong the character may often discover an unknown ally or a secret foe. In the case of someone with the Void-touched or Animal Aversion weaknesses, all creatures that would normally dislike the character due to their unusual properties now feel an extreme hatred for them.
+The character's strong force of will and charismatic personality ensures that anyone they interact with quickly develops a very strong opinion of them, whether it be positive or negative; rare is the person who feels ambivalent about the character. Not every NPC is quick to reveal their personal feelings about the character, especially if they are particularly strong. As such, the character may often discover an unknown ally or a secret foe. In the case of someone with the Void-touched or Animal Aversion weaknesses, all creatures that would normally dislike the character due to their unusual properties now feel an extreme hatred for them, as per the Hatred Weakness.
 
-Additionally, whenever the character gains fame, roll against their new fame point total. On a black success, they gain an additional point of fame. A gain of fame in this manner does not allow the player to roll for another point of fame.
+Additionally, whenever the character gains Fame, roll against their new Fame point total. On a black success, they gain an additional point of Fame. A gain of Fame in this manner does not allow the player to roll for another point of Fame.
 
 \subsubsection{Quick Study}
 \textbf{\small Cost: 5 Skill Points}
@@ -738,7 +744,8 @@ The amount of time required to study any subject (usually for the purposes of ga
 
 \subsubsection{Sleepless}
 \textbf{\small Cost: 5 Skill Points}
-The character needs very little sleep on most nights. Normally, the character needs only 2 hours of sleep to feel fully rested. Even if they desired to sleep longer, they usually find themselves unable to do so. At the start of the campaign, and at the start of any session before which a significant amount of time was skipped, the referee should roll 1d8+4. This roll need not be revealed to the player. On the night after this number of days has passed, the character's lack of sleep seems to catch up with them, and they sleep for a full 8 hours. While sleeping on this particular night, the character is unusually difficult to rouse. At the referee's discretion, the player may spend a Luck Point to rouse from their slumber. After whatever event that caused them to wake has passed, however, they must resume their sleep.
+
+The character needs very little sleep on most nights. Normally, the character needs only 2 hours of sleep to feel fully rested. Even if they desired to sleep longer, they usually find themselves unable to do so. At the start of the campaign, and at the start of any session before which a significant amount of time was skipped, the Referee should roll 1d8+4. This roll need not be revealed to the player. On the night after this number of days has passed, the character's lack of sleep seems to catch up with them, and they sleep for a full 8 hours. While sleeping on this particular night, the character is unusually difficult to rouse. At the Referee's discretion, the player may spend a Luck Point to rouse from their slumber. After whatever event that caused them to wake has passed, however, they must resume their sleep.
 
 \subsubsection{Street-Smarts}
 A childhood spent in an urban environment has given the character a keen eye for danger and an ear for interesting information. The character receives a +3 to Perception Skill checks while in a city environment. 
@@ -746,7 +753,7 @@ A childhood spent in an urban environment has given the character a keen eye for
 \subsubsection{Trained for War}
 A character wishing to choose this Quirk must have a rating of least 1 in a Weapon Skill at Character Creation.
 
-The character gets a +2 column shift to their General Physical Rating when using a weapon in the same family as their starting weapon for which they are not trained. This score cannot exceed the highest score the character has for a specific weapon in the chosen weapon family. A family of weapons is a category such as flexible weapons (whips, flails, etc); 1-handed blades; 2-handed blunt weapons (greathammers); pole weapons (lance, spear, guisarme, etc).
+The character gets a +2 bonus to their General Physical Rating when using a weapon in the same family as their starting weapon for which they are not trained. This score cannot exceed the highest score the character has for a specific weapon in the chosen weapon family. A family of weapons is a category such as flexible weapons (whips, flails, etc); 1-handed blades; 2-handed blunt weapons (greathammers); pole weapons (lance, spear, guisarme, etc).
 
 \subsubsection{Triage Specialist}
 The character is a practiced hand at treating combat wounds. Perhaps they were a medic in their nation's army or a surgeon in a war-torn region. Nonetheless, they gain a +3 bonus to First-Aid Skill checks or other Skill checks used to treat wounds that resulted from combat. This grants no bonus to healing wounds inflicted by the environment (fire, falling, nettles, etc) that were taken in the course of combat. However, this will grant a bonus to healing wounds inflicted by caltrops or other devices that are generally used to wound enemy combatants.
@@ -756,14 +763,14 @@ The character is a practiced hand at treating combat wounds. Perhaps they were a
 
 A character with Quirk is considered by most to be a particularly pitiful creature. The character, by some twist of fate, is completely immune to the effects of magic, both helpful and harmful. Additionally, all characters within 20 feet of this creature receive a -2 to all Magical Skill checks used to manifest magical effects. Finally, a character with this quirk cannot learn to use any Magic Skills.
 
-Additionally, all creatures can sense that the character is, in some way, subtly \emph{different} than those around them. Most characters will treat the character more gruffly than they would a normal stranger. Magically-attuned creatures, however, experience a strong feeling of disgust when in the presence Void-Touched characters, as they are an antithesis of everything they believe in. Creatures that have points in the Reiki or Magic Sense Skills, or any creature with a General Magic Rating of 2 or greater fall into the previous category. Demons, spirits, and any other creatures that the referee deems appropriate may also fall into the above category.
+Additionally, all creatures can sense that the character is, in some way, subtly \emph{different} than those around them. Most characters will treat the character more gruffly than they would a normal stranger. Magically-attuned creatures, however, experience a strong feeling of disgust when in the presence Void-Touched characters, as they are the antithesis of their very existence. Such creatures are those that have points in the Reiki or Magic Sense Skills, or any creature with a General Magic Rating of 2 or greater. Demons, spirits, and any other creatures that the Referee deems appropriate may also fall into the above category.
 \end{multicols}
 
 \chapter{The Resolution Chart}
 This chapter concerns the method by which conflicts are resolved in THIZ. These conflicts are resolved with dice rolls, and the results of those rolls are found by consulting the Resolution Chart. Depicted at the end of this book in many forms, this chart dictates how successful any character is whenever they use a Skill. The player makes a check by rolling a 1d100 and consulting the proper row of the resolution chart.
 
 \section{Reading the Resolution Chart}
-The resolution chart consists of multiple rows and six columns. The leftmost column, which contains a white background or a white header, denotes the rating against which a check is being made. For example, if a character is attempting to swim through rough seas and has a rating of 4 in the Swimming skill, the player will consult the row whose left-most column contains a '4' when making a check. Once the proper row has been consulted, the player can then determine the level of success. This is represented by the columns whose background colors or headers are black, red, yellow, green, or grey. These colors represent black, red, yellow, or green success and failure, respectively. 
+The resolution chart consists of multiple rows and six columns. The leftmost column, which contains a white background or a white header, denotes the Rating against which a check is being made. For example, if a character is attempting to swim through rough seas and has a rating of 4 in the Swimming skill, the player will consult the row whose left-most column contains a '4' when making a check. Once the proper row has been consulted, the player can then determine the level of success. This is represented by the columns whose background colors or headers are black, red, yellow, green, or grey. These colors represent black, red, yellow, or green success and failure, respectively. 
 
 There are many variations of the resolution chart depicted in the back of the book. They represent the roll required to attain a certain level of success in two different ways. Some of the charts contain a range of numbers in their columns, whereas some contain a single number. The charts containing a range of numbers depict the numbers between which your d100 roll must fall in order to achieve that level of success. On the charts with a single number, your level of success is that of the column which depicts the smallest number greater than your roll. 
 
@@ -776,7 +783,7 @@ Combat may be the meat and potatoes of your group's tabletop adventures, or it m
 \section{Get the Mooks out of the Way!}
 In the world of THIZ, players will encounter two types of enemies: Mooks and Adversaries. 
 
-Mooks are the chaff which your characters must clear on their way to the adversaries. Hired thugs, guardsmen, militia-men, sailors, and other such fighters who certainly die by the sword, but don't quite live by it, as your characters do. 
+Mooks are the chaff which your characters must clear on their way to the Adversaries. Hired thugs, guardsmen, militia-men, sailors, and other such fighters who certainly die by the sword, but don't quite live by it, as your characters do. 
 
 Adversaries are characters that are on par with those of the players. Armed with only your Skills and your wits, you will almost certainly square off against adversaries during your adventures. Unlike combat with Mooks, meeting an Adversary in pitched battle is not always an almost certain victory. 
 
@@ -796,15 +803,15 @@ In most cases, some combatants are more prepared for combat than others. Some fi
 
 Whichever side has the combatant with the highest Preparedness may take a full Turn of actions against their enemies. In the case of a tie, compare the total Preparedness of either party. If there is still a tie, have the characters with the highest Preparedness check Preparedness again, until the tie is resolved.
 
-In some special cases, such as an ambush, the referee may declare that one side is unprepared, in which case the other side takes a full Initiative Pass of actions against the other. 
+In some special cases, such as an ambush, the Referee may declare that one side is unprepared, in which case the other side takes a full Initiative Pass of actions against the other. 
 
-If a character enters combat after it has already began, they must declare an intended target. The character and their intended target then determine their Preparedness. The character with the highest preparedness may take a free action against the other. The newly arrived character may afterward take part in regular combat, starting with the following Initiative Pass.
+If a character enters combat after it has already began, they must declare an intended target. The character and their intended target then determine their Preparedness. If the new arrival has a higher Preparedness, they may take a free action against their intended target. The newly arrived character may afterward take part in regular combat, starting with the following Initiative Pass.
 
 \section{Determining Initiative and Initiative Passes}
 In order to determine Initiative, players roll 1d10 and add either Speed + Perception or their General Physical rating, whichever is higher.
 
 Once all characters have determined their Initiative, they each take a 
-turn in initiative order. A turn in combat lasts 5 seconds, and permits a character to take a single action. Possible actions are outlined below, in the section entitled \textbf{Actions}, but typical actions include: moving, attacking, or casting a spell. The referee should keep in mind that all turns occur nearly simultaneously, with characters possessing higher initiative resolving the effects of their turn first. The culmination of all characters' turns is referred to as a \textbf{Turn}.
+turn in initiative order. A turn in combat lasts 5 seconds, and permits a character to take a single action. Possible actions are outlined below, in the section entitled \textbf{Actions}, but typical actions include: moving, attacking, or manifesting a magical effect. The Referee should keep in mind that all turns occur nearly simultaneously, with characters possessing higher initiative resolving the effects of their turn first. The culmination of all characters' turns is referred to as a \textbf{Turn}.
 
 Once all characters in the combat have acted in initiative order, they subtract 10 from their Initiative score. If any characters have an initiative above 0, they may act again, in order of their new Initiative. This process repeats until no characters have an initiative  above 0. This cycle, beginning with all characters checking Initiative and ending with all characters possessing an Initiative of 0 or lower, is called an \textbf{Initiative Pass}.
 
@@ -880,29 +887,31 @@ The effect of wounds on particular body locations is outlined in the charts belo
 }
 \end{center}
 
-In the case of non-lethal damage (attacker is using bare fists), an Incapacitated character is simply unconscious (they cannot act, Speed is 0). In the case of lethal damage, they are dying. They must check Toughness. On a failure, they die. On a Black success, they need not check Toughness any more. A character can attempt to use First Aid to stabilize an Incapacitated character, which they do on any level of success. Also in the case of lethal damage, a limb that receives a Black Wound may be removed, at the referee's discretion. 
+In the case of non-lethal damage (attacker is using bare fists), an Incapacitated character is simply unconscious (they cannot act, Speed is 0). In the case of lethal damage, they are dying. A dying character must check Toughness on their next turn and each turn thereafter. On a failure, they die. On a Black success, they need not check Toughness any more. A character can attempt to use First Aid to stabilize an Incapacitated character, which they do on any level of success. Also in the case of lethal damage, a limb that receives a Black Wound may be removed, at the Referee's discretion. 
 
 \section{Recovering from Damage}
-A character heals a single Green wound with a full day of rest. Once all Green wounds have been healed, a character can attempt to heal any additional wounds they may have. After a full day of rest, they may make a check against their Toughness score. On any level of success, they heal their least-severe wound. If there are multiple wounds of the same severity on different body locations, a character heals wounds in this priority: Chest, Head, Gut, extremities (arms and legs). To determine which extremity is healed first, roll on the random body location chart until a wounded arm or leg is rolled. 
+A character heals a single Green wound with a full day of rest (a day in which they do not get into combat or make great physical exertion). Once all Green wounds have been healed, a character can attempt to heal any additional wounds they may have. After a full day of rest, they may make a check against their Toughness score. On any level of success, they heal their least-severe wound. If there are multiple wounds of the same severity on different body locations, a character heals wounds in this priority: Chest, Head, Gut, extremities (arms and legs). To determine which extremity is healed first, roll on the random body location chart until a wounded arm or leg is rolled. 
 
 A character with Knowledge (Surgery) may attempt to heal a wounded character. Despite the connotation (and even the denotation) of the word "surgery," Knowledge (Surgery) is the catch-all skill for medicinal knowledge. If a character is wounded and another character wishes to heal them, they can make a check against their Knowledge (Surgery) skill. If their level of success matches that of a wound the character possesses, they heal that wound. One wound per body location per day can be healed in this manner. 
 
+A character trained in First Aid can attempt to heal a Green Wound the character has on a body location. On any level of success, the Green Wound is removed. One Green Wound per body location per day can be healed in this manner.
+
 \section{Combat Equipment}
-This book attempts to separate the setting and the mechanics as much as possible. As such, rather than listing specific weapon or armor types, specific materials, and specific costs, this book leaves those to the referee and the players to determine as appropriate for their setting. The book does, however, provide a suggestion for comparing the efficacy of weapons and armor, relative to each other. 
+This book attempts to separate the setting and the mechanics as much as possible. As such, rather than listing specific weapon or armor types, specific materials, and specific costs, this book leaves those to the Referee and the players to determine as appropriate for their setting. The book does, however, provide a suggestion for comparing the efficacy of weapons and armor, relative to each other. 
 
-Weapons and armor are made of materials, and these materials have relative hardness and resistances relative to each other. As such, it should be easy and intuitive for the referee to identify four or five materials that are common to their setting and rank them from 1 to 4 (or 5), on a scale of increasing hardness. The value assigned to a specific material is the Attack or Armor bonus for a weapon or a piece of armor made with that material, respectively. In addition to an Armor Bonus, pieces of Armor also cover one or more body locations. Whatever design or style the armor has is up to the referee and their setting. 
+Weapons and armor are made of materials, and these materials have hardness and resistances relative to each other. As such, it should be easy and intuitive for the Referee to identify four or five materials that are common to their setting and rank them from 1 to 4 (or 5), on a scale of increasing hardness. The value assigned to a specific material is the Attack or Armor bonus for a weapon or a piece of armor made with that material, respectively. In addition to an Armor Bonus, pieces of Armor also cover one or more body locations. Whatever design or style the armor has is up to the Referee and their setting. 
 
-For example, a futuristic setting could commonly feature objects made of Carbon Fiber, Steel, Titanium, and Plasteel. If the referee assigned these materials a hardness of 1, 2, 3, and 4, respectively, then a sword made of Titanium would have an Attack Bonus of 3. Alternately, in a medieval setting featuring Leather, Bronze, Iron, and Steel materials, each with a hardness of 1, 2, 3, or 4, respectively, a piece of bronze armor would have an Armor Bonus of 2. 
+For example, a futuristic setting could commonly feature objects made of Carbon Fiber, Steel, Titanium, and Plasteel. If the Referee assigned these materials a hardness of 1, 2, 3, and 4, respectively, then a sword made of Titanium would have an Attack Bonus of 3. Alternately, in a medieval setting featuring Leather, Bronze, Iron, and Steel materials, each with a hardness of 1, 2, 3, or 4, respectively, a piece of bronze armor would have an Armor Bonus of 2. 
 
-If the setting allows for the use of ranged weapons of any sort, the referee may declare Attack Bonuses for these weapons as well. If the weapon is low-velocity, such as a bow, the Attack Bonus is 1, so long as the missiles are made of a material with a hardness of at least 1. If the missiles are low-velocity but designed to pierce armor, such as a bodkin point arrow, the Attack Bonus is 2. High velocity missiles (bullets fired from a gun or faster), both traditional and armor-piercing, have an Attack Bonus of 3 and 4 respectively. 
+If the setting allows for the use of ranged weapons of any sort, the Referee may declare Attack Bonuses for these weapons as well. If the weapon is low-velocity, such as a bow, the Attack Bonus is 1, so long as the missiles are made of a material with a hardness of at least 1. If the missiles are low-velocity but designed to pierce armor, such as a bodkin point arrow, the Attack Bonus is 2. High velocity missiles (bullets fired from a gun or faster), both traditional and armor-piercing, have an Attack Bonus of 3 and 4 respectively. 
 
-In special circumstances, such as weapons or armor made of a very rare material, or magical/technological weapons that aren't technically made of any material, it is up to the referee's discretion to declare an Attack or Armor Bonus, relative to the traditional materials of the setting. 
+In special circumstances, such as weapons or armor made of a very rare material, or magical/technological weapons that aren't technically made of any material, it is up to the Referee's discretion to declare an Attack or Armor Bonus, relative to the traditional materials of the setting. 
 
 \subsection{Shields}
 Normally stacking pieces of armor does not provide any benefit to the character. They only receive the greater of the two Armor Bonuses. In the case of shields, however, wearing a shield on an arm always adds that shield's Armor Bonus to the Armor Bonus of any other armor on that arm. Additionally, a character wearing a shield may add the Armor Bonus of that shield to the Armor Bonus of a single body location of theirs that is attacked during each combat turn. When an attack is made against a character wearing a shield, and they have not declared a body location for that turn, they may declare that the targeted body location will receive the Armor Bonus from their shield for that combat turn. 
 
 \section{Unarmed Combat}
-Characters fighting without melee weapons, using their bare fists, can only damage armored Adversaries if their Strength rating is triple that of the Adversary's Armor Bonus. A character uses their Unarmed Combat Skill to make attacks such as these; this Skill can also be used if the character is equipped with certain weapons, such as a cestus or knuckledusters. If using one of these weapons or something similar, and the Attack Bonus of that weapon is 1 or higher, the character can damage armored Adversaries regardless of their Strength rating.  
+Characters fighting without melee weapons, using their bare fists, can only damage armored Adversaries if their Strength rating is triple that of the Adversary's Armor Bonus (there is no such restriction on damaging armored Mooks). A character uses their Unarmed Combat Skill to make attacks such as these; this Skill can also be used if the character is equipped with certain weapons, such as a cestus or knuckledusters. If using one of these weapons or something similar, and the Attack Bonus of that weapon is 1 or higher, the character can damage armored Adversaries regardless of their Strength rating.  
 
 \section{Two-Weapon Fighting}
 A character fighting with two weapons must have the Dual-Wield skill for the two weapons they wish to attack with, or suffer penalties. The character may check their Weapon skill normally to attack with their main-hand weapon, but they must check the lower of their Weapon Skill or Dual-Wield rating to attack with their second weapon. The attack made with their second weapon is resolved after the turn of the character with the lowest initiative. 
@@ -915,9 +924,10 @@ Maneuvers are special actions that can be performed in Combat whose primary inte
 \subsubsection{Grappling}
 A character can attempt to grapple another character whether or not they have the Grappling skill. Of course, having training will increase a character's chance of success. In order to grapple another character, the character must make a check against their Grappling or General Physical rating, minus the Speed or General Physical rating of their target. This check is referred to as a Grappling check. 
 
-On a success, they are grappling the target. On subsequent turns, they can make another Grappling check and, on a success, can continue grappling the target and make a free Unarmed Combat attack, throw the target 5 feet per 5 full points of Strength, or pin the target to the floor. A thrown target always lands in the Prone position.
+On a success, they are grappling the target. On subsequent turns, they can make another Grappling check and, on a success, can continue grappling the target and make a free Unarmed Combat attack, throw the target 5 feet per 5 full points of Strength, or pin the target to the floor. A thrown target always lands in the Prone position. Characters involved in a Grappling maneuver have an effect Speed of 0 for the purpose of determining a hit against them.
 
 A character that begins their turn being Grappled can either make a Grappling check to reverse the grapple or a Strength check to break free. In either case, the intended effect only occurs if their level of success exceeds that of the character that Grappled them. 
+
 
 \subsubsection{Tripping}
 A character can attempt to trip another character, making them drop to the floor in the Prone position. The character must make a check against their Weapon skill or General Physical rating minus the target's Speed or General Physical rating. Particular weapons or objects grant a bonus to tripping. These include flexible weapons like whips and weapons with hooks, such as guisarmes.
@@ -926,12 +936,14 @@ A character can attempt to trip another character, making them drop to the floor
 A character may find themselves in the Prone position as a result of the actions of another character or environmental effects, or they may choose to drop prone themselves. Moving to or from the Prone position is an action that takes up a single turn. Characters attempting to hit a character in the Prone position with a missile attack receive a -3 penalty. Characters who attempt to hit a character in the Prone position with a melee weapon, however, receive a +3 bonus. 
 
 \subsubsection{Disarming}
-A character can attempt to knock a weapon from another character's grasp, if they are in melee range with their target. To do so, they check against their Weapon skill or General Physical rating minus their target's Weapon skill or General Physical rating. On any level of success, the weapon drops to the ground at their target's feet. On a Black success, the weapon drops to the ground at most 10 feet away from the target, in a random direction. Flexible weapons such as whips and flails grant a +3 bonus to attempts to disarm a target.
+A character can attempt to knock a weapon from another character's grasp, if they are in melee range with their target. To do so, they check against their Weapon skill or General Physical rating minus their target's Weapon skill or General Physical rating. On any level of success, the weapon drops to the ground, usually at their target's feet. On a Black success, the weapon drops to the ground at most 10 feet away from the target, in a random direction. Flexible weapons such as whips and flails grant a +3 bonus to attempts to disarm a target.
 
 \subsubsection{Sundering}
 A character attempting to sunder the equipment of a character must declare the piece of equipment they intend to sunder (a weapon or the armor of a body location). A sunder attempt also requires two rolls: the first is a check to see if the character hits the intended target, and the second is to determine if they were able to damage it. The first check is made against the character's Weapon skill or General Physical rating minus the Speed or General Physical rating of the target. The second check is against the character's Strength or General Physical rating. 
 
-If both of these checks have any level of success, the target equipment is damaged, at least to some extent. The target piece of equipment's Attack Bonus or Armor Bonus (as appropriate) is reduced by the Attack Bonus of the character's weapon. A piece of equipment whose Bonus (Attack or Armor) has been reduced to 0 is destroyed. On a Black success on the Strength check inflicts a Green wound on the body location nearest the target piece of equipment.  
+If both of these checks have any level of success, the target equipment is damaged, at least to some extent. The target piece of equipment's Attack Bonus or Armor Bonus (as appropriate) is reduced by the Attack Bonus of the character's weapon. A piece of equipment whose Bonus (Attack or Armor) has been reduced to 0 is destroyed. A Black success on the Strength check inflicts a Green wound on the body location nearest the target piece of equipment. If the character is attempting a sunder check without a weapon (using an unarmed attack), their Strength must be quadruple the Attack or Armor Bonus of the targeted piece of equipment, or they automatically fail. On a successful Strength check, they reduce the Attack or Armor Bonus of the target equipment by 1, 2, 3, or 4, for Green through Black success, respectively.
+
+If the sundering character succeeds at the check to determine a hit, but fails the check to sunder the piece of equipment, their equipment is instead damaged. The Attack Bonus is reduced by 1 or 2, at the Referee's discretion, and usually dependent on the relative bonuses of the attacking and target equipment. If the sundering character is using an unarmed attack, they suffer a Green or Yellow wound to their attacking body location, at the Referee's discretion.
 
 For example: Gala of Iondren uses her trusty steel lucerne hammer to attempt to sunder the bronze helmet of a would-be assassin. She successfully hits his helmet and gets a Green success on her Strength check. Her weapon, being made of steel, has an Attack Bonus of 3, which reduces the bronze helmet's Armor Bonus of 1 to -2. As its Armor Bonus is reduced to 0 or lower, the helmet is destroyed. 
 
@@ -943,22 +955,25 @@ A character must know where their target is in order to attack them.
 
 Any character that is in combat and cannot see receives a -5 penalty to Speed to avoid all attacks, as well as a -5 penalty to any rolls made to attack a character. If both the attacker and the target are unable to see, these penalties cancel each other out. 
 
-A character that is blind (temporarily or permanently), in complete darkness, or otherwise blinded (in all of the above cases, they will be referred to as a "blind character") must make an effort to locate their target without the faculty of sight. If they are more than 15 feet away from their target, each time their target performs an action that produces sound, the character may make a Perception or General Physical check. On any level of success, the referee must give them an idea of where the character is located, relative to their current location. This can simply be a cardinal direction, but should be more specific for greater levels of success. 
+A character that is blind (temporarily or permanently), in complete darkness, or otherwise blinded (in all of the above cases, they will be referred to as a "blind character") must make an effort to locate their target without the faculty of sight. If they are more than 15 feet away from their target, each time their target performs an action that produces sound, the character may make a Perception or General Physical check. On any level of success, the Referee must give them an idea of where the character is located, relative to their current location. This can simply be a cardinal direction, but should be more specific for greater levels of success. 
 
-If a blind character is 15 feet or less away from their target and that target produces a sound, the the character may make a Perception or General Physical check. On any success, the referee should inform them of 4, 3, 2, or 1 possible locations for the target, for a Green through Black success, respectively. If the table is using a grid for combat, these locations correspond directly to grids. Otherwise, this is left up to the referee's discretion. In any case, the possible locations for the target should be adjacent to each other. A blind character can choose to make a blind melee attack towards one of these locations, if they are in melee range of it. If the target is actually located there, and the character scores a hit, roll on the random body location chart to see where they have struck. 
+If a blind character is 15 feet or less away from their target and that target produces a sound, the the character may make a Perception or General Physical check. On any success, the Referee should inform them of 4, 3, 2, or 1 possible locations for the target, for a Green through Black success, respectively. If the table is using a grid for combat, these locations correspond directly to grids. Otherwise, this is left up to the Referee's discretion. In any case, the possible locations for the target should be adjacent to each other. A blind character can choose to make a blind melee attack towards one of these locations, if they are in melee range of it. If the target is actually located there, and the character scores a hit, roll on the random body location chart to see where they have struck. 
 
-Consider a scenario where a character performs an action that produces a noise away from their location (throwing a stone on the floor, or shooting an arrow at a wall, etc). Unless they move completely silently while performing this action, any characters attempting to locate them may make two Perception or General Physical checks, and receive information about where the noises came from, appropriate for their distance from each source of sound. In this case, the referee should describe both noises and leave it up to the character to decide which noise was produced by their actual target. 
+Consider a scenario where a character performs an action that produces a noise away from their location (throwing a stone on the floor, or shooting an arrow at a wall, etc). Unless they move completely silently while performing this action, any characters attempting to locate them may make two Perception or General Physical checks, and receive information about where the noises came from, appropriate for their distance from each source of sound. In this case, the Referee should describe both noises and leave it up to the character to decide which noise was produced by their actual target. 
+
+\section{Flanking}
+For every allied character other than themselves in melee range of an enemy, a character receives a +1 bonus to attacking that enemy with melee, up to a maximum of +3.
 
 \end{multicols}
 
 \chapter{Magic}
-Magic in THIZ is a powerful force. Player characters and their Adversaries will often use magic to their own ends, often performing feats well beyond normal human ability. Such power, however, comes at a steep price: the study and use of magic often warps the minds and bodies of those who dare dabble in the arcane.
+Magic in THIZ is a powerful force. Player characters and their Adversaries will often use magic to their own ends, performing feats well beyond normal human ability. Such power, however, comes at a steep price: the study and use of magic is likely to warp the minds and bodies of those who dare dabble in the arcane.
 
 \begin{multicols}{2}
 \subsection{Magic Users}
-Any character in THIZ can learn magic, so long as they are willing to pay the price. Players can choose to learn Magic Skills at Character Creation, and for each Magic Skill their character possesses, they must choose a Magical or Mental Weakness to represent the effect such knowledge has had on their person. A character can also learn a Magical Skill at any point in the campaign, so long as they have a teacher and time to spare. 
+Any character in THIZ can learn magic, so long as they are willing to pay the price. Players can choose to learn Magic Skills at Character Creation, and for each Magic Skill their character possesses, they must choose a Magical or Mental Weakness to represent the effect such knowledge has had on their character. A character can also learn a Magical Skill at any point in the campaign, so long as they have a teacher and time to spare. 
 
-In most settings, characters that do not possess magical abilities will be suspicious or fearful of those that do. A character who is discovered to be a "witch" or "sorcerer" may find that those they once considered friends will want nothing more to do with them.
+In most settings, characters that do not possess magical abilities will be suspicious or fearful of those that do. A character who is discovered to be a ``witch'' or ``sorcerer'' may find that those they once considered friends will want nothing more to do with them.
 
 \subsection{Learning New Magic Skills}
 Like all skills, Magical Skills require a cost of 5 Skill Points to learn after Character Creation. Additionally, the character must have a mentor or tutor who already possess a particular Magic Skill and a rating of at least 7 in that skill to teach them the Magic Skill.
@@ -967,21 +982,21 @@ All Magic Skills require a 6-month period of study. The character must spend eve
 
 If the tutor and the character wish, the character may travel or adventure while studying with their tutor, so long as the they spend some time each day studying the desired Magic Skill. Characters studying a Magic Skill in this way must spend 1/3rd more time studying their Magic Skill. That means, a character studying a Magic Skill on the go must spend 6 months + 2 additional months studying, for a total of 8 months. 
 
-Lastly, a character that has spent time studying a Magic Skill under a tutor may gain a \textbf{Special} in that Magic Skill. The section "Training" in the chapter \textbf{Character Advancement \& Time Management} has more information on Specials, but they are essentially personalized specialties that a character develops while mastering a skill. This can take the form of a +3 to the Magic Skill in a specific environment or time period, or a specific magical effect that the character can manifest at an easier level of success than normal. The Special is unique to the character, but may also exhibit the influence of their tutor, as well. A character that already knows a Magic Skill and wishes to develop a Special for said Magic Skill must spend 3 months with a tutor who knows that Magic Skill. A character can only have one Special for each Magic Skill they possess, but they may seek further training to develop a new Special in place of their old one.
+Lastly, a character that has spent time studying a Magic Skill under a tutor may gain a \textbf{Special} in that Magic Skill. The section "Training" in the chapter \textbf{Character Advancement \& Time Management} has more information on Specials, but they are essentially personalized specialties that a character develops while mastering a skill. This can take the form of a +3 to the Magic Skill in a specific environment or situation, or a specific magical effect that the character can manifest at an easier level of success than normal. The Special is unique to the character, but may also exhibit the influence of their tutor, as well. A character that already knows a Magic Skill and wishes to develop a Special for said Magic Skill must spend 3 months with a tutor who knows that Magic Skill. A character can only have one Special for each Magic Skill they possess, but they may seek further training to develop a new Special in place of their old one.
 
 \subsection{Manifesting Magical Effects}
-A character wishing to use their magical skill must declare the magical effect they intend to manifest. The referee then gives them a target level of Success they must reach in order to make that effect occur. Of course, the more complex or powerful the magical effect, the higher the level of success required. The description of each Magical Skill in the \textbf{Skills} chapter has example magical effects and the requisite levels of success. Additionally, particularly powerful Magic Skills and magical effects will require the use of rare or expensive reagents each time they are cast. The character may have to pay a large sum of money or go on an adventure or quest to find these reagents.
+A character wishing to use their magical skill must declare the magical effect they intend to manifest. The Referee then gives them a target level of Success they must reach in order to make that effect occur. Of course, the more complex or powerful the magical effect, the higher the level of success required. The description of each Magical Skill in the \textbf{Skills} chapter has example magical effects and the requisite levels of success. Additionally, particularly powerful Magic Skills and magical effects will require the use of rare or expensive reagents each time they are attempted. The character may have to pay a large sum of money or go on an adventure or quest to find these reagents.
 
-Whenever a character witnesses a particularly impressive use of a Magical Skill, at the referee's discretion, they can possibly be inflicted with Terror. For more information, please see the section entitled "Terror" at the end of this chapter.  
+Whenever a character witnesses a particularly impressive use of a Magical Skill, at the Referee's discretion, they can possibly be inflicted with Terror. For more information, please see the section entitled "Terror" at the end of this chapter.  
 
 \subsection{Extended Casting}
-Obviously, not every time a character attempts to manifest a magical effect will they achieve the requisite level of success. This usually means that the magical effect does not occur, and whatever reagents the character was using to cast the spell are wasted. 
+Obviously, not every time a character attempts to manifest a magical effect will they achieve the requisite level of success. This usually means that the magical effect does not occur, and whatever reagents the character was using to manifest the magical effect are wasted. 
 
-All is not lost, however, as a character may choose to continue attempting to cast the spell, maintaining a partial level of success until they succeed. Each check takes up a single combat turn (or some amount of time at the referee's discretion outside of combat), as normal. Each level of success requires two checks resulting a level of success directly below it. 
+All is not lost, however, as a character may choose to continue attempting to cast the spell, maintaining a partial level of success until they succeed. Each check takes up a single combat turn (or some amount of time at the Referee's discretion outside of combat), as normal. Each level of success requires two checks resulting a level of success directly below it. 
 
-For example, in the middle of combat, Bertold is attempting to use Artifice to add +1 to the attack bonus of all nearby firearms. This requires a Red success. On his first turn, he only achieves a Green success. He chooses to continue the same spell until he succeeds. On his next turn, he gets a Yellow success. He now has a Green and a Yellow success, but no Red success, so the spell is not successful. On his third turn, he gets another Green success. Two Green successes make another Yellow success, and two Yellow success make a Red success. The spell is finally cast!
+For example, in the middle of combat, Bertold is attempting to use Artifice to add +1 to the Attack Bonus of all nearby firearms. The Referee determines that this requires a Red success. On his first turn, he only achieves a Green success. He chooses to continue the same magical effect until he succeeds. On his next turn, he gets a Yellow success. He now has a Green and a Yellow success, but no Red success, so the magical effect is not manifested. On his third turn, he gets another Green success. Two Green successes make another Yellow success, and two Yellow success make a Red success. The magical effect is finally made manifest!
 
-If a magical effect requires the expenditure of reagents, the character must spend 25\% more of the reagent for each additional check against their Magical Skill. If they run out of the reagent or lose contact with a required spell focus, they cannot make additional checks and all progress towards casting the spell is lost. Additionally, if a character's concentration is broken, they lose all progress towards casting the spell. A character doing Extended Casting in combat that suffers a wound must make a Willpower check. On a failure, they lose all progress towards casting the spell. 
+If a magical effect requires the expenditure of reagents, the character must spend 25\% more of the reagent for each additional check against their Magical Skill. If they run out of the reagent or lose contact with a required magical focus, they cannot make additional checks and all progress towards manifesting the magical effect is lost. Additionally, if a character's concentration is broken, they lose all progress towards manifesting the magical effect. A character doing Extended Casting in combat that suffers a wound must make a Willpower check. On a failure, their concentration is broken. 
 
 \subsection{Terror}
 Terror is a natural reaction to witnessing magical effects. Realizing that someone in your presence can defy the laws that govern reality itself usually has a devastating effect on one's sense of security. 
@@ -1015,7 +1030,7 @@ When traveling on foot, a character can move a certain number of miles per day, 
 Animals are also limited in terms of how many miles they can cover per day by their Speed or General Physical rating. A character riding an animal or driving a team of animals may use their Animal Handling skill to direct or motivate the animal(s) to move, but they cannot use Animal Handling to get the creatures to travel a distance greater than that dictated by their Speed rating.
 
 \subsubsection{Boats}
-Boats and ships are often a relatively safe and easy means of traveling long distances. A boat that is rowed can travel 10 miles in a day. A boat that is sailing on good winds can travel up to 30 miles in a day. A larger ship can travel up to 50 or 65 miles in a day, depending on its cargo and weather conditions. Ships that use motors or other technological (or magical) means of travel can go 80, 100, or even more miles in a day if the referee deems it appropriate. 
+Boats and ships are often a relatively safe and easy means of traveling long distances. A boat that is rowed can travel 10 miles in a day. A boat that is sailing on good winds can travel up to 30 miles in a day. A larger ship can travel up to 50 or 65 miles in a day, depending on its cargo and weather conditions. Ships that use motors or other technological (or magical) means of travel can go 80, 100, or even more miles in a day if the Referee deems it appropriate. 
 
 \section{Movement Rate Table}
 
@@ -1074,16 +1089,16 @@ A character may jog at the rate listed on the table above for a number of hours 
 A character may sprint at the rate listed on the table above for a number of minutes equal to their Toughness or General Physical rating. A character with a value of zero in both of those ratings can sprint for a single minute. After using the entirety of their sprint time, a character must rest for 30 minutes. 
 
 \section{Animals}
-Animals follow the same movement and fatigue rules as humans. One notable difference between the two is that, while humans have a maximum possible rating of 30 in any Skill, animals may have a rating that is higher, especially in Speed. If a character wishes to induce an animal to move or act in an abnormal manner, they must make a check against their Animal Handling or General Mental rating. On a failure, the animal does not obey. On any level of success, the animal complies. At the referee's discretion, a greater level of success may result in an exemplary execution of the character's command. 
+Animals follow the same movement and fatigue rules as humans. One notable difference between the two is that, while humans have a maximum possible rating of 30 in any Skill, animals may have a rating that is higher, especially in Speed. If a character wishes to induce an animal to move or act in an abnormal manner, they must make a check against their Animal Handling or General Mental rating. On a failure, the animal does not obey. On any level of success, the animal complies. At the Referee's discretion, a greater level of success may result in an exemplary execution of the character's command. 
 
-At the referee's discretion, the above Movement Rate chart may be modified slightly for some creatures, such as horses. For a particularly fast animal, the numbers in the chart indicate yards moved per turn/minute rather than feet. 
+At the Referee's discretion, the above Movement Rate chart may be modified slightly for some creatures, such as horses. For a particularly fast animal, the numbers in the chart indicate yards moved per turn/minute rather than feet. 
 
 \section{Climbing}
-Any character can attempt to make easy climbs and, if the ascent seems simple enough, the referee can forgo the need to make a player roll for their character. Contrastingly, a climb can be difficult enough that characters untrained in the Climbing skill require the help of a trained climber or ropes and pitons to make the ascent. 
+Any character can attempt to make easy climbs and, if the ascent seems simple enough, the Referee can forgo the need to make a player roll for their character. Contrastingly, a climb can be difficult enough that characters untrained in the Climbing skill require the help of a trained climber or ropes and pitons to make the ascent. 
 
 While climbing, the character moves at a rate of 5 feet + 1/2 their Climbing skill each combat turn. 
 
-For every 100 feet a character climbs, they must make a check against their Climbing or General Physical rating. For climbs less than 100 feet, the character makes a check at the halfway point and at the top of the climb. Every climb should involve at least two resolution checks. On a failure, the character falls from the point they are at when the check was made. On any degree of success, the character may continue climbing. Certain conditions, such as a sloping surface or overhang may apply a bonus or penalty to the resolution check, at the referee's discretion.
+For every 100 feet a character climbs, they must make a check against their Climbing or General Physical rating. For climbs less than 100 feet, the character makes a check at the halfway point and at the top of the climb. Every climb should involve at least two resolution checks. On a failure, the character falls from the point they are at when the check was made. On any degree of success, the character may continue climbing. Certain conditions, such as a sloping surface or overhang may apply a bonus or penalty to the resolution check, at the Referee's discretion.
 
 A character that falls is not guaranteed to fall all the way to the bottom. Roll 1d10 x 10. If the result is greater than the character's distance above the ground, they fall all the way to the bottom. Else, they catch themselves after falling that distance. 
 
@@ -1100,7 +1115,7 @@ A character's walking speed in battle or when walking short distances is much gr
 An animal carrying a rider can only travel 2/3 its typical distance (as determined above) each day. If it is pulling a vehicle, the animal can travel 1/2 its typical distance each day. 
 
 \section{Vehicles}
-Normally, the day-to-day trivialities of traveling are glossed over by the players and the referee. Travel usually happens in the stroke of a narrative brush, with the occasional storm or pack of bandits to break up the monotony. The following rules, then, deal with vehicular combat, vehicular collisions, and tests of skill between one driver and another.
+Normally, the day-to-day trivialities of traveling are glossed over by the players and the Referee. Travel usually happens in the stroke of a narrative brush, with the occasional storm or pack of bandits to break up the monotony. The following rules, then, deal with vehicular combat, vehicular collisions, and tests of skill between one driver and another.
 
 \subsection{Operating a Vehicle}
 Operating a vehicle is governed by the Pilot skill. Each unique vehicle, such as a chariot or sledge, should have its own instance of the Pilot skill. 
@@ -1145,7 +1160,7 @@ Attacks made from a moving vehicle against a stationary target or a pedestrian a
 
 When an attack is made against a vehicle by a stationary target or a vehicle that is crossing its path, the target vehicle's current Speed is used by the attacker to calculate their adjusted attack rating. 
 
-As vehicles can take damage, they each have their own unique Toughness rating, as determined by the referee. When they suffer damage, they can make a check against their Toughness rating to avoid the wound, just as a character would. All vehicles have a single body location. If they suffer a Black wound, the vehicle is unable to continue operating. 
+As vehicles can take damage, they each have their own unique Toughness rating, as determined by the Referee. When they suffer damage, they can make a check against their Toughness rating to avoid the wound, just as a character would. All vehicles have a single body location. If they suffer a Black wound, the vehicle is unable to continue operating. 
 
 \subsection{Collision Damage}
 
@@ -1153,7 +1168,7 @@ When vehicles collide, make a check against the Speed of the vehicle doing the s
 
 If a moving vehicle strikes a pedestrian, make a resolution check against the vehicle's current Speed minus the pedestrian's Speed in order to determine the potential wound the pedestrian will suffer. Only the pedestrian suffers damage in this type of collision, and they may make a check against Toughness as normal when potentially suffering a wound. 
 
-When a moving vehicle strikes a stationary fixture, such as a building or city wall, make a check against the vehicle's current Speed in order to determine the wound the vehicle may suffer, as above. It is up to the referee's discretion to determine how the stationary fixture is affected by the collision. 
+When a moving vehicle strikes a stationary fixture, such as a building or city wall, make a check against the vehicle's current Speed in order to determine the wound the vehicle may suffer, as above. It is up to the Referee's discretion to determine how the stationary fixture is affected by the collision. 
 
 \subsection{Inoperable Vehicles}
 
@@ -1174,13 +1189,13 @@ Characters that fall more than 10 feet may possibly be damaged by their fall. Wh
 
 Characters injured by a fall that survive the damage are stunned for a number of turns equal to the distance fallen divided by 10. Stunned characters may take no actions. 
 
-A character that falls 100 feet or more onto an unyielding surface is killed instantaneously. A character that falls 100 feet or more onto a yielding (deep water, sand, deep snow) surface may survive, according to the referee's discretion. Water, regardless of depth, is not a yielding surface if the character has fallen 200 feet or more. 
+A character that falls 100 feet or more onto an unyielding surface is killed instantaneously. A character that falls 100 feet or more onto a yielding (deep water, sand, deep snow) surface may survive, according to the Referee's discretion. Water, regardless of depth, is not a yielding surface if the character has fallen 200 feet or more. 
 
 \section{Fire}
 
-A fire has a rating based on its intensity. A fire's rating is used as if it were an attacker's Weapon skill in order to determine if it inflicts a wound on a character. A character that is able to move away from the fire may reduce the fire's rating by their Speed rating. Additionally, any armor worn by a character on a targeted body location reduces the fire's rating by 1, regardless of the Armor Bonus it may have. 
+A fire has a rating based on its intensity. A fire's rating is used as if it were an attacker's Weapon skill in order to determine if it inflicts a wound on a character. A character that is able to move away from the fire may reduce the fire's rating by their Speed rating. Additionally, any armor worn by a character on a targeted body location reduces the fire's rating by 1, regardless of the Armor Bonus it may have. Unless, of course, the armor is particularly flammable. In that case, it is up to the Referee's discretion how the fire's rating is affected. 
 
-In order to determine where a character is injured by a fire, the referee could use the situation to dictate the location, such as ruling that the body location closest to or targeted by the fire (at the hands of another character, usually) is injured by the fire. If the character is temporarily consumed or licked by flames, the referee may use the random body location chart to determine where the character is injured, or their own discretion. In some cases, all body locations could be affected simultaneously.
+In order to determine where a character is injured by a fire, the Referee could use the situation to dictate the location, such as ruling that the body location closest to or targeted by the fire (at the hands of another character, usually) is injured by the fire. If the character is temporarily consumed or licked by flames, the Referee may use the random body location chart to determine where the character is injured, or their own discretion. In some cases, all body locations could be affected simultaneously.
 
 Below is a chart depicting the rating for typical types of fire: 
 
@@ -1253,13 +1268,13 @@ Below is a table of ratings for typical bodies of water:
 
 \section{Suffocation}
 
-A character that cannot breathe for any reason, including submersion in water, can hold their breath for (6 + their General Physical rating) turns. After this time has been exceeded, the referee should keep a running total of the number of turns they have been unable to breathe. At the end of each turn after that point, the referee must make a resolution check against the running total you have been keeping. The character receives a wound corresponding to the level of success of that check to their Chest body location. A character regains a turn they can spend without breathing for every two turns they spend being able to breathe. 
+A character that cannot breathe for any reason, including submersion in water, can hold their breath for (6 + their General Physical rating) turns. After this time has been exceeded, the Referee should keep a running total of the number of turns they have been unable to breathe. At the end of each turn after that point, the Referee must make a resolution check against the running total they have been keeping. The character receives a wound corresponding to the level of success of that check to their Chest body location. A character regains a turn they can spend without breathing for every two turns they spend being able to breathe. 
 
-For example, a character with a General Physical rating of 1 can hold their breath for 7 turns. Unfortunately for them, they have been cast into the vacuum of space without any breathing apparatus. After the 8th turn of being in the void, the referee must make a check against a rating of 1. Unfortunately for the character, the referee scores a Green success, which results in a Green wound to their Chest. They now suffer from a -1 to initiative checks, due to this wound. The next turn, the 9th turn they could not breathe, they would make a resolution check against a rating of 2.
+For example, a character with a General Physical rating of 1 can hold their breath for 7 turns. Unfortunately for them, they have been cast into the vacuum of space without any breathing apparatus. After the 8th turn of being in the void, the Referee must make a check against a rating of 1. Unfortunately for the character, the Referee scores a Green success, which results in a Green wound to their Chest. They now suffer from a -1 to initiative checks, as with any Green wound to the Chest. The next turn, the 9th turn they could not breathe, the Referee would make a resolution check against a rating of 2.
 
 
 \section{Poison}
-Every poison has a Wound Rating (from Green to Black) and a Duration. Whenever a character is poisoned, the referee makes a check against that character's Toughness or General Physical rating. If their level of success meets or exceeds that of the poison's Wound Rating, they do not suffer the wound the poison would inflict on them. Otherwise, they must attempt to find and apply the antidote before duration takes effect. If they fail to do so, they suffer a wound appropriate for the Wound rating of the poison. Most poisons inflict a wound on the Gut body location, but the referee can instead decide to inflict a wound on the body location directly affected by the poison (such as an arm if it was cut by a poisoned blade).
+Every poison has a Wound Rating (from Green to Black) and a Duration. Whenever a character is poisoned, the Referee makes a check against that character's Toughness or General Physical rating. If their level of success meets or exceeds that of the poison's Wound Rating, they do not suffer the wound the poison would inflict on them. Otherwise, they must attempt to find and apply the antidote before duration takes effect. If they fail to do so, they suffer a wound appropriate for the Wound rating of the poison. Most poisons inflict a wound on the Gut body location, but the Referee can instead decide to inflict a wound on the body location directly affected by the poison (such as an arm if it was cut by a poisoned blade).
 
 \end{multicols}
 
@@ -1273,20 +1288,20 @@ Players often have lofty or imaginative goals for their character. Many of these
 
 At the end of each session, a character may gain skill points to spend on increasing their skills. A character should earn at least one skill point for attending the session, but they can earn additional points for making use of their skills. 
 
-Using a skill once or twice in a session earns them 1 additional point. Heavy use of a skill, such as fighting off a veritable horde of Mooks or Swimming across the Shadowed Sea and back again, earns a character 5 additional skill points. A referee may award 2, 3, or 4 additional skill points for using a skill some amount between these extremes. Characters can also gain 2 skill points for succeeding at using a skill in which they are not trained.
+Using a skill once or twice in a session earns them 1 additional point. Heavy use of a skill, such as fighting off a veritable horde of Mooks or Swimming across the Shadowed Sea and back again, earns a character 5 additional skill points. A Referee may award 2, 3, or 4 additional skill points for using a skill some amount between these extremes. Characters can also gain 2 skill points for succeeding at using a skill in which they are not trained.
 
 A character may earn a maximum of 10 skill points at the end of a session. 
 
-Skill points can be spent to increase skills the character already has at a one-to-one ratio. New skills can be learned at the cost of 5 skill points. These skills begin with a rating of 1. If the referee feels the current circumstances do not make sense for the character to learn a particular skill, they may ask the player to wait until it is more appropriate. An example of such a situation is a character attempting to learn Acrobatics after having spent the entire session tied to a torturer's rack. 
+Skill points can be spent to increase skills the character already has at a one-to-one ratio. New skills can be learned at the cost of 5 skill points. These skills begin with a rating of 1. If the Referee feels the current circumstances do not make sense for the character to learn a particular skill, they may ask the player to wait until it is more appropriate. An example of such a situation is a character attempting to learn Acrobatics after having spent the entire session tied to a torturer's rack. 
 
 \section{Luck}
-Each character has a certain number of luck points they can use to offset the effects of their often tumultuous fate. This number should only be known to the referee, and the player should only be informed of their total when it reaches zero. This way, the player (and their character) are never sure when their luck is going to run out. 
+Each character has a certain number of Luck Points they can use to offset the effects of their often tumultuous fate. This number should only be known to the Referee, and the player should only be informed of their total when it reaches zero. This way, the player (and their character) are never sure when their luck is going to run out. 
 
-Players can spend a luck point to re-roll a resolution check if they are upset with the results. They can also spend a luck point in order to reduce the level of a wound by one (a Black wound to a Red or a Yellow wound to a Green).
+Players can spend a Luck Point to re-roll a resolution check if they are upset with the results. They can also spend a Luck Point in order to reduce the level of a wound by one (a Black wound to a Red or a Yellow wound to a Green).
 
-Players can also spend a variable amount of luck points if they want their character to attempt a feat that could only be possible if luck was on their side. This includes actions such as jumping from the top of a ship's mast and landing through the cannon-hole of a nearby ship. If the referee declares an action could only be possible through sheer luck, the player can designate how many luck points they wish to spend. The referee then rolls on the resolution chart as if this amount of luck points were a skill rating. If this amount exceeds the character's total luck points, then the referee must roll on the character's total luck points instead. On any level of success, the character successfully completes the stunt. 
+Players can also spend a variable amount of Luck Points if they want their character to attempt a feat that could only be possible if luck was on their side. This includes actions such as jumping from the top of a ship's mast and landing through the cannon-hole of a nearby ship. If the Referee declares an action could only be possible through sheer luck, the player can designate how many Luck Points they wish to spend. The Referee then rolls on the resolution chart as if this amount of Luck Points were a Skill rating. If this amount exceeds the character's total Luck Points, then the Referee must roll on the character's total Luck Points instead. On any level of success, the character successfully completes the stunt. 
 
-The referee can award a character an additional luck point for particularly daring stunts. They could also reward the character with an additional luck point for good role-playing or greatly contributing to the table's fun. 
+The Referee can award a character an additional Luck Point for particularly daring stunts. They could also reward the character with an additional Luck Point for good role-playing or greatly contributing to the table's fun. 
 
 \section{Training}
 
@@ -1300,7 +1315,7 @@ A character can gain a Special for any skill they possess, so long as they can f
 
 \section{Professions}
 
-If a character does not wish to spend their free time training a new skill, they can instead attempt to ply their skills and line their coffers. A character can attempt to use any skill they possess in order to make money, so long as they can find an employer wishing to utilize that skill. Some examples include a merchant willing to use a character's Weapon Skill while traveling in a caravan, a cartographer tasking a character with the Navigate skill to help them accurately map out an area, or an alchemist using a character with Knowledge (Herbalism) to gather reagents from the surrounding countryside. Players (and the referee) should keep in mind that a particular employer may be less willing to employ a character with too low of a rating in a skill. 
+If a character does not wish to spend their free time training a new skill, they can instead attempt to ply their skills and line their coffers. A character can attempt to use any skill they possess in order to make money, so long as they can find an employer wishing to utilize that skill. Some examples include a merchant willing to use a character's Weapon Skill while traveling in a caravan, a cartographer tasking a character with the Navigate skill to help them accurately map out an area, or an alchemist using a character with Knowledge (Herbalism) to gather reagents from the surrounding countryside. Players (and the Referee) should keep in mind that a particular employer may be less willing to employ a character with too low of a rating in a skill. 
 
 A character earns income on a weekly basis. Each week, they make a resolution check against the skill they are being employed to use. Based on their level of success, they make a certain level of income. Rather than tie the results to a certain system of currency or particular setting, the results for each level of success are described on a relative scale below:  
 
@@ -1314,18 +1329,55 @@ A character earns income on a weekly basis. Each week, they make a resolution ch
 		\item{Black: Enough to afford weekly feasts and a stay in a private suite; or enough to afford that toy you've always wanted}
 	\end{itemize}
 
-Of course, the above examples are just that - example values. The referee can award income at their discretion, and a character can choose to spend it in whatever way they please. 
+Of course, the above examples are just that - example values. The Referee can award income at their discretion, and a character can choose to spend it in whatever way they please. 
 
 \section{Crafting}
 A character can also attempt to craft an item if they possess an appropriate skill, such as Artisan, Profession, Trade, or even Knowledge or Forgery. When they attempt to do so, they must purchase the raw materials and secure any tools or work-space required to craft the item.
 
-When a character declares they wish to craft an object, the referee must give them a \textbf{Target Score}, which is an integer value representing the difficulty of crafting the object (for a blacksmith, this can be 2 if they are trying to craft a simple dagger or 12 if they are attempting to craft a masterfully-balanced sword customized for a particular character). The referee must also designate an amount of \textbf{Time} a character gets for each attempt. If this is something like a weapon or a small carving, that amount of time might be 6 hours, while a large manuscript or a small building might take a week. 
+When a character declares they wish to craft an object, the Referee must give them a \textbf{Target Score}, which is an integer value representing the difficulty of crafting the object (for a blacksmith, this can be 2 if they are trying to craft a simple dagger or 12 if they are attempting to craft a masterfully-balanced sword customized for a particular character). The Referee must also designate an amount of \textbf{Time} a character gets for each attempt. If this is something like a weapon or a small carving, that amount of time might be 6 hours, while a large manuscript or a small building might take a week. 
 
-Once a target score and a period of time has been established, the character makes a resolution check against the skill they wish to employ to craft an object. Depending on their level of success, they get 1, 2, 3, or 4 points, for a Green through Black success, respectively. These points are subtracted from the target score, and the period of time the referee designated has elapsed. If the target score has been reduced to zero or lower, the character has successfully crafted the object. Otherwise, if they have enough free time, they may spend another period of time and make another resolution check. Failure does not eliminate their progress, but it does not make new progress either. 
+Once a target score and a period of time has been established, the character makes a resolution check against the skill they wish to employ to craft an object. Depending on their level of success, they get 1, 2, 3, or 4 points, for a Green through Black success, respectively. These points are subtracted from the target score, and the period of time the Referee designated has elapsed. If the target score has been reduced to zero or lower, the character has successfully crafted the object. Otherwise, if they have enough free time, they may spend another period of time and make another resolution check. Failure does not eliminate their progress, but it does not make new progress either. 
 
-Here is a quick example: a character wishes to use their Trade (Carpentry) skill to make a small shed. The referee decides that, since the shed must not be of exceptional quality or size, the target score is only three, and the period of time is two days. The carpenter makes a check against their skill, and they get a Yellow success. This reduces their target score by 2, which leaves it at 1, and two days pass. They make another check and get a Red success. This reduces their target score by 3, to -2, and two more days pass. The target score is at zero or lower, and the shed is complete! 
+Here is a quick example: a character wishes to use their Trade (Carpentry) skill to make a small shed. The Referee decides that, since the shed must not be of exceptional quality or size, the target score is only 3, and the period of time is two days. The carpenter makes a check against their skill, and they get a Yellow success. This reduces their target score by 2, which leaves it at 1, and two days pass. They make another check and get a Red success. This reduces their target score by 3, to -2, and two more days pass. The target score is at zero or lower, and the shed is complete! 
 
-If a character manages to exceed the target score, they craft an exceptional version of whatever they were attempting to make. What exactly this means for the character is up to the referee's discretion. 
+If a character manages to exceed the target score, they craft an exceptional version of whatever they were attempting to make. What exactly this means for the character is up to the Referee's discretion. 
+
+\section{Fame}
+Fame is a statistic that the player cannot allocate Skill points to, but it is an integral part of their character nonetheless. A character's Fame will outlast their wealth, and likely their physical bodies. Their deeds, their personality, their reputation --- whatever it is about the character that precedes them as they make their way through a city. The stories that radiate in their wake, on the tongues of all those who were in their presence, however briefly. 
+
+Every character has Fame. At character creation, this statistic always begins at 0. The player cannot allocate Skill points towards their character's Fame score. Fame can only be earned by a character's display of heroic (or not-so-heroic) action. The conditions under which a character's actions can earn them Fame are as follows:
+	
+	\begin{enumerate}
+		\item{ \small The deed must be extraordinary.}
+		\item{ \small Other creatures must witness the deed, and leave the area capable of recounting tales of the character's actions. OR}
+		\item{ \small Their must be indisputable proof of the character's deed for them to show others.}
+		\item{ \small The deed must have been particularly challenging or dangerous to the character.}
+\end{enumerate}
+
+Example deeds worth 1 Fame Point:
+\begin{itemize}
+\setlength\itemsep{0em}
+\item{ \small A dangerous stunt}
+\item{ \small An attack against insurmountable odds}
+\item{ \small Defeating an enemy with higher general skill ratings}
+\item{ \small Possessing a Skill with a rating over 20}
+\item{ \small Possessing a Skill with a rating over 30 (stacks)}
+\item{ \small An astounding display of mercy or cruelty}
+\item{ \small Helping or hindering a character of note}
+\end{itemize}
+
+Characters in the world and even items can possess a Fame rating, if they have enough notoriety. A character who helps vanquish such a creature or gains possession of such an item gains Fame equal to that of the creature or item.
+
+When outwitted, outgunned, or simply embarrassed, a character can potentially lose Fame. Similarly to gaining Fame, a character can only lose Fame if there are witnesses to give an account of their blunder. Some example actions that can cause a loss of 1 point of Fame include:
+\begin{itemize}
+\setlength\itemsep{0em}
+\item{ \small An astounding display of cowardice or stupidity}
+\item{ \small Being made a fool of}
+\item{ \small Betraying friends or followers}
+\item{ \small Being defeated by an enemy with lower general skill ratings}
+\end{itemize}
+
+A character's Fame will most directly affect their life when it comes to their interactions with other characters. Villagers and dignitaries alike will be cowed in the presence of a character with enough renown. Fame usually dictates what sort of employment a character can find. A king might consider a character with a Fame of 10 or lower to be unfit to send out as an envoy to a gathering of nobles. Contrastingly, a caravan owner or merchant might be too intimidated to hire a character with over 10 Fame to guard them as they travel. Characters with over 26 Fame might find themselves asked to become an ambassador to a neighboring country or a general in the royal army.
 
 \end{multicols}
 
@@ -1421,7 +1473,7 @@ This appendix contains multiple renditions of the resolution chart, as there has
 
 \begin{table}[h]
 \begin{tabular}{lccccc}
-\multicolumn{1}{c}{}                       & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} \textbf{H}} & \cellcolor[HTML]{FE0000}\textbf{T} & \multicolumn{1}{c}{\cellcolor[HTML]{F8FF00}\textbf{A}} & \multicolumn{1}{c}{\cellcolor[HTML]{34FF34}\textbf{M}} & \multicolumn{1}{c}{\cellcolor[HTML]{C0C0C0}\textbf{F}} \\
+\multicolumn{1}{c}{}                       & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} \textbf{B}} & \cellcolor[HTML]{FE0000}\textbf{R} & \multicolumn{1}{c}{\cellcolor[HTML]{F8FF00}\textbf{Y}} & \multicolumn{1}{c}{\cellcolor[HTML]{34FF34}\textbf{G}} & \multicolumn{1}{c}{\cellcolor[HTML]{C0C0C0}\textbf{F}} \\
 \rowcolor[HTML]{FFFFFF} 
 {\color[HTML]{000000} \textbf{-26 to -30}} & {\color[HTML]{333333} 1 .. 4}                             & 5 .. 10                            & 11 .. 18                                               & 19 .. 30                                               & 31 .. 100                                              \\
 \rowcolor[HTML]{EFEFEF} 
@@ -1489,7 +1541,7 @@ This appendix contains multiple renditions of the resolution chart, as there has
 
 \begin{table}[h]
 \begin{tabular}{lccccc}
-\multicolumn{1}{c|}{} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} \textbf{H}} & \cellcolor[HTML]{FE0000}\textbf{T} & \multicolumn{1}{c}{\cellcolor[HTML]{F8FF00}\textbf{A}} & \multicolumn{1}{c}{\cellcolor[HTML]{34FF34}\textbf{M}} & \multicolumn{1}{c}{\cellcolor[HTML]{C0C0C0}\textbf{F}} \\ 
+\multicolumn{1}{c|}{} & \cellcolor[HTML]{333333}{\color[HTML]{FFFFFF} \textbf{B}} & \cellcolor[HTML]{FE0000}\textbf{R} & \multicolumn{1}{c}{\cellcolor[HTML]{F8FF00}\textbf{Y}} & \multicolumn{1}{c}{\cellcolor[HTML]{34FF34}\textbf{G}} & \multicolumn{1}{c}{\cellcolor[HTML]{C0C0C0}\textbf{F}} \\ 
 \rowcolor[HTML]{FFFFFF} 
 \multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{-26 to -30}}} & {\color[HTML]{333333}4}	&10	& 18	& 30	& 100	\\ 
 \rowcolor[HTML]{EFEFEF} 
@@ -1577,12 +1629,30 @@ This appendix contains multiple renditions of the resolution chart, as there has
 
 \vspace{0.5cm}
 
-\begin{tabularx}{\textwidth}{+>{\centering\arraybackslash}X=}
+\begin{tabularx}{\textwidth}{+
+X">{\hsize=.01\hsize\centering}X"
+X">{\hsize=.01\hsize\centering}X"
+>{\hsize=1.1\hsize\centering}X">{\hsize=.01\hsize\centering}X"
+X">{\hsize=.01\hsize\centering}X"
+>{\hsize=1.3\hsize\centering}X">{\hsize=.01\hsize\centering}X"
+X">{\hsize=.01\hsize\centering}X=}
+
 \thickhline
-\textbf{NOTES} \\ \thickhline
-  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\
-  \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt} \\ \rule{0.95\textwidth}{.1pt} \\ \\
+\multicolumn{2}{+c"}{ \small \textbf{METTLE}} & \multicolumn{2}{c"}{\small \textbf{EFFICACY}} & \multicolumn{2}{c"}{\small \textbf{EXPERTISE}} & \multicolumn{2}{c"}{\small \textbf{BODY}} & \multicolumn{2}{c"}{\small \textbf{AWARENESS}} & \multicolumn{2}{c=}{\small \textbf{MAGIC}} \\ 
 \thickhline
+
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
 \end{tabularx}
 
 \vspace{0.5cm}
@@ -1613,6 +1683,13 @@ LEGS & \\ \thickhline
 \rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\
 \rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\
 \rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\ & \\ \thickhline
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\begin{tabularx}{\textwidth}{+l"XXX"l"X=}
+\thickhline
+\textbf{WEALTH} & & & & \textbf{FAME} &  \\ \thickhline
 \end{tabularx}
 
 \end{document}	

@@ -1,0 +1,116 @@
+\documentclass[oneside]{book}
+
+\usepackage{tabularx}
+\usepackage[table,xcdraw]{xcolor}
+\makeatletter
+
+%thick horizontal line for tables 
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+
+%thick vertical line to go on the left side of a table
+\newcolumntype{+}{@{\vrule width 1pt\hskip\tabcolsep}}
+
+%thick vertical line to go between columns
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+
+%thick vertical line to go on the right side of a table
+\newcolumntype{=}{@{\hskip\tabcolsep\vrule width 1pt}}
+
+\makeatother
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+\begin{document}
+
+\pagenumbering{gobble}
+
+\centering
+\begin{tabularx}{\textwidth}{+l"X"l"X=}
+\thickhline
+\textbf{NAME} &  & \textbf{PLAYER} &  \\ \thickhline
+\end{tabularx}
+\begin{tabularx}{\textwidth}{+l">{\setlength\hsize{0.1\hsize}\centering}X"l">{\setlength\hsize{0.25\hsize}\centering}X"l">{\setlength\hsize{0.25\hsize}\centering}X"l">{\setlength\hsize{1.4\hsize}\centering}X=}
+\thickhline
+\textbf{GENDER} & & \textbf{HEIGHT} & & \textbf{WEIGHT} & & \textbf{HOMELAND} & \\ \thickhline
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\begin{tabularx}{\textwidth}{+>{\centering\arraybackslash}X=}
+\thickhline
+\textbf{THE STORY BEGINS} \\ \thickhline
+  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt}  \\ \rule{0.95\textwidth}{.1pt} \\ \rule{0.95\textwidth}{.1pt} \\ \\
+\thickhline
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\begin{tabularx}{\textwidth}{+
+X">{\hsize=.01\hsize\centering}X"
+X">{\hsize=.01\hsize\centering}X"
+>{\hsize=1.1\hsize\centering}X">{\hsize=.01\hsize\centering}X"
+X">{\hsize=.01\hsize\centering}X"
+>{\hsize=1.3\hsize\centering}X">{\hsize=.01\hsize\centering}X"
+X">{\hsize=.01\hsize\centering}X=}
+
+\thickhline
+\multicolumn{2}{+c"}{ \small \textbf{METTLE}} & \multicolumn{2}{c"}{\small \textbf{EFFICACY}} & \multicolumn{2}{c"}{\small \textbf{EXPERTISE}} & \multicolumn{2}{c"}{\small \textbf{BODY}} & \multicolumn{2}{c"}{\small \textbf{AWARENESS}} & \multicolumn{2}{c=}{\small \textbf{MAGIC}} \\ 
+\thickhline
+
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+& & & & & & & & & & & \\ \thickhline
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\begin{tabularx}{\textwidth}{+l"X=}
+\thickhline
+\multicolumn{2}{+c=}{\textbf{WOUNDS}} \\ \thickhline
+HEAD & \\ \thickhline
+CHEST & \\ \thickhline
+GUT & \\ \thickhline
+ARMS & \\ \thickhline
+LEGS & \\ \thickhline
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\begin{tabularx}{\textwidth}{+>{\centering\arraybackslash}X >{\centering\arraybackslash}X=}
+\thickhline
+\multicolumn{2}{+c=}{\textbf{EQUIPMENT}} \\ \thickhline
+ &  \\ 
+\rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\ 
+\rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\ 
+\rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\ 
+\rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\
+\rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\
+\rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\
+\rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\
+\rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\
+\rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\
+\rule{0.45\textwidth}{.1pt} & \rule{0.45\textwidth}{.1pt} \\ & \\ \thickhline
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\begin{tabularx}{\textwidth}{+l"XXX"l"X=}
+\thickhline
+\textbf{WEALTH} & & & & \textbf{FAME} &  \\ \thickhline
+\end{tabularx}
+
+\end{document}
